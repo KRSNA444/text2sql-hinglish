@@ -1,4 +1,4 @@
-# Text-to-SQL for English and Hinglish (QLoRA fine-tuned Qwen2.5-Coder-3B)
+﻿# Text-to-SQL for English and Hinglish (QLoRA fine-tuned Qwen2.5-Coder-3B)
 
 Ask a question about a database in **English or Hinglish** ("Kitne singers hain?") and get a SQL query plus the result.
 A 3B model fine-tuned with QLoRA on a single 8 GB laptop GPU (RTX 4060), served locally through Ollama, with a Streamlit demo.
@@ -53,7 +53,7 @@ python llama.cpp/convert_hf_to_gguf.py outputs/merged_hinglish --outfile outputs
 ollama create text2sql-hinglish -f Modelfile
 ```
 
-Model weights: https://huggingface.co/YOUR_USERNAME/text2sql-hinglish (LoRA adapter / merged model).
+Model weights: https://huggingface.co/Krsna444/text2sql-hinglish-lora (LoRA adapter / merged model).
 
 ## Limitations (please read)
 
