@@ -1,0 +1,1202 @@
+[
+ {
+  "idx": 5,
+  "db_id": "concert_singer",
+  "question_en": "What is the average, minimum, and maximum age of all singers from France?",
+  "question": "France ke sabhi singers ki average, minimum aur maximum age kya hai?"
+ },
+ {
+  "idx": 13,
+  "db_id": "concert_singer",
+  "question_en": "List all song names by singers above the average age.",
+  "question": "Average age se zyada age wale singers ke sabhi song names batao."
+ },
+ {
+  "idx": 24,
+  "db_id": "concert_singer",
+  "question_en": "For each stadium, how many concerts play there?",
+  "question": "Har stadium me kitne concerts hote hain?"
+ },
+ {
+  "idx": 41,
+  "db_id": "concert_singer",
+  "question_en": "What is the name and country of origin of every singer who has a song with the word 'Hey' in its title?",
+  "question": "Un sabhi singers ka naam aur country of origin batao jinke song ke title me 'Hey' word hai."
+ },
+ {
+  "idx": 48,
+  "db_id": "pets_1",
+  "question_en": "Find the weight of the youngest dog.",
+  "question": "Sabse young dog ka weight batao."
+ },
+ {
+  "idx": 51,
+  "db_id": "pets_1",
+  "question_en": "List the maximum weight and type for each type of pet.",
+  "question": "Har type ke pet ke liye maximum weight aur type batao."
+ },
+ {
+  "idx": 61,
+  "db_id": "pets_1",
+  "question_en": "What are the students' first names who have both cats and dogs as pets?",
+  "question": "Un students ke first names batao jinke paas cat aur dog dono pets hain."
+ },
+ {
+  "idx": 62,
+  "db_id": "pets_1",
+  "question_en": "Find the major and age of students who do not have a cat pet.",
+  "question": "Jin students ke paas cat pet nahi hai, unka major aur age batao."
+ },
+ {
+  "idx": 63,
+  "db_id": "pets_1",
+  "question_en": "What major is every student who does not own a cat as a pet, and also how old are they?",
+  "question": "Har us student ka major kya hai jiske paas pet me cat nahi hai, aur unki age kitni hai?"
+ },
+ {
+  "idx": 64,
+  "db_id": "pets_1",
+  "question_en": "Find the id of students who do not have a cat pet.",
+  "question": "Un students ki id batao jinke paas cat pet nahi hai."
+ },
+ {
+  "idx": 65,
+  "db_id": "pets_1",
+  "question_en": "What are the ids of the students who do not own cats as pets?",
+  "question": "Un students ki ids kya hain jo pet ke roop me cats nahi rakhte?"
+ },
+ {
+  "idx": 67,
+  "db_id": "pets_1",
+  "question_en": "What is the first name of every student who has a dog but does not have a cat?",
+  "question": "Har us student ka first name batao jiske paas dog hai lekin cat nahi hai."
+ },
+ {
+  "idx": 71,
+  "db_id": "pets_1",
+  "question_en": "What is the id and weight of every pet who is older than 1?",
+  "question": "Har us pet ki id aur weight batao jiski age 1 se zyada hai."
+ },
+ {
+  "idx": 72,
+  "db_id": "pets_1",
+  "question_en": "Find the average and maximum age for each type of pet.",
+  "question": "Har type ke pet ke liye average aur maximum age batao."
+ },
+ {
+  "idx": 75,
+  "db_id": "pets_1",
+  "question_en": "What is the average weight for each type of pet?",
+  "question": "Har type ke pet ka average weight kya hai?"
+ },
+ {
+  "idx": 77,
+  "db_id": "pets_1",
+  "question_en": "What are the different first names and ages of the students who do have pets?",
+  "question": "Jin students ke paas pets hain, unke alag-alag first names aur ages batao."
+ },
+ {
+  "idx": 80,
+  "db_id": "pets_1",
+  "question_en": "Find the number of pets for each student who has any pet and student id.",
+  "question": "Jis bhi student ke paas koi pet hai, uske pets ki ginti aur student id batao."
+ },
+ {
+  "idx": 83,
+  "db_id": "pets_1",
+  "question_en": "What is the first name and gender of the all the students who have more than one pet?",
+  "question": "Un sabhi students ka first name aur gender batao jinke paas ek se zyada pets hain."
+ },
+ {
+  "idx": 84,
+  "db_id": "pets_1",
+  "question_en": "Find the last name of the student who has a cat that is age 3.",
+  "question": "Us student ka last name batao jiske paas 3 saal ki age ki cat hai."
+ },
+ {
+  "idx": 85,
+  "db_id": "pets_1",
+  "question_en": "What is the last name of the student who has a cat that is 3 years old?",
+  "question": "Us student ka last name kya hai jiske paas 3 years ki cat hai?"
+ },
+ {
+  "idx": 93,
+  "db_id": "car_1",
+  "question_en": "How many countries exist?",
+  "question": "Kitne countries hain?"
+ },
+ {
+  "idx": 96,
+  "db_id": "car_1",
+  "question_en": "Which model of the car has the minimum horsepower?",
+  "question": "Kis car model ki horsepower sabse kam hai?"
+ },
+ {
+  "idx": 99,
+  "db_id": "car_1",
+  "question_en": "What is the model for the car with a weight smaller than the average?",
+  "question": "Average se kam weight wali car ka model kya hai?"
+ },
+ {
+  "idx": 100,
+  "db_id": "car_1",
+  "question_en": "Find the name of the makers that produced some cars in the year of 1970?",
+  "question": "1970 me kuch cars banane wale makers ke naam batao."
+ },
+ {
+  "idx": 106,
+  "db_id": "car_1",
+  "question_en": "How many car makers are there in each continents? List the continent name and the count.",
+  "question": "Har continent me kitne car makers hain? Continent ka naam aur count batao."
+ },
+ {
+  "idx": 119,
+  "db_id": "car_1",
+  "question_en": "What is the average miles per gallon of all the cards with 4 cylinders?",
+  "question": "4 cylinders wali sabhi cars ki average miles per gallon kya hai?"
+ },
+ {
+  "idx": 120,
+  "db_id": "car_1",
+  "question_en": "What is the smallest weight of the car produced with 8 cylinders on 1974 ?",
+  "question": "1974 me bani 8 cylinders wali car ka sabse kam weight kya hai?"
+ },
+ {
+  "idx": 121,
+  "db_id": "car_1",
+  "question_en": "What is the minimum weight of the car with 8 cylinders produced in 1974 ?",
+  "question": "1974 me bani 8 cylinders wali car ka minimum weight kya hai?"
+ },
+ {
+  "idx": 127,
+  "db_id": "car_1",
+  "question_en": "What is the number of cars with a horsepower greater than 150?",
+  "question": "150 se zyada horsepower wali cars kitni hain?"
+ },
+ {
+  "idx": 129,
+  "db_id": "car_1",
+  "question_en": "What is the average weight and year for each year?",
+  "question": "Har year ke liye average weight aur year batao."
+ },
+ {
+  "idx": 133,
+  "db_id": "car_1",
+  "question_en": "What is the largest amount of horsepower for the models with 3 cylinders and what make is it?",
+  "question": "3 cylinders wale models ki sabse zyada horsepower kitni hai, aur wo kis make ki hai?"
+ },
+ {
+  "idx": 137,
+  "db_id": "car_1",
+  "question_en": "What is the average horsepower for all cars produced before 1980 ?",
+  "question": "1980 se pehle bani sabhi cars ki average horsepower kya hai?"
+ },
+ {
+  "idx": 141,
+  "db_id": "car_1",
+  "question_en": "What is the maximum accelerate for all the different cylinders?",
+  "question": "Alag-alag cylinders ke liye maximum accelerate kya hai?"
+ },
+ {
+  "idx": 148,
+  "db_id": "car_1",
+  "question_en": "How many car models were produced by the maker with full name American Motor Company?",
+  "question": "Full name American Motor Company wale maker ne kitne car models banaye?"
+ },
+ {
+  "idx": 149,
+  "db_id": "car_1",
+  "question_en": "What is the number of car models created by the car maker American Motor Company?",
+  "question": "Car maker American Motor Company ne kitne car models banaye hain?"
+ },
+ {
+  "idx": 150,
+  "db_id": "car_1",
+  "question_en": "Which makers designed more than 3 car models? List full name and the id.",
+  "question": "Kin makers ne 3 se zyada car models design kiye? Full name aur id batao."
+ },
+ {
+  "idx": 155,
+  "db_id": "car_1",
+  "question_en": "What are the different years in which there were cars produced that weighed less than 4000 and also cars that weighted more than 3000 ?",
+  "question": "Wo alag-alag years batao jinme 4000 se kam weight wali aur 3000 se zyada weight wali, dono tarah ki cars bani thi."
+ },
+ {
+  "idx": 156,
+  "db_id": "car_1",
+  "question_en": "What is the horsepower of the car with the largest accelerate?",
+  "question": "Sabse zyada accelerate wali car ki horsepower kya hai?"
+ },
+ {
+  "idx": 169,
+  "db_id": "car_1",
+  "question_en": "Among the cars that do not have the minimum horsepower , what are the make ids and names of all those with less than 4 cylinders ?",
+  "question": "Jin cars ki horsepower minimum nahi hai, unme se 4 se kam cylinders wali sabhi cars ke make ids aur names batao."
+ },
+ {
+  "idx": 171,
+  "db_id": "car_1",
+  "question_en": "What is the maximum mpg of the cars that had 8 cylinders or that were produced before 1980 ?",
+  "question": "Jin cars me 8 cylinders the ya jo 1980 se pehle bani thi, unka maximum mpg kya hai?"
+ },
+ {
+  "idx": 173,
+  "db_id": "car_1",
+  "question_en": "What are the different models wthat are lighter than 3500 but were not built by the Ford Motor Company?",
+  "question": "Wo alag-alag models batao jo 3500 se halke hain lekin Ford Motor Company ne nahi banaye."
+ },
+ {
+  "idx": 177,
+  "db_id": "car_1",
+  "question_en": "What are the ids and makers of all car makers that produce at least 2 models and make more than 3 cars?",
+  "question": "Un sabhi car makers ki ids aur makers batao jo kam se kam 2 models banate hain aur 3 se zyada cars banate hain."
+ },
+ {
+  "idx": 181,
+  "db_id": "flight_2",
+  "question_en": "What country is Jetblue Airways affiliated with?",
+  "question": "Jetblue Airways kis country se affiliated hai?"
+ },
+ {
+  "idx": 185,
+  "db_id": "flight_2",
+  "question_en": "What are the airline names and abbreviations for airlines in the USA?",
+  "question": "USA ki airlines ke names aur abbreviations batao."
+ },
+ {
+  "idx": 186,
+  "db_id": "flight_2",
+  "question_en": "List the airport code and name in the city of Anthony.",
+  "question": "Anthony city me airport code aur name batao."
+ },
+ {
+  "idx": 187,
+  "db_id": "flight_2",
+  "question_en": "Give the airport code and airport name corresonding to the city Anthony.",
+  "question": "City Anthony ke airport ka code aur airport name do."
+ },
+ {
+  "idx": 193,
+  "db_id": "flight_2",
+  "question_en": "Return the number of flights.",
+  "question": "Flights ki sankhya batao."
+ },
+ {
+  "idx": 211,
+  "db_id": "flight_2",
+  "question_en": "Return the number of flights arriving in Aberdeen.",
+  "question": "Aberdeen me aane wali flights ki sankhya batao."
+ },
+ {
+  "idx": 224,
+  "db_id": "flight_2",
+  "question_en": "Which city has most number of departing flights?",
+  "question": "Kis city se sabse zyada flights depart hoti hain?"
+ },
+ {
+  "idx": 227,
+  "db_id": "flight_2",
+  "question_en": "What is the airport code of the airport with the most flights?",
+  "question": "Sabse zyada flights wale airport ka airport code kya hai?"
+ },
+ {
+  "idx": 229,
+  "db_id": "flight_2",
+  "question_en": "Give the code of the airport with the least flights.",
+  "question": "Sabse kam flights wale airport ka code batao."
+ },
+ {
+  "idx": 237,
+  "db_id": "flight_2",
+  "question_en": "Which airlines have a flight with destination airport AHD?",
+  "question": "Kin airlines ki flight ka destination airport AHD hai?"
+ },
+ {
+  "idx": 238,
+  "db_id": "flight_2",
+  "question_en": "Find all airlines that have flights from both airports 'APG' and 'CVO'.",
+  "question": "Wo sabhi airlines batao jinki flights airports 'APG' aur 'CVO' dono se chalti hain."
+ },
+ {
+  "idx": 239,
+  "db_id": "flight_2",
+  "question_en": "Which airlines have departing flights from both APG and CVO airports?",
+  "question": "Kin airlines ki departing flights APG aur CVO dono airports se hain?"
+ },
+ {
+  "idx": 247,
+  "db_id": "flight_2",
+  "question_en": "Which flight numbers correspond to United Airlines flights?",
+  "question": "United Airlines ki flights ke flight numbers kaunse hain?"
+ },
+ {
+  "idx": 250,
+  "db_id": "flight_2",
+  "question_en": "What are flight numbers of flights arriving at Airport \"APG\"?",
+  "question": "Airport 'APG' pe aane wali flights ke flight numbers kya hain?"
+ },
+ {
+  "idx": 254,
+  "db_id": "flight_2",
+  "question_en": "What are flight numbers of flights arriving at City \"Aberdeen\"?",
+  "question": "City 'Aberdeen' me aane wali flights ke flight numbers kya hain?"
+ },
+ {
+  "idx": 255,
+  "db_id": "flight_2",
+  "question_en": "Give the flight numbers of flights arriving in Aberdeen.",
+  "question": "Aberdeen me aane wali flights ke flight numbers batao."
+ },
+ {
+  "idx": 270,
+  "db_id": "employee_hire_evaluation",
+  "question_en": "Find the manager name and district of the shop whose number of products is the largest.",
+  "question": "Jis shop me products ki sankhya sabse zyada hai, uske manager ka naam aur district batao."
+ },
+ {
+  "idx": 277,
+  "db_id": "employee_hire_evaluation",
+  "question_en": "Which shops' number products is above the average? Give me the shop names.",
+  "question": "Kin shops ke products ki sankhya average se zyada hai? Shop names batao."
+ },
+ {
+  "idx": 285,
+  "db_id": "employee_hire_evaluation",
+  "question_en": "Which shop has the most employees? Give me the shop name.",
+  "question": "Kis shop me sabse zyada employees hain? Shop ka naam batao."
+ },
+ {
+  "idx": 286,
+  "db_id": "employee_hire_evaluation",
+  "question_en": "Find the name of the shops that do not hire any employee.",
+  "question": "Un shops ke naam batao jo koi employee hire nahi karte."
+ },
+ {
+  "idx": 289,
+  "db_id": "employee_hire_evaluation",
+  "question_en": "For each shop, return the number of employees working there and the name of the shop.",
+  "question": "Har shop ke liye wahan kaam karne wale employees ki sankhya aur shop ka naam batao."
+ },
+ {
+  "idx": 292,
+  "db_id": "employee_hire_evaluation",
+  "question_en": "Give me all the information about hiring.",
+  "question": "Hiring ke baare me saari information do."
+ },
+ {
+  "idx": 295,
+  "db_id": "employee_hire_evaluation",
+  "question_en": "Find the districts in which there are both shops selling less than 3000 products and shops selling more than 10000 products.",
+  "question": "Wo districts batao jinme 3000 se kam products bechne wali shops aur 10000 se zyada products bechne wali shops, dono hain."
+ },
+ {
+  "idx": 297,
+  "db_id": "employee_hire_evaluation",
+  "question_en": "Count the number of distinct store locations.",
+  "question": "Alag-alag store locations ki ginti karo."
+ },
+ {
+  "idx": 307,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "Count the number of different templates used for documents.",
+  "question": "Documents me use hue alag-alag templates ki ginti karo."
+ },
+ {
+  "idx": 308,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "How many documents are using the template with type code 'PPT'?",
+  "question": "Type code 'PPT' wale template ko kitne documents use kar rahe hain?"
+ },
+ {
+  "idx": 309,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "Count the number of documents that use the PPT template type.",
+  "question": "PPT template type use karne wale documents ki ginti karo."
+ },
+ {
+  "idx": 316,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "Show ids for all templates not used by any document.",
+  "question": "Un sabhi templates ki ids batao jo kisi bhi document me use nahi hue."
+ },
+ {
+  "idx": 318,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "How many templates do we have?",
+  "question": "Humare paas kitne templates hain?"
+ },
+ {
+  "idx": 322,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "Show all distinct template type codes for all templates.",
+  "question": "Sabhi templates ke liye saare distinct template type codes batao."
+ },
+ {
+  "idx": 327,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "Count the number of templates of the type CV.",
+  "question": "Type CV ke templates ki ginti karo."
+ },
+ {
+  "idx": 349,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "What are the type codes and descriptions for all template types?",
+  "question": "Sabhi template types ke type codes aur descriptions kya hain?"
+ },
+ {
+  "idx": 351,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "Return the template type description of the template type with the code AD.",
+  "question": "Code AD wale template type ka template type description batao."
+ },
+ {
+  "idx": 352,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "What is the template type code for template type description \"Book\".",
+  "question": "Template type description 'Book' ke liye template type code kya hai?"
+ },
+ {
+  "idx": 356,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "What are the template ids with template type description \"Presentation\".",
+  "question": "Template type description 'Presentation' wale templates ki ids batao."
+ },
+ {
+  "idx": 359,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "Count the number of paragraphs.",
+  "question": "Paragraphs ki ginti karo."
+ },
+ {
+  "idx": 364,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "Show all paragraph ids and texts for the document with name 'Welcome to NY'.",
+  "question": "Document 'Welcome to NY' ke sabhi paragraph ids aur texts batao."
+ },
+ {
+  "idx": 368,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "Show all document ids and the number of paragraphs in each document. Order by document id.",
+  "question": "Sabhi document ids aur har document me paragraphs ki sankhya batao. Document id ke order me sort karo."
+ },
+ {
+  "idx": 371,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "What are the ids and names of each document, as well as the number of paragraphs in each?",
+  "question": "Har document ki id aur name, aur har document me kitne paragraphs hain, ye batao."
+ },
+ {
+  "idx": 379,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "Give the ids of documents that have between one and two paragraphs.",
+  "question": "Un documents ki ids batao jinme ek se do paragraphs hain."
+ },
+ {
+  "idx": 382,
+  "db_id": "course_teach",
+  "question_en": "How many teachers are there?",
+  "question": "Kitne teachers hain?"
+ },
+ {
+  "idx": 390,
+  "db_id": "course_teach",
+  "question_en": "Show the name of teachers aged either 32 or 33?",
+  "question": "Un teachers ke naam batao jinki age 32 ya 33 hai."
+ },
+ {
+  "idx": 396,
+  "db_id": "course_teach",
+  "question_en": "List the most common hometown of teachers.",
+  "question": "Teachers ka sabse common hometown batao."
+ },
+ {
+  "idx": 401,
+  "db_id": "course_teach",
+  "question_en": "What is the name of each teacher and what course they teach?",
+  "question": "Har teacher ka naam kya hai aur wo kaunsa course padhata hai?"
+ },
+ {
+  "idx": 407,
+  "db_id": "course_teach",
+  "question_en": "What are the names of the teachers and how many courses do they teach?",
+  "question": "Teachers ke naam aur wo kitne courses padhate hain, ye batao."
+ },
+ {
+  "idx": 408,
+  "db_id": "course_teach",
+  "question_en": "Show names of teachers that teach at least two courses.",
+  "question": "Un teachers ke naam batao jo kam se kam do courses padhate hain."
+ },
+ {
+  "idx": 412,
+  "db_id": "museum_visit",
+  "question_en": "How many visitors below age 30 are there?",
+  "question": "30 se kam age ke kitne visitors hain?"
+ },
+ {
+  "idx": 426,
+  "db_id": "museum_visit",
+  "question_en": "What is the total ticket expense of the visitors whose membership level is 1?",
+  "question": "Membership level 1 wale visitors ka total ticket expense kitna hai?"
+ },
+ {
+  "idx": 429,
+  "db_id": "museum_visit",
+  "question_en": "How many museums were opened after 2013 or before 2008?",
+  "question": "2013 ke baad ya 2008 se pehle kitne museums khule?"
+ },
+ {
+  "idx": 430,
+  "db_id": "wta_1",
+  "question_en": "Find the total number of players.",
+  "question": "Players ki total sankhya batao."
+ },
+ {
+  "idx": 432,
+  "db_id": "wta_1",
+  "question_en": "Find the total number of matches.",
+  "question": "Matches ki total sankhya batao."
+ },
+ {
+  "idx": 435,
+  "db_id": "wta_1",
+  "question_en": "What are the first names and birth dates of players from the USA?",
+  "question": "USA ke players ke first names aur birth dates batao."
+ },
+ {
+  "idx": 438,
+  "db_id": "wta_1",
+  "question_en": "Find the average rank of winners in all matches.",
+  "question": "Sabhi matches me winners ki average rank batao."
+ },
+ {
+  "idx": 440,
+  "db_id": "wta_1",
+  "question_en": "Find the highest rank of losers in all matches.",
+  "question": "Sabhi matches me losers ki highest rank batao."
+ },
+ {
+  "idx": 441,
+  "db_id": "wta_1",
+  "question_en": "What is the best rank of losers across all matches?",
+  "question": "Sabhi matches me losers ki best rank kya hai?"
+ },
+ {
+  "idx": 445,
+  "db_id": "wta_1",
+  "question_en": "How many different loser names are there?",
+  "question": "Kitne alag-alag loser names hain?"
+ },
+ {
+  "idx": 457,
+  "db_id": "wta_1",
+  "question_en": "What are the full names of all players, sorted by birth date?",
+  "question": "Sabhi players ke full names birth date ke hisaab se sort karke batao."
+ },
+ {
+  "idx": 460,
+  "db_id": "wta_1",
+  "question_en": "Find the first name and country code of the player who did the most number of tours.",
+  "question": "Sabse zyada tours karne wale player ka first name aur country code batao."
+ },
+ {
+  "idx": 465,
+  "db_id": "wta_1",
+  "question_en": "What is the name of the winner who has won the most matches, and how many rank points does this player have?",
+  "question": "Sabse zyada matches jeetne wale winner ka naam kya hai, aur is player ke rank points kitne hain?"
+ },
+ {
+  "idx": 468,
+  "db_id": "wta_1",
+  "question_en": "find the names of loser and winner who played in the match with greatest number of minutes.",
+  "question": "Sabse zyada minutes wale match me khelne wale loser aur winner ke naam batao."
+ },
+ {
+  "idx": 473,
+  "db_id": "wta_1",
+  "question_en": "What are the first names of all players, and their total ranking points?",
+  "question": "Sabhi players ke first names aur unke total ranking points batao."
+ },
+ {
+  "idx": 477,
+  "db_id": "wta_1",
+  "question_en": "What is the code of the country with the most players?",
+  "question": "Sabse zyada players wale country ka code kya hai?"
+ },
+ {
+  "idx": 486,
+  "db_id": "wta_1",
+  "question_en": "How many different winners both participated in the WTA Championships and were left handed?",
+  "question": "Kitne alag winners ne WTA Championships me bhi hissa liya aur wo left handed bhi the?"
+ },
+ {
+  "idx": 497,
+  "db_id": "battle_death",
+  "question_en": "What are the death and injury situations caused by the ship with tonnage 't'?",
+  "question": "Tonnage 't' wale ship ki wajah se hui deaths aur injuries ki situations kya hain?"
+ },
+ {
+  "idx": 501,
+  "db_id": "battle_death",
+  "question_en": "What is the ship id and name that caused most total injuries?",
+  "question": "Sabse zyada total injuries karne wale ship ki id aur name batao."
+ },
+ {
+  "idx": 506,
+  "db_id": "battle_death",
+  "question_en": "Show names, results and bulgarian commanders of the battles with no ships lost in the 'English Channel'.",
+  "question": "'English Channel' me jin battles me koi ship nahi khoyi, unke names, results aur bulgarian commanders batao."
+ },
+ {
+  "idx": 507,
+  "db_id": "battle_death",
+  "question_en": "What are the notes of the death events which has substring 'East'?",
+  "question": "Un death events ke notes batao jinme substring 'East' hai."
+ },
+ {
+  "idx": 509,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What is the first and second line for all addresses?",
+  "question": "Sabhi addresses ki first aur second line batao."
+ },
+ {
+  "idx": 525,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What are the names and descriptions for all the sections?",
+  "question": "Sabhi sections ke names aur descriptions batao."
+ },
+ {
+  "idx": 538,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "Find the kind of program which most number of students are enrolled in?",
+  "question": "Kis kind ke program me sabse zyada students enrolled hain?"
+ },
+ {
+  "idx": 545,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What is the name of the semester with no students enrolled?",
+  "question": "Us semester ka naam batao jisme koi student enrolled nahi hai."
+ },
+ {
+  "idx": 548,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What's the name of the course with most number of enrollments?",
+  "question": "Sabse zyada enrollments wale course ka naam kya hai?"
+ },
+ {
+  "idx": 554,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What is the phone number of the man with the first name Timmothy and the last name Ward?",
+  "question": "First name Timmothy aur last name Ward wale aadmi ka phone number kya hai?"
+ },
+ {
+  "idx": 561,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What is the first name of the student whose permanent address is different from his or her current one?",
+  "question": "Us student ka first name batao jiska permanent address uske current address se alag hai."
+ },
+ {
+  "idx": 563,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What is the id, line 1, and line 2 of the address with the most students?",
+  "question": "Sabse zyada students wale address ki id, line 1 aur line 2 batao."
+ },
+ {
+  "idx": 564,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "On average, when were the transcripts printed?",
+  "question": "Average me, transcripts kab print hue the?"
+ },
+ {
+  "idx": 565,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What is the average transcript date?",
+  "question": "Average transcript date kya hai?"
+ },
+ {
+  "idx": 571,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "When was the last transcript released?",
+  "question": "Aakhri transcript kab release hua tha?"
+ },
+ {
+  "idx": 572,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "How many times at most can a course enrollment result show in different transcripts? Also show the course enrollment id.",
+  "question": "Ek course enrollment result alag-alag transcripts me adhiktam kitni baar aa sakta hai? Course enrollment id bhi batao."
+ },
+ {
+  "idx": 574,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "Show the date of the transcript which shows the least number of results, also list the id.",
+  "question": "Jis transcript me sabse kam results dikhte hain, uski date batao, aur id bhi do."
+ },
+ {
+  "idx": 578,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "How many different addresses do the students currently live?",
+  "question": "Students abhi kitne alag-alag addresses par rehte hain?"
+ },
+ {
+  "idx": 580,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "List all the student details in reversed lexicographical order.",
+  "question": "Sabhi student details ko ulte lexicographical order me batao."
+ },
+ {
+  "idx": 585,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What are the first names of the students who live in Haiti permanently or have the cell phone number 09700166582 ?",
+  "question": "Un students ke first names batao jo permanently Haiti me rehte hain ya jinka cell phone number 09700166582 hai."
+ },
+ {
+  "idx": 587,
+  "db_id": "tvshow",
+  "question_en": "What are the titles of the cartoons sorted alphabetically?",
+  "question": "Cartoons ke titles alphabetical order me batao."
+ },
+ {
+  "idx": 589,
+  "db_id": "tvshow",
+  "question_en": "What are the names of all cartoons directed by Ben Jones?",
+  "question": "Ben Jones dwara directed sabhi cartoons ke naam batao."
+ },
+ {
+  "idx": 591,
+  "db_id": "tvshow",
+  "question_en": "What is the number of cartoones written by Joseph Kuhr?",
+  "question": "Joseph Kuhr dwara likhe gaye cartoons ki sankhya kya hai?"
+ },
+ {
+  "idx": 592,
+  "db_id": "tvshow",
+  "question_en": "list all cartoon titles and their directors ordered by their air date",
+  "question": "Sabhi cartoon titles aur unke directors, air date ke order me batao."
+ },
+ {
+  "idx": 594,
+  "db_id": "tvshow",
+  "question_en": "List the title of all cartoon directed by \"Ben Jones\" or \"Brandon Vietti\".",
+  "question": "'Ben Jones' ya 'Brandon Vietti' dwara directed sabhi cartoons ke title batao."
+ },
+ {
+  "idx": 596,
+  "db_id": "tvshow",
+  "question_en": "Which country has the most of TV Channels? List the country and number of TV Channels it has.",
+  "question": "Kis country ke sabse zyada TV Channels hain? Country aur uske TV Channels ki sankhya batao."
+ },
+ {
+  "idx": 597,
+  "db_id": "tvshow",
+  "question_en": "What is the country with the most number of TV Channels and how many does it have?",
+  "question": "Sabse zyada TV Channels wali country kaunsi hai aur uske kitne hain?"
+ },
+ {
+  "idx": 600,
+  "db_id": "tvshow",
+  "question_en": "What is the content of TV Channel with serial name \"Sky Radio\"?",
+  "question": "Serial name 'Sky Radio' wale TV Channel ka content kya hai?"
+ },
+ {
+  "idx": 604,
+  "db_id": "tvshow",
+  "question_en": "How many TV Channel using language English?",
+  "question": "Language English use karne wale kitne TV Channels hain?"
+ },
+ {
+  "idx": 609,
+  "db_id": "tvshow",
+  "question_en": "For each language, list the number of TV Channels that use it.",
+  "question": "Har language ke liye, use karne wale TV Channels ki sankhya batao."
+ },
+ {
+  "idx": 624,
+  "db_id": "tvshow",
+  "question_en": "What is the TV Channel of TV series with Episode \"A Love of a Lifetime\"? List the TV Channel's series name.",
+  "question": "Episode 'A Love of a Lifetime' wali TV series ka TV Channel kaunsa hai? TV Channel ka series name batao."
+ },
+ {
+  "idx": 625,
+  "db_id": "tvshow",
+  "question_en": "What is the name of the series that has the episode \"A Love of a Lifetime\"?",
+  "question": "Us series ka naam kya hai jisme episode 'A Love of a Lifetime' hai?"
+ },
+ {
+  "idx": 626,
+  "db_id": "tvshow",
+  "question_en": "List the Episode of all  TV series showed on TV Channel with series name \"Sky Radio\".",
+  "question": "Series name 'Sky Radio' wale TV Channel par dikhayi gayi sabhi TV series ke Episodes batao."
+ },
+ {
+  "idx": 634,
+  "db_id": "tvshow",
+  "question_en": "which countries' tv channels are playing some cartoon written by Todd Casey?",
+  "question": "Kin countries ke tv channels par Todd Casey ke likhe kuch cartoon chal rahe hain?"
+ },
+ {
+  "idx": 643,
+  "db_id": "tvshow",
+  "question_en": "What are the ids of all tv channels that have more than 2 TV channels?",
+  "question": "Un tv channels ki ids batao jinme 2 se zyada TV channels hain."
+ },
+ {
+  "idx": 646,
+  "db_id": "tvshow",
+  "question_en": "find the package option of the tv channel that do not have any cartoon directed by Ben Jones.",
+  "question": "Us tv channel ka package option batao jisme Ben Jones dwara directed koi cartoon nahi hai."
+ },
+ {
+  "idx": 655,
+  "db_id": "poker_player",
+  "question_en": "Return the average earnings across all poker players.",
+  "question": "Sabhi poker players ki average earnings batao."
+ },
+ {
+  "idx": 663,
+  "db_id": "poker_player",
+  "question_en": "Give the names of poker players who have earnings above 300000.",
+  "question": "Un poker players ke naam batao jinki earnings 300000 se zyada hain."
+ },
+ {
+  "idx": 664,
+  "db_id": "poker_player",
+  "question_en": "List the names of poker players ordered by the final tables made in ascending order.",
+  "question": "Poker players ke naam final tables ki sankhya ke ascending order me batao."
+ },
+ {
+  "idx": 675,
+  "db_id": "poker_player",
+  "question_en": "How many people are there of each nationality?",
+  "question": "Har nationality ke kitne log hain?"
+ },
+ {
+  "idx": 681,
+  "db_id": "poker_player",
+  "question_en": "What are the names and birth dates of people, ordered by their names in alphabetical order?",
+  "question": "Logon ke naam aur birth dates, naam ke alphabetical order me batao."
+ },
+ {
+  "idx": 685,
+  "db_id": "poker_player",
+  "question_en": "What are the names of people who do not play poker?",
+  "question": "Un logon ke naam batao jo poker nahi khelte."
+ },
+ {
+  "idx": 697,
+  "db_id": "voter_1",
+  "question_en": "What are the number of votes from state 'NY' or 'CA'?",
+  "question": "State 'NY' ya 'CA' se kitne votes aaye?"
+ },
+ {
+  "idx": 698,
+  "db_id": "voter_1",
+  "question_en": "How many contestants did not get voted?",
+  "question": "Kitne contestants ko vote nahi mile?"
+ },
+ {
+  "idx": 699,
+  "db_id": "voter_1",
+  "question_en": "What is the area code in which the most voters voted?",
+  "question": "Kis area code me sabse zyada voters ne vote kiya?"
+ },
+ {
+  "idx": 700,
+  "db_id": "voter_1",
+  "question_en": "What are the create dates, states, and phone numbers of the votes that were for the contestant named 'Tabatha Gehling'?",
+  "question": "Contestant 'Tabatha Gehling' ko diye gaye votes ki create dates, states aur phone numbers batao."
+ },
+ {
+  "idx": 708,
+  "db_id": "world_1",
+  "question_en": "How much surface area do the countires in the Carribean cover together?",
+  "question": "Caribbean ke countries ka total surface area kitna hai?"
+ },
+ {
+  "idx": 712,
+  "db_id": "world_1",
+  "question_en": "What region is Kabul in?",
+  "question": "Kabul kis region me hai?"
+ },
+ {
+  "idx": 714,
+  "db_id": "world_1",
+  "question_en": "What language is predominantly spoken in Aruba?",
+  "question": "Aruba me mukhya roop se kaunsi language boli jaati hai?"
+ },
+ {
+  "idx": 716,
+  "db_id": "world_1",
+  "question_en": "Give me Brazil’s population and life expectancies.",
+  "question": "Brazil ki population aur life expectancies batao."
+ },
+ {
+  "idx": 719,
+  "db_id": "world_1",
+  "question_en": "What is the average expected life expectancy for countries in the region of Central Africa?",
+  "question": "Region Central Africa ke countries ki average expected life expectancy kya hai?"
+ },
+ {
+  "idx": 724,
+  "db_id": "world_1",
+  "question_en": "How many people live in Asia, and what is the largest GNP among them?",
+  "question": "Asia me kitne log rehte hain, aur unme sabse bada GNP kitna hai?"
+ },
+ {
+  "idx": 730,
+  "db_id": "world_1",
+  "question_en": "What is the total population of Gelderland district?",
+  "question": "Gelderland district ki total population kitni hai?"
+ },
+ {
+  "idx": 734,
+  "db_id": "world_1",
+  "question_en": "What is the number of distinct languages used around the world?",
+  "question": "Duniya bhar me use hone wali alag-alag languages ki sankhya kya hai?"
+ },
+ {
+  "idx": 747,
+  "db_id": "world_1",
+  "question_en": "What are the names of nations speak both English and French?",
+  "question": "Un nations ke naam batao jo English aur French dono bolte hain."
+ },
+ {
+  "idx": 749,
+  "db_id": "world_1",
+  "question_en": "What are the names of nations where both English and French are official languages?",
+  "question": "Un nations ke naam batao jahan English aur French dono official languages hain."
+ },
+ {
+  "idx": 757,
+  "db_id": "world_1",
+  "question_en": "Which language is the most popular on the Asian continent?",
+  "question": "Asian continent par kaunsi language sabse popular hai?"
+ },
+ {
+  "idx": 776,
+  "db_id": "world_1",
+  "question_en": "Which African countries have a smaller population than that of any country in Asia?",
+  "question": "Kin African countries ki population Asia ke kisi bhi country se kam hai?"
+ },
+ {
+  "idx": 783,
+  "db_id": "world_1",
+  "question_en": "What are the codes of the countries that do not speak English and whose government forms are not Republic?",
+  "question": "Un countries ke codes batao jo English nahi bolte aur jinka government form Republic nahi hai."
+ },
+ {
+  "idx": 787,
+  "db_id": "world_1",
+  "question_en": "Which unique cities are in Asian countries where Chinese is the official language ?",
+  "question": "Un Asian countries ke alag-alag cities batao jahan Chinese official language hai."
+ },
+ {
+  "idx": 796,
+  "db_id": "world_1",
+  "question_en": "How many cities in each district have a population that is above the average population across all cities?",
+  "question": "Har district me kitni cities ki population, sabhi cities ki average population se zyada hai?"
+ },
+ {
+  "idx": 799,
+  "db_id": "world_1",
+  "question_en": "Find the average life expectancy and total population for each continent where the average life expectancy is shorter than 72?",
+  "question": "Har us continent ke liye average life expectancy aur total population batao jahan average life expectancy 72 se kam hai."
+ },
+ {
+  "idx": 809,
+  "db_id": "world_1",
+  "question_en": "What are the names of the countries that are in the continent of Europe and have a population of 80000?",
+  "question": "Europe continent ke un countries ke naam batao jinki population 80000 hai."
+ },
+ {
+  "idx": 814,
+  "db_id": "world_1",
+  "question_en": "Return the names of cities that have a population between 160000 and 900000 .",
+  "question": "Un cities ke naam batao jinki population 160000 aur 900000 ke beech hai."
+ },
+ {
+  "idx": 817,
+  "db_id": "world_1",
+  "question_en": "What is the language spoken by the largest percentage of people in each country?",
+  "question": "Har country me sabse zyada percentage logon dwara boli jaane wali language kaunsi hai?"
+ },
+ {
+  "idx": 836,
+  "db_id": "orchestra",
+  "question_en": "Count the number of different nationalities of conductors.",
+  "question": "Conductors ki alag-alag nationalities ki ginti karo."
+ },
+ {
+  "idx": 838,
+  "db_id": "orchestra",
+  "question_en": "What are the names of conductors, sorted descending by the number of years they have worked?",
+  "question": "Conductors ke naam, kaam ke saalon ki sankhya ke descending order me batao."
+ },
+ {
+  "idx": 839,
+  "db_id": "orchestra",
+  "question_en": "List the name of the conductor with the most years of work.",
+  "question": "Sabse zyada saal kaam karne wale conductor ka naam batao."
+ },
+ {
+  "idx": 842,
+  "db_id": "orchestra",
+  "question_en": "What are the names of conductors as well as the corresonding orchestras that they have conducted?",
+  "question": "Conductors ke naam aur jin orchestras ko unhone conduct kiya, wo batao."
+ },
+ {
+  "idx": 847,
+  "db_id": "orchestra",
+  "question_en": "Please show the name of the conductor that has conducted orchestras founded after 2008.",
+  "question": "Us conductor ka naam batao jisne 2008 ke baad founded orchestras ko conduct kiya hai."
+ },
+ {
+  "idx": 857,
+  "db_id": "orchestra",
+  "question_en": "Show the record companies shared by orchestras founded before 2003 and after 2003.",
+  "question": "Wo record companies batao jo 2003 se pehle aur 2003 ke baad founded orchestras dono ke saath shared hain."
+ },
+ {
+  "idx": 861,
+  "db_id": "orchestra",
+  "question_en": "Show the years in which orchestras that have given more than one performance are founded.",
+  "question": "Un saalon ko batao jinme founded orchestras ne ek se zyada performance di hain."
+ },
+ {
+  "idx": 880,
+  "db_id": "network_1",
+  "question_en": "Return the grade that has the greatest number of high schoolers.",
+  "question": "Wo grade batao jisme high schoolers ki sankhya sabse zyada hai."
+ },
+ {
+  "idx": 897,
+  "db_id": "network_1",
+  "question_en": "Show names of all high school students who do not have any friends.",
+  "question": "Un sabhi high school students ke naam batao jinka koi friend nahi hai."
+ },
+ {
+  "idx": 917,
+  "db_id": "network_1",
+  "question_en": "Find the minimum grade of students who have no friends.",
+  "question": "Jin students ka koi friend nahi hai, unka minimum grade batao."
+ },
+ {
+  "idx": 930,
+  "db_id": "dog_kennels",
+  "question_en": "Give me the id, role and email of the professionals who did not perform any treatment on dogs.",
+  "question": "Un professionals ki id, role aur email batao jinhone dogs par koi treatment nahi kiya."
+ },
+ {
+  "idx": 943,
+  "db_id": "dog_kennels",
+  "question_en": "Which professionals have done at least two types of treatments? List the professional id and cell phone.",
+  "question": "Kin professionals ne kam se kam do types ke treatments kiye hain? Professional id aur cell phone batao."
+ },
+ {
+  "idx": 944,
+  "db_id": "dog_kennels",
+  "question_en": "Find the id and cell phone of the professionals who operate two or more types of treatments.",
+  "question": "Un professionals ki id aur cell phone batao jo do ya zyada types ke treatments karte hain."
+ },
+ {
+  "idx": 946,
+  "db_id": "dog_kennels",
+  "question_en": "Which professionals have operated a treatment that costs less than the average? Give me theor first names and last names.",
+  "question": "Kin professionals ne average se kam cost wala treatment kiya hai? Unke first names aur last names batao."
+ },
+ {
+  "idx": 947,
+  "db_id": "dog_kennels",
+  "question_en": "List the date of each treatment, together with the first name of the professional who operated it.",
+  "question": "Har treatment ki date, aur use karne wale professional ka first name batao."
+ },
+ {
+  "idx": 965,
+  "db_id": "dog_kennels",
+  "question_en": "What are the arriving date and the departing date of all the dogs?",
+  "question": "Sabhi dogs ki arriving date aur departing date batao."
+ },
+ {
+  "idx": 970,
+  "db_id": "dog_kennels",
+  "question_en": "Find the number of professionals who have ever treated dogs.",
+  "question": "Un professionals ki sankhya batao jinhone kabhi dogs ka treatment kiya hai."
+ },
+ {
+  "idx": 971,
+  "db_id": "dog_kennels",
+  "question_en": "Which professionals live in a city containing the substring 'West'? List his or her role, street, city and state.",
+  "question": "Kin professionals ki city me substring 'West' hai? Unka role, street, city aur state batao."
+ },
+ {
+  "idx": 990,
+  "db_id": "dog_kennels",
+  "question_en": "Tell me the age of the oldest dog.",
+  "question": "Sabse oldest dog ki age batao."
+ },
+ {
+  "idx": 991,
+  "db_id": "dog_kennels",
+  "question_en": "How much does each charge type costs? List both charge type and amount.",
+  "question": "Har charge type ki cost kitni hai? Charge type aur amount dono batao."
+ },
+ {
+  "idx": 994,
+  "db_id": "dog_kennels",
+  "question_en": "What is the charge amount of the most expensive charge type?",
+  "question": "Sabse mehnge charge type ka charge amount kya hai?"
+ },
+ {
+  "idx": 1000,
+  "db_id": "dog_kennels",
+  "question_en": "What are each professional's first name and description of the treatment they have performed?",
+  "question": "Har professional ka first name aur unke kiye gaye treatment ka description batao."
+ },
+ {
+  "idx": 1004,
+  "db_id": "singer",
+  "question_en": "What are the names of singers ordered by ascending net worth?",
+  "question": "Singers ke naam ascending net worth ke order me batao."
+ },
+ {
+  "idx": 1012,
+  "db_id": "singer",
+  "question_en": "What is the name of the singer who is worth the most?",
+  "question": "Sabse zyada net worth wale singer ka naam kya hai?"
+ },
+ {
+  "idx": 1014,
+  "db_id": "singer",
+  "question_en": "For each citizenship, how many singers are from that country?",
+  "question": "Har citizenship ke liye us country ke kitne singers hain?"
+ },
+ {
+  "idx": 1016,
+  "db_id": "singer",
+  "question_en": "What is the most common singer citizenship ?",
+  "question": "Sabse common singer citizenship kaunsi hai?"
+ },
+ {
+  "idx": 1022,
+  "db_id": "singer",
+  "question_en": "what are the different names of the singers that have sales more than 300000?",
+  "question": "Un singers ke alag-alag naam batao jinki sales 300000 se zyada hain."
+ },
+ {
+  "idx": 1028,
+  "db_id": "singer",
+  "question_en": "What is the sname of every sing that does not have any song?",
+  "question": "Har us singer ka sname kya hai jiska koi song nahi hai?"
+ },
+ {
+  "idx": 1029,
+  "db_id": "singer",
+  "question_en": "Show the citizenship shared by singers with birth year before 1945 and after 1955.",
+  "question": "Wo citizenship batao jo 1945 se pehle aur 1955 ke baad birth year wale singers me shared hai."
+ },
+ {
+  "idx": 1032,
+  "db_id": "real_estate_properties",
+  "question_en": "What is the feature type name of feature AirCon?",
+  "question": "Feature AirCon ka feature type name kya hai?"
+ }
+]

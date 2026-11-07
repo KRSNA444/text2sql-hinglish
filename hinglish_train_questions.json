@@ -1,0 +1,3602 @@
+[
+ {
+  "i": 0,
+  "db_id": "book_2",
+  "question_en": "List the writers of the books in ascending alphabetical order.",
+  "question": "Books ke writers ke naam alphabetical ascending order me batao."
+ },
+ {
+  "i": 1,
+  "db_id": "party_people",
+  "question_en": "Show all member names who are not in charge of any event.",
+  "question": "Un sabhi members ke naam batao jo kisi event ke incharge nahi hain."
+ },
+ {
+  "i": 16,
+  "db_id": "store_1",
+  "question_en": "List the name of all tracks in the playlists of Movies.",
+  "question": "Movies ki playlists me aane wale sabhi tracks ke naam batao."
+ },
+ {
+  "i": 24,
+  "db_id": "bike_1",
+  "question_en": "What are the name, latitude, and city of the station with the lowest latitude?",
+  "question": "Sabse kam latitude wale station ka naam, latitude aur city kya hai?"
+ },
+ {
+  "i": 26,
+  "db_id": "solvency_ii",
+  "question_en": "Show the names of products that are in at least two events.",
+  "question": "Un products ke naam batao jo kam se kam do events me hain."
+ },
+ {
+  "i": 33,
+  "db_id": "sakila_1",
+  "question_en": "What are the first names of customers who have not rented any films after '2005-08-23 02:06:01'?",
+  "question": "Un customers ke first names batao jinhone '2005-08-23 02:06:01' ke baad koi film rent nahi ki."
+ },
+ {
+  "i": 36,
+  "db_id": "student_assessment",
+  "question_en": "How many courses do the student whose id is 171 attend?",
+  "question": "Jis student ki id 171 hai, wo kitne courses attend karta hai?"
+ },
+ {
+  "i": 41,
+  "db_id": "machine_repair",
+  "question_en": "What is the starting year of the oldest technicians?",
+  "question": "Sabse purane technicians ka starting year kya hai?"
+ },
+ {
+  "i": 45,
+  "db_id": "college_3",
+  "question_en": "Find the first names of students whose first names contain letter \"a\".",
+  "question": "Un students ke first names batao jinke first name me letter 'a' hai."
+ },
+ {
+  "i": 51,
+  "db_id": "swimming",
+  "question_en": "How many stadiums does each country have?",
+  "question": "Har country ke kitne stadiums hain?"
+ },
+ {
+  "i": 52,
+  "db_id": "college_2",
+  "question_en": "What are the names of all instructors in the Comp. Sci. department?",
+  "question": "Comp. Sci. department ke sabhi instructors ke naam kya hain?"
+ },
+ {
+  "i": 53,
+  "db_id": "student_assessment",
+  "question_en": "What are the ids of the students who registered for course 301 most recently?",
+  "question": "Course 301 me sabse recently register hone wale students ki ids kya hain?"
+ },
+ {
+  "i": 63,
+  "db_id": "customers_and_addresses",
+  "question_en": "What are the name and active date of the customers whose contact channel code is email?",
+  "question": "Un customers ka naam aur active date batao jinka contact channel code email hai."
+ },
+ {
+  "i": 64,
+  "db_id": "ship_mission",
+  "question_en": "Show different types of ships and the number of ships of each type.",
+  "question": "Ships ke alag-alag types aur har type ke ships ki sankhya batao."
+ },
+ {
+  "i": 74,
+  "db_id": "machine_repair",
+  "question_en": "How many technicians are there?",
+  "question": "Kitne technicians hain?"
+ },
+ {
+  "i": 75,
+  "db_id": "ship_1",
+  "question_en": "What is the name, type, and flag of the ship that was built in the most recent year?",
+  "question": "Sabse recent year me bane ship ka naam, type aur flag kya hai?"
+ },
+ {
+  "i": 79,
+  "db_id": "company_office",
+  "question_en": "Which buildings have more than one company offices? Give me the building names.",
+  "question": "Kin buildings me ek se zyada company offices hain? Building ke naam batao."
+ },
+ {
+  "i": 147,
+  "db_id": "sports_competition",
+  "question_en": "which country did participated in the most number of Tournament competitions?",
+  "question": "Kis country ne sabse zyada Tournament competitions me hissa liya?"
+ },
+ {
+  "i": 148,
+  "db_id": "voter_2",
+  "question_en": "Return all the distinct secretary votes made in the fall election cycle.",
+  "question": "Fall election cycle me diye gaye sabhi distinct secretary votes batao."
+ },
+ {
+  "i": 149,
+  "db_id": "college_1",
+  "question_en": "How many departments does the college has?",
+  "question": "College me kitne departments hain?"
+ },
+ {
+  "i": 161,
+  "db_id": "workshop_paper",
+  "question_en": "Show each author and the number of workshops they submitted to.",
+  "question": "Har author aur unke submit kiye gaye workshops ki sankhya batao."
+ },
+ {
+  "i": 177,
+  "db_id": "voter_2",
+  "question_en": "How many distinct president votes are recorded?",
+  "question": "Kitne distinct president votes record hue hain?"
+ },
+ {
+  "i": 206,
+  "db_id": "tracking_software_problems",
+  "question_en": "Which problems were reported by the staff named Dameon Frami or Jolie Weber? Give me the ids of the problems.",
+  "question": "Staff Dameon Frami ya Jolie Weber ne kaun si problems report ki? Problems ki ids batao."
+ },
+ {
+  "i": 214,
+  "db_id": "music_2",
+  "question_en": "How many songs have used the instrument \"drums\"?",
+  "question": "Kitne songs me instrument 'drums' use hua hai?"
+ },
+ {
+  "i": 215,
+  "db_id": "product_catalog",
+  "question_en": "Which attribute definitions have attribute value 0? Give me the attribute name and attribute ID.",
+  "question": "Kin attribute definitions ki attribute value 0 hai? Attribute name aur attribute ID batao."
+ },
+ {
+  "i": 221,
+  "db_id": "game_1",
+  "question_en": "Show all student IDs with the number of sports and total number of games played",
+  "question": "Sabhi student IDs aur unke khele gaye sports aur total games ki sankhya batao."
+ },
+ {
+  "i": 223,
+  "db_id": "machine_repair",
+  "question_en": "What is the starting year for the oldest technician?",
+  "question": "Sabse purane technician ka starting year kya hai?"
+ },
+ {
+  "i": 225,
+  "db_id": "body_builder",
+  "question_en": "List the height and weight of people in descending order of height.",
+  "question": "Logon ki height aur weight height ke descending order me batao."
+ },
+ {
+  "i": 231,
+  "db_id": "entertainment_awards",
+  "question_en": "List the name of artworks in ascending alphabetical order.",
+  "question": "Artworks ke naam alphabetical ascending order me batao."
+ },
+ {
+  "i": 276,
+  "db_id": "tracking_software_problems",
+  "question_en": "List the names of all the distinct product names in alphabetical order?",
+  "question": "Sabhi distinct product names alphabetical order me batao."
+ },
+ {
+  "i": 283,
+  "db_id": "apartment_rentals",
+  "question_en": "Return each apartment type code with the number of apartments having that apartment type, in ascending order of the number of apartments.",
+  "question": "Har apartment type code ke saath us type ke apartments ki sankhya batao, apartments ki sankhya ke ascending order me."
+ },
+ {
+  "i": 285,
+  "db_id": "insurance_policies",
+  "question_en": "List the details of the customers who do not have any policies.",
+  "question": "Un customers ki details batao jinki koi policy nahi hai."
+ },
+ {
+  "i": 303,
+  "db_id": "book_2",
+  "question_en": "What is the number of distinct publication dates?",
+  "question": "Distinct publication dates ki sankhya kya hai?"
+ },
+ {
+  "i": 318,
+  "db_id": "storm_record",
+  "question_en": "Return the names of the regions affected by storms that had a death count of at least 10.",
+  "question": "Un storms se prabhavit regions ke naam batao jinme kam se kam 10 deaths hue."
+ },
+ {
+  "i": 328,
+  "db_id": "restaurant_1",
+  "question_en": "What is the age of student Linda Smith?",
+  "question": "Student Linda Smith ki age kya hai?"
+ },
+ {
+  "i": 329,
+  "db_id": "flight_1",
+  "question_en": "What is the salary and name of the employee who has the most number of certificates on aircrafts with distance more than 5000?",
+  "question": "5000 se zyada distance wale aircrafts ke sabse zyada certificates wale employee ki salary aur name kya hai?"
+ },
+ {
+  "i": 331,
+  "db_id": "e_learning",
+  "question_en": "What are the names and descriptions of the all courses under the \"Computer Science\" subject?",
+  "question": "'Computer Science' subject ke sabhi courses ke naam aur descriptions batao."
+ },
+ {
+  "i": 336,
+  "db_id": "city_record",
+  "question_en": "Which city has the lowest GDP? Please list the city name and its GDP.",
+  "question": "Kis city ka GDP sabse kam hai? City ka naam aur GDP batao."
+ },
+ {
+  "i": 359,
+  "db_id": "wine_1",
+  "question_en": "What is the area for the appelation which produced the most wines prior to 2010?",
+  "question": "2010 se pehle sabse zyada wines banane wale appelation ka area kya hai?"
+ },
+ {
+  "i": 373,
+  "db_id": "phone_1",
+  "question_en": "Find the names of the chip models that are not used by any phone with full accreditation type.",
+  "question": "Un chip models ke naam batao jo full accreditation type wale kisi bhi phone me use nahi hue."
+ },
+ {
+  "i": 382,
+  "db_id": "e_learning",
+  "question_en": "Find the latest logon date of the students whose family name is \"Jaskolski\" or \"Langosh\".",
+  "question": "Un students ka latest logon date batao jinka family name 'Jaskolski' ya 'Langosh' hai."
+ },
+ {
+  "i": 392,
+  "db_id": "school_bus",
+  "question_en": "List names for drivers from Hartford city and younger than 40.",
+  "question": "Hartford city ke aur 40 se kam age ke drivers ke naam batao."
+ },
+ {
+  "i": 393,
+  "db_id": "workshop_paper",
+  "question_en": "Show different colleges along with the number of authors of submission from each college.",
+  "question": "Alag-alag colleges aur har college se submission ke authors ki sankhya batao."
+ },
+ {
+  "i": 399,
+  "db_id": "flight_1",
+  "question_en": "What are the origins of all flights that are headed to Honolulu?",
+  "question": "Honolulu jaane wali sabhi flights ke origins kya hain?"
+ },
+ {
+  "i": 418,
+  "db_id": "dorm_1",
+  "question_en": "How many students are older than 20 in each dorm?",
+  "question": "Har dorm me 20 se zyada age ke kitne students hain?"
+ },
+ {
+  "i": 421,
+  "db_id": "bike_1",
+  "question_en": "What are all the different start station names for a trip that lasted less than 100?",
+  "question": "100 se kam der chalne wali trips ke alag-alag start station names kya hain?"
+ },
+ {
+  "i": 450,
+  "db_id": "store_1",
+  "question_en": "List the name of tracks belongs to genre Rock or genre Jazz.",
+  "question": "Genre Rock ya genre Jazz ke tracks ke naam batao."
+ },
+ {
+  "i": 456,
+  "db_id": "college_2",
+  "question_en": "What are the names of instructors who advise more than one student?",
+  "question": "Un instructors ke naam batao jo ek se zyada students ko advise karte hain."
+ },
+ {
+  "i": 480,
+  "db_id": "customers_and_addresses",
+  "question_en": "Which city is post code 255 located in?",
+  "question": "Post code 255 kis city me hai?"
+ },
+ {
+  "i": 488,
+  "db_id": "bike_1",
+  "question_en": "What is the installation date for each ending station on all the trips?",
+  "question": "Sabhi trips ke har ending station ki installation date kya hai?"
+ },
+ {
+  "i": 508,
+  "db_id": "tracking_share_transactions",
+  "question_en": "Show the number of transactions with transaction type code \"SALE\" for different investors if it is larger than 0.",
+  "question": "Alag-alag investors ke liye transaction type code 'SALE' wale transactions ki sankhya batao, agar wo 0 se zyada hai."
+ },
+ {
+  "i": 511,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "Return the day Number and stored date for all the documents.",
+  "question": "Sabhi documents ka day Number aur stored date batao."
+ },
+ {
+  "i": 512,
+  "db_id": "film_rank",
+  "question_en": "Count the number of films.",
+  "question": "Films ki ginti karo."
+ },
+ {
+  "i": 529,
+  "db_id": "theme_gallery",
+  "question_en": "Return the themes, dates, and attendance for exhibitions that happened in 2004.",
+  "question": "2004 me hui exhibitions ke themes, dates aur attendance batao."
+ },
+ {
+  "i": 542,
+  "db_id": "insurance_and_eClaims",
+  "question_en": "Find the total and average amount paid in claim headers.",
+  "question": "Claim headers me total aur average amount paid batao."
+ },
+ {
+  "i": 572,
+  "db_id": "hr_1",
+  "question_en": "display the employee ID and job name for all those jobs in department 80.",
+  "question": "Department 80 ki sabhi jobs ke liye employee ID aur job name dikhao."
+ },
+ {
+  "i": 578,
+  "db_id": "behavior_monitoring",
+  "question_en": "Find the id and last name of the student that has the most behavior incidents?",
+  "question": "Sabse zyada behavior incidents wale student ki id aur last name batao."
+ },
+ {
+  "i": 579,
+  "db_id": "tracking_orders",
+  "question_en": "Which customers have both \"On Road\" and \"Shipped\" as order status? List the customer names.",
+  "question": "Kin customers ke order status 'On Road' aur 'Shipped' dono hain? Customer names batao."
+ },
+ {
+  "i": 632,
+  "db_id": "protein_institute",
+  "question_en": "Show institution names along with the number of proteins for each institution.",
+  "question": "Institution names aur har institution ke proteins ki sankhya dikhao."
+ },
+ {
+  "i": 646,
+  "db_id": "twitter_1",
+  "question_en": "Find the number of followers for each user.",
+  "question": "Har user ke followers ki sankhya batao."
+ },
+ {
+  "i": 648,
+  "db_id": "allergy_1",
+  "question_en": "Give the city that the student whose family name is Kim lives in.",
+  "question": "Jis student ka family name Kim hai, wo kis city me rehta hai?"
+ },
+ {
+  "i": 658,
+  "db_id": "theme_gallery",
+  "question_en": "How many artists do we have?",
+  "question": "Humare paas kitne artists hain?"
+ },
+ {
+  "i": 679,
+  "db_id": "aircraft",
+  "question_en": "What are the number of international and domestic passengers of the airport named London \"Heathrow\"?",
+  "question": "London 'Heathrow' naam ke airport ke international aur domestic passengers ki sankhya kya hai?"
+ },
+ {
+  "i": 685,
+  "db_id": "flight_1",
+  "question_en": "What are the destinations and number of flights to each one?",
+  "question": "Destinations aur har destination ki flights ki sankhya kya hai?"
+ },
+ {
+  "i": 699,
+  "db_id": "hr_1",
+  "question_en": "display those departments where more than ten employees work who got a commission percentage.",
+  "question": "Wo departments dikhao jahan das se zyada employees kaam karte hain jinhe commission percentage mila hai."
+ },
+ {
+  "i": 710,
+  "db_id": "perpetrator",
+  "question_en": "What are the names of perpetrators whose country is not \"China\"?",
+  "question": "Un perpetrators ke naam batao jinki country 'China' nahi hai."
+ },
+ {
+  "i": 717,
+  "db_id": "station_weather",
+  "question_en": "Find the number and time of the train that goes from Chennai to Guruvayur.",
+  "question": "Chennai se Guruvayur jaane wali train ka number aur time batao."
+ },
+ {
+  "i": 720,
+  "db_id": "ship_mission",
+  "question_en": "What are the names of ships that were involved in a mission launched after 1928?",
+  "question": "1928 ke baad launch hue mission me shamil ships ke naam kya hain?"
+ },
+ {
+  "i": 741,
+  "db_id": "scientist_1",
+  "question_en": "Find the name of scientists who are not assigned to any project.",
+  "question": "Un scientists ke naam batao jo kisi project me assign nahi hain."
+ },
+ {
+  "i": 743,
+  "db_id": "college_2",
+  "question_en": "Find the title, credit, and department name of courses that have more than one prerequisites?",
+  "question": "Un courses ka title, credit aur department name batao jinke ek se zyada prerequisites hain."
+ },
+ {
+  "i": 764,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "How many budget types do we have?",
+  "question": "Humare paas kitne budget types hain?"
+ },
+ {
+  "i": 779,
+  "db_id": "dorm_1",
+  "question_en": "Find the number of students who is older than 20 in each dorm.",
+  "question": "Har dorm me 20 se zyada age ke students ki sankhya batao."
+ },
+ {
+  "i": 800,
+  "db_id": "gas_company",
+  "question_en": "Show all locations and the number of gas stations in each location ordered by the count.",
+  "question": "Sabhi locations aur har location ke gas stations ki sankhya, count ke order me dikhao."
+ },
+ {
+  "i": 801,
+  "db_id": "music_4",
+  "question_en": "Please show the date of ceremony of the volumes that last more than 2 weeks on top.",
+  "question": "Un volumes ki ceremony date dikhao jo 2 hafte se zyada top par rahe."
+ },
+ {
+  "i": 828,
+  "db_id": "wine_1",
+  "question_en": "What are the grapes, appelations, and wines with scores above 93, sorted by Name?",
+  "question": "93 se zyada score wale grapes, appelations aur wines Name se sort karke batao."
+ },
+ {
+  "i": 833,
+  "db_id": "shop_membership",
+  "question_en": "What are the minimum and maximum membership amounts for all branches that either opened in 2011 or are located in London?",
+  "question": "Un branches ka minimum aur maximum membership amount batao jo ya to 2011 me khuli ya London me hain."
+ },
+ {
+  "i": 855,
+  "db_id": "climbing",
+  "question_en": "What is the maximum point for climbers whose country is United Kingdom?",
+  "question": "Un climbers ke maximum point kya hain jinki country United Kingdom hai?"
+ },
+ {
+  "i": 861,
+  "db_id": "body_builder",
+  "question_en": "List the snatch score and clean jerk score of body builders in ascending order of snatch score.",
+  "question": "Body builders ka snatch score aur clean jerk score, snatch score ke ascending order me batao."
+ },
+ {
+  "i": 862,
+  "db_id": "customers_and_invoices",
+  "question_en": "How many order items correspond to each order id?",
+  "question": "Har order id ke kitne order items hain?"
+ },
+ {
+  "i": 867,
+  "db_id": "insurance_and_eClaims",
+  "question_en": "Find the names of all the customers and staff members.",
+  "question": "Sabhi customers aur staff members ke naam batao."
+ },
+ {
+  "i": 868,
+  "db_id": "shop_membership",
+  "question_en": "What are the cities that do not have any branches with more than 100 members?",
+  "question": "Un cities ke naam batao jinme 100 se zyada members wali koi branch nahi hai."
+ },
+ {
+  "i": 874,
+  "db_id": "entrepreneur",
+  "question_en": "Which company was started by the entrepreneur with the greatest height?",
+  "question": "Sabse zyada height wale entrepreneur ne kaun si company shuru ki?"
+ },
+ {
+  "i": 886,
+  "db_id": "customers_card_transactions",
+  "question_en": "Show all card type codes.",
+  "question": "Sabhi card type codes dikhao."
+ },
+ {
+  "i": 895,
+  "db_id": "flight_4",
+  "question_en": "Return the cities with more than 3 airports in the United States.",
+  "question": "United States me 3 se zyada airports wali cities batao."
+ },
+ {
+  "i": 902,
+  "db_id": "solvency_ii",
+  "question_en": "Show the names of products that are in at least two events in ascending alphabetical order of product name.",
+  "question": "Un products ke naam product name ke alphabetical ascending order me dikhao jo kam se kam do events me hain."
+ },
+ {
+  "i": 906,
+  "db_id": "city_record",
+  "question_en": "What are the GDP and population of the city that already served as a host more than once?",
+  "question": "Us city ka GDP aur population kya hai jo ek se zyada baar host reh chuki hai?"
+ },
+ {
+  "i": 930,
+  "db_id": "club_1",
+  "question_en": "Count the number of different positions in the club \"Bootup Baltimore\".",
+  "question": "Club 'Bootup Baltimore' me alag-alag positions ki ginti karo."
+ },
+ {
+  "i": 937,
+  "db_id": "network_2",
+  "question_en": "What is the age of the friend of Zach with longest year relationship?",
+  "question": "Zach ke us friend ki age kya hai jiske saath sabse lamba year relationship hai?"
+ },
+ {
+  "i": 953,
+  "db_id": "icfp_1",
+  "question_en": "Which papers have \"Stephanie Weirich\" as an author?",
+  "question": "Kin papers ke author 'Stephanie Weirich' hain?"
+ },
+ {
+  "i": 958,
+  "db_id": "document_management",
+  "question_en": "Return the type code of the document named \"David CV\".",
+  "question": "'David CV' naam ke document ka type code batao."
+ },
+ {
+  "i": 962,
+  "db_id": "products_gen_characteristics",
+  "question_en": "What are the names of products with category \"Spices\"?",
+  "question": "Category 'Spices' wale products ke naam kya hain?"
+ },
+ {
+  "i": 1003,
+  "db_id": "wrestler",
+  "question_en": "How many wrestlers are there?",
+  "question": "Kitne wrestlers hain?"
+ },
+ {
+  "i": 1007,
+  "db_id": "customers_card_transactions",
+  "question_en": "Show ids, first names, last names, and phones for all customers.",
+  "question": "Sabhi customers ki ids, first names, last names aur phones dikhao."
+ },
+ {
+  "i": 1008,
+  "db_id": "storm_record",
+  "question_en": "How many regions were affected by each storm?",
+  "question": "Har storm se kitne regions prabhavit hue?"
+ },
+ {
+  "i": 1013,
+  "db_id": "tracking_share_transactions",
+  "question_en": "What are the sale details and dates of transactions with amount smaller than 3000?",
+  "question": "3000 se kam amount wale transactions ke sale details aur dates kya hain?"
+ },
+ {
+  "i": 1021,
+  "db_id": "apartment_rentals",
+  "question_en": "What are the facility codes of the apartments with more than four bedrooms?",
+  "question": "Chaar se zyada bedrooms wale apartments ke facility codes kya hain?"
+ },
+ {
+  "i": 1066,
+  "db_id": "college_2",
+  "question_en": "Find the name of students who have taken the prerequisite course of the course with title International Finance.",
+  "question": "Un students ke naam batao jinhone title International Finance wale course ka prerequisite course liya hai."
+ },
+ {
+  "i": 1086,
+  "db_id": "music_2",
+  "question_en": "Who performed the song named \"Badlands\"? Show the first name and the last name.",
+  "question": "'Badlands' naam ka song kisne perform kiya? First name aur last name dikhao."
+ },
+ {
+  "i": 1089,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "What is \"the date in location from\" and \"the date in location to\" for the document with name \"Robin CV\"?",
+  "question": "Document 'Robin CV' ke liye 'the date in location from' aur 'the date in location to' kya hain?"
+ },
+ {
+  "i": 1105,
+  "db_id": "shop_membership",
+  "question_en": "Find the name of branches where have some members whose hometown is in Louisville, Kentucky and some in Hiram, Georgia.",
+  "question": "Un branches ke naam batao jahan kuch members ka hometown Louisville, Kentucky hai aur kuch ka Hiram, Georgia."
+ },
+ {
+  "i": 1130,
+  "db_id": "bike_1",
+  "question_en": "What are the date, mean temperature and mean humidity for the top 3 days with the largest max gust speeds?",
+  "question": "Sabse zyada max gust speed wale top 3 dino ki date, mean temperature aur mean humidity kya hain?"
+ },
+ {
+  "i": 1137,
+  "db_id": "election",
+  "question_en": "What are the distinct districts for elections?",
+  "question": "Elections ke alag-alag districts kya hain?"
+ },
+ {
+  "i": 1138,
+  "db_id": "flight_4",
+  "question_en": "What is the number of routes whose destinations are Italian airports?",
+  "question": "Un routes ki sankhya kya hai jinki destinations Italian airports hain?"
+ },
+ {
+  "i": 1140,
+  "db_id": "product_catalog",
+  "question_en": "Find the total number of catalog contents.",
+  "question": "Catalog contents ki total sankhya batao."
+ },
+ {
+  "i": 1155,
+  "db_id": "formula_1",
+  "question_en": "What are the drivers' last names and id who had 11 pit stops and participated in more than 5 race results?",
+  "question": "Un drivers ke last names aur id batao jinke 11 pit stops hue aur jo 5 se zyada race results me shamil hue."
+ },
+ {
+  "i": 1158,
+  "db_id": "voter_2",
+  "question_en": "What are the distinct last names of the students who have president votes and have 8741 as the advisor?",
+  "question": "Un students ke alag-alag last names batao jinke president votes hain aur advisor 8741 hai."
+ },
+ {
+  "i": 1162,
+  "db_id": "pilot_record",
+  "question_en": "What are the different nationalities of pilots? Show each nationality and the number of pilots of each nationality.",
+  "question": "Pilots ki alag-alag nationalities kya hain? Har nationality aur uske pilots ki sankhya dikhao."
+ },
+ {
+  "i": 1194,
+  "db_id": "soccer_2",
+  "question_en": "What are the names of all tryout participants who are from the largest college?",
+  "question": "Sabse bade college ke sabhi tryout participants ke naam batao."
+ },
+ {
+  "i": 1201,
+  "db_id": "assets_maintenance",
+  "question_en": "How many assets does each maintenance contract contain? List the number and the contract id.",
+  "question": "Har maintenance contract me kitne assets hain? Sankhya aur contract id batao."
+ },
+ {
+  "i": 1204,
+  "db_id": "storm_record",
+  "question_en": "What are the names of regions that were not affected?",
+  "question": "Un regions ke naam batao jo prabhavit nahi hue."
+ },
+ {
+  "i": 1211,
+  "db_id": "customers_and_addresses",
+  "question_en": "How many orders have detail \"Second time\"?",
+  "question": "Kitne orders ki detail 'Second time' hai?"
+ },
+ {
+  "i": 1214,
+  "db_id": "music_1",
+  "question_en": "Find the id of the song that lasts the longest.",
+  "question": "Sabse lamba chalne wale song ki id batao."
+ },
+ {
+  "i": 1226,
+  "db_id": "small_bank_1",
+  "question_en": "How many accounts have a savings balance above the average savings balance?",
+  "question": "Kitne accounts ka savings balance average savings balance se zyada hai?"
+ },
+ {
+  "i": 1237,
+  "db_id": "body_builder",
+  "question_en": "What are the birth date and birth place of the body builder with the highest total points?",
+  "question": "Sabse zyada total points wale body builder ki birth date aur birth place kya hai?"
+ },
+ {
+  "i": 1260,
+  "db_id": "coffee_shop",
+  "question_en": "What are the id and address of the shops which have a happy hour in May?",
+  "question": "Un shops ki id aur address batao jinme May me happy hour hota hai."
+ },
+ {
+  "i": 1270,
+  "db_id": "hospital_1",
+  "question_en": "What are the names of procedures physician John Wen was trained in?",
+  "question": "Physician John Wen ko kin procedures ki training mili thi?"
+ },
+ {
+  "i": 1283,
+  "db_id": "insurance_policies",
+  "question_en": "With which kind of payment method were the least number of payments processed?",
+  "question": "Kis tarah ke payment method se sabse kam payments process hue?"
+ },
+ {
+  "i": 1289,
+  "db_id": "tracking_orders",
+  "question_en": "Find the id of the order whose shipment tracking number is \"3452\".",
+  "question": "Us order ki id batao jiska shipment tracking number '3452' hai."
+ },
+ {
+  "i": 1293,
+  "db_id": "customers_and_invoices",
+  "question_en": "What are the ids, date opened, name, and other details for all accounts?",
+  "question": "Sabhi accounts ki ids, date opened, name aur other details batao."
+ },
+ {
+  "i": 1296,
+  "db_id": "tracking_share_transactions",
+  "question_en": "Show the average amount of transactions for different lots.",
+  "question": "Alag-alag lots ke liye transactions ka average amount dikhao."
+ },
+ {
+  "i": 1302,
+  "db_id": "company_employee",
+  "question_en": "list the names of the companies with more than 200 sales in the descending order of sales and profits.",
+  "question": "200 se zyada sales wali companies ke naam sales aur profits ke descending order me batao."
+ },
+ {
+  "i": 1313,
+  "db_id": "music_2",
+  "question_en": "How many musicians play in the song \"Flash\"?",
+  "question": "Song 'Flash' me kitne musicians bajate hain?"
+ },
+ {
+  "i": 1318,
+  "db_id": "sakila_1",
+  "question_en": "Count the number of customers who are active.",
+  "question": "Active customers ki ginti karo."
+ },
+ {
+  "i": 1321,
+  "db_id": "college_2",
+  "question_en": "How many different instructors have taught some course?",
+  "question": "Kitne alag instructors ne koi course padhaya hai?"
+ },
+ {
+  "i": 1324,
+  "db_id": "music_1",
+  "question_en": "What are the song names for every song whose rating is less than the minimum rating for English songs?",
+  "question": "English songs ki minimum rating se kam rating wale har song ka naam kya hai?"
+ },
+ {
+  "i": 1325,
+  "db_id": "university_basketball",
+  "question_en": "What are the average enrollment size of the universities that are founded before 1850?",
+  "question": "1850 se pehle bani universities ka average enrollment size kya hai?"
+ },
+ {
+  "i": 1332,
+  "db_id": "club_1",
+  "question_en": "List the clubs having \"Davis Steven\" as a member.",
+  "question": "'Davis Steven' jin clubs ke member hain, unki list batao."
+ },
+ {
+  "i": 1334,
+  "db_id": "cre_Doc_Control_Systems",
+  "question_en": "List document id of documents status is done and document type is Paper and the document is shipped by shipping agent named USPS.",
+  "question": "Un documents ki id batao jinka status done hai, document type Paper hai aur jo shipping agent USPS dwara ship hue."
+ },
+ {
+  "i": 1350,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "How many documents have expenses?",
+  "question": "Kitne documents me expenses hain?"
+ },
+ {
+  "i": 1355,
+  "db_id": "sports_competition",
+  "question_en": "List all club names in ascending order of start year.",
+  "question": "Sabhi club names start year ke ascending order me batao."
+ },
+ {
+  "i": 1368,
+  "db_id": "aircraft",
+  "question_en": "what is the name of every pilot who is at least 25 years old?",
+  "question": "Un sabhi pilots ke naam kya hain jo kam se kam 25 saal ke hain?"
+ },
+ {
+  "i": 1377,
+  "db_id": "movie_1",
+  "question_en": "What are the names of all the different reviewers who rates Gone with the Wind?",
+  "question": "Un sabhi alag reviewers ke naam batao jinhone Gone with the Wind ko rate kiya."
+ },
+ {
+  "i": 1384,
+  "db_id": "twitter_1",
+  "question_en": "Find the id of users who are followed by Mary or Susan.",
+  "question": "Un users ki id batao jinhe Mary ya Susan follow karte hain."
+ },
+ {
+  "i": 1395,
+  "db_id": "dorm_1",
+  "question_en": "What is the first and last name of all students who are younger than average?",
+  "question": "Average se kam age ke sabhi students ka first aur last name kya hai?"
+ },
+ {
+  "i": 1398,
+  "db_id": "theme_gallery",
+  "question_en": "What is the name of the artist who joined latest?",
+  "question": "Sabse latest join karne wale artist ka naam kya hai?"
+ },
+ {
+  "i": 1404,
+  "db_id": "dorm_1",
+  "question_en": "Find the number of students in each major.",
+  "question": "Har major me students ki sankhya batao."
+ },
+ {
+  "i": 1406,
+  "db_id": "soccer_2",
+  "question_en": "Find the name of players whose card is yes in the descending order of training hours.",
+  "question": "Un players ke naam training hours ke descending order me batao jinka card yes hai."
+ },
+ {
+  "i": 1419,
+  "db_id": "network_2",
+  "question_en": "Who is the friend of Zach with longest year relationship?",
+  "question": "Zach ka wo friend kaun hai jiske saath sabse lamba year relationship hai?"
+ },
+ {
+  "i": 1427,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "Count the number of documents.",
+  "question": "Documents ki ginti karo."
+ },
+ {
+  "i": 1438,
+  "db_id": "college_1",
+  "question_en": "What are the first names and office of the professors who are in the history department and have a Ph.D?",
+  "question": "History department ke aur Ph.D wale professors ke first names aur office kya hain?"
+ },
+ {
+  "i": 1439,
+  "db_id": "sakila_1",
+  "question_en": "Count the number of cities in Australia.",
+  "question": "Australia me cities ki ginti karo."
+ },
+ {
+  "i": 1442,
+  "db_id": "music_4",
+  "question_en": "What are the famous titles of the artist \"Triumfall\"?",
+  "question": "Artist 'Triumfall' ke famous titles kya hain?"
+ },
+ {
+  "i": 1453,
+  "db_id": "voter_2",
+  "question_en": "Find the distinct first names of the students who have class senator votes.",
+  "question": "Un students ke alag first names batao jinke class senator votes hain."
+ },
+ {
+  "i": 1477,
+  "db_id": "flight_1",
+  "question_en": "Show the name of aircraft which fewest people have its certificate.",
+  "question": "Us aircraft ka naam batao jiska certificate sabse kam logon ke paas hai."
+ },
+ {
+  "i": 1489,
+  "db_id": "film_rank",
+  "question_en": "What is the average number of cities of markets with low film market estimate bigger than 10000?",
+  "question": "Jin markets ka low film market estimate 10000 se zyada hai, unki cities ki average sankhya kya hai?"
+ },
+ {
+  "i": 1509,
+  "db_id": "flight_4",
+  "question_en": "Find the name and city of the airport which is the source for the most number of flight routes.",
+  "question": "Sabse zyada flight routes ke source airport ka naam aur city batao."
+ },
+ {
+  "i": 1550,
+  "db_id": "match_season",
+  "question_en": "How many distinct teams are involved in match seasons?",
+  "question": "Match seasons me kitni alag teams shamil hain?"
+ },
+ {
+  "i": 1551,
+  "db_id": "wine_1",
+  "question_en": "Give the maximum price and score for wines produced in the appelation St. Helena.",
+  "question": "Appelation St. Helena me bani wines ki maximum price aur score batao."
+ },
+ {
+  "i": 1566,
+  "db_id": "apartment_rentals",
+  "question_en": "Show the most common apartment type code.",
+  "question": "Sabse common apartment type code dikhao."
+ },
+ {
+  "i": 1578,
+  "db_id": "formula_1",
+  "question_en": "What is the first and last name of all the German drivers?",
+  "question": "Sabhi German drivers ka first aur last name kya hai?"
+ },
+ {
+  "i": 1599,
+  "db_id": "student_1",
+  "question_en": "Find the number of students taught by the teacher KAWA GORDON.",
+  "question": "Teacher KAWA GORDON ke padhaye students ki sankhya batao."
+ },
+ {
+  "i": 1603,
+  "db_id": "manufactory_1",
+  "question_en": "What is the total revenue of companies with revenue greater than the lowest revenue of any manufacturer in Austin?",
+  "question": "Un companies ka total revenue kya hai jinka revenue Austin ke kisi bhi manufacturer ke lowest revenue se zyada hai?"
+ },
+ {
+  "i": 1607,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "What are the type codes and descriptions of each budget type?",
+  "question": "Har budget type ke type codes aur descriptions kya hain?"
+ },
+ {
+  "i": 1616,
+  "db_id": "insurance_fnol",
+  "question_en": "How many policies are listed for the customer named \"Dayana Robel\"?",
+  "question": "Customer 'Dayana Robel' ki kitni policies listed hain?"
+ },
+ {
+  "i": 1635,
+  "db_id": "e_government",
+  "question_en": "List all the name of organizations in order of the date formed.",
+  "question": "Organizations ke naam date formed ke order me batao."
+ },
+ {
+  "i": 1641,
+  "db_id": "club_1",
+  "question_en": "How many clubs does \"Linda Smith\" belong to?",
+  "question": "'Linda Smith' kitne clubs ki member hai?"
+ },
+ {
+  "i": 1663,
+  "db_id": "department_store",
+  "question_en": "What is the id of the department with the least number of staff?",
+  "question": "Sabse kam staff wale department ki id kya hai?"
+ },
+ {
+  "i": 1664,
+  "db_id": "customers_and_invoices",
+  "question_en": "What are the invoice dates, order ids, and order details for all invoices?",
+  "question": "Sabhi invoices ki invoice dates, order ids aur order details kya hain?"
+ },
+ {
+  "i": 1667,
+  "db_id": "sakila_1",
+  "question_en": "What are all the movies rated as R? List the titles.",
+  "question": "R rating wali sabhi movies kaun si hain? Titles batao."
+ },
+ {
+  "i": 1671,
+  "db_id": "entrepreneur",
+  "question_en": "Show the investors shared by entrepreneurs that requested more than 140000 and entrepreneurs that requested less than 120000.",
+  "question": "Un investors ko dikhao jo 140000 se zyada maangne wale entrepreneurs aur 120000 se kam maangne wale entrepreneurs dono ke saath shared hain."
+ },
+ {
+  "i": 1672,
+  "db_id": "department_store",
+  "question_en": "Count the number of distinct product types.",
+  "question": "Distinct product types ki ginti karo."
+ },
+ {
+  "i": 1685,
+  "db_id": "college_1",
+  "question_en": "Find the number of students for each department.",
+  "question": "Har department ke students ki sankhya batao."
+ },
+ {
+  "i": 1686,
+  "db_id": "driving_school",
+  "question_en": "What is the total amount of moeny paid by the customer Carole Bernhard?",
+  "question": "Customer Carole Bernhard ne total kitna paisa diya?"
+ },
+ {
+  "i": 1688,
+  "db_id": "csu_1",
+  "question_en": "In the year 2000, what is the campus fee for San Francisco State University?",
+  "question": "Saal 2000 me San Francisco State University ki campus fee kitni thi?"
+ },
+ {
+  "i": 1690,
+  "db_id": "customers_and_addresses",
+  "question_en": "Tell me the number of orders with \"Second time\" as order detail.",
+  "question": "'Second time' order detail wale orders ki sankhya batao."
+ },
+ {
+  "i": 1729,
+  "db_id": "insurance_and_eClaims",
+  "question_en": "Find all the policy type codes associated with the customer \"Dayana Robel\"",
+  "question": "Customer 'Dayana Robel' se jude sabhi policy type codes batao."
+ },
+ {
+  "i": 1733,
+  "db_id": "party_people",
+  "question_en": "Count the number of regions.",
+  "question": "Regions ki ginti karo."
+ },
+ {
+  "i": 1741,
+  "db_id": "cre_Theme_park",
+  "question_en": "Find the total number of available hotels.",
+  "question": "Available hotels ki total sankhya batao."
+ },
+ {
+  "i": 1744,
+  "db_id": "swimming",
+  "question_en": "Find the names of stadiums which have never had any event.",
+  "question": "Un stadiums ke naam batao jahan kabhi koi event nahi hua."
+ },
+ {
+  "i": 1752,
+  "db_id": "tracking_orders",
+  "question_en": "What are ids of the all distinct orders, sorted by placement date?",
+  "question": "Sabhi distinct orders ki ids placement date ke hisaab se sort karke batao."
+ },
+ {
+  "i": 1761,
+  "db_id": "music_2",
+  "question_en": "return all columns of the albums created in the year of 2012.",
+  "question": "Saal 2012 me bane albums ke sabhi columns return karo."
+ },
+ {
+  "i": 1768,
+  "db_id": "theme_gallery",
+  "question_en": "What is the name and country for the artist with most number of exhibitions?",
+  "question": "Sabse zyada exhibitions wale artist ka naam aur country kya hai?"
+ },
+ {
+  "i": 1775,
+  "db_id": "school_finance",
+  "question_en": "Show all school names in alphabetical order.",
+  "question": "Sabhi school names alphabetical order me dikhao."
+ },
+ {
+  "i": 1791,
+  "db_id": "student_1",
+  "question_en": "How many students are taught by teacher TARRING LEIA?",
+  "question": "Teacher TARRING LEIA kitne students ko padhate hain?"
+ },
+ {
+  "i": 1806,
+  "db_id": "student_assessment",
+  "question_en": "List the names of courses in alphabetical order?",
+  "question": "Courses ke naam alphabetical order me batao."
+ },
+ {
+  "i": 1811,
+  "db_id": "student_1",
+  "question_en": "Show me the classrooms grade 5 is using.",
+  "question": "Mujhe wo classrooms dikhao jinhe grade 5 use kar raha hai."
+ },
+ {
+  "i": 1842,
+  "db_id": "wedding",
+  "question_en": "Show the minimum, maximum, and average age for all people.",
+  "question": "Sabhi logon ki minimum, maximum aur average age dikhao."
+ },
+ {
+  "i": 1845,
+  "db_id": "epinions_1",
+  "question_en": "Find the names of goods that receive a rating of 10.",
+  "question": "Un goods ke naam batao jinhe rating 10 mili hai."
+ },
+ {
+  "i": 1849,
+  "db_id": "store_product",
+  "question_en": "What is the most common maximum page size?",
+  "question": "Sabse common maximum page size kya hai?"
+ },
+ {
+  "i": 1852,
+  "db_id": "mountain_photos",
+  "question_en": "What are the names of the cameras that have taken picture of the most mountains?",
+  "question": "Un cameras ke naam kya hain jinhone sabse zyada mountains ki tasveer li?"
+ },
+ {
+  "i": 1876,
+  "db_id": "tracking_orders",
+  "question_en": "Find all the order items whose product id is 11. What are the order item ids?",
+  "question": "Un sabhi order items ko dhoondho jinki product id 11 hai. Order item ids kya hain?"
+ },
+ {
+  "i": 1877,
+  "db_id": "browser_web",
+  "question_en": "When did the web accelerator 'CACHEbox' and browser 'Internet Explorer' become compatible?",
+  "question": "Web accelerator 'CACHEbox' aur browser 'Internet Explorer' kab compatible hue?"
+ },
+ {
+  "i": 1878,
+  "db_id": "formula_1",
+  "question_en": "Find the id and location of circuits that belong to France or Belgium?",
+  "question": "France ya Belgium ke circuits ki id aur location batao."
+ },
+ {
+  "i": 1882,
+  "db_id": "school_player",
+  "question_en": "What is the denomination of the school the most players belong to?",
+  "question": "Sabse zyada players kis school ke hain, us school ka denomination kya hai?"
+ },
+ {
+  "i": 1891,
+  "db_id": "tracking_grants_for_research",
+  "question_en": "What are the details of the project with no outcomes?",
+  "question": "Jis project ka koi outcome nahi hai, uski details kya hain?"
+ },
+ {
+  "i": 1897,
+  "db_id": "store_1",
+  "question_en": "What is the unit price of the tune \"Fast As a Shark\"?",
+  "question": "Tune 'Fast As a Shark' ka unit price kya hai?"
+ },
+ {
+  "i": 1909,
+  "db_id": "inn_1",
+  "question_en": "What are the name of rooms that cost more than the average.",
+  "question": "Average se zyada cost wale rooms ke naam batao."
+ },
+ {
+  "i": 1910,
+  "db_id": "game_injury",
+  "question_en": "How many distinct kinds of injuries happened after season 2010?",
+  "question": "Season 2010 ke baad kitne alag kinds ki injuries hui?"
+ },
+ {
+  "i": 1915,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "Give me all the distinct location codes for documents.",
+  "question": "Documents ke sabhi distinct location codes batao."
+ },
+ {
+  "i": 1931,
+  "db_id": "activity_1",
+  "question_en": "Which faculty members advise two ore more students? Give me their faculty ids.",
+  "question": "Kaun se faculty members do ya zyada students ko advise karte hain? Unki faculty ids batao."
+ },
+ {
+  "i": 1933,
+  "db_id": "riding_club",
+  "question_en": "Show the residences that have at least two players.",
+  "question": "Wo residences dikhao jahan kam se kam do players hain."
+ },
+ {
+  "i": 1936,
+  "db_id": "sakila_1",
+  "question_en": "What are the city name, id, and number of addresses corresponding to the city with the most addressed?",
+  "question": "Sabse zyada addresses wali city ka city name, id aur addresses ki sankhya kya hai?"
+ },
+ {
+  "i": 1967,
+  "db_id": "medicine_enzyme_interaction",
+  "question_en": "What are the names and trade names of the medcines that are FDA approved?",
+  "question": "FDA approved medicines ke naam aur trade names kya hain?"
+ },
+ {
+  "i": 1991,
+  "db_id": "loan_1",
+  "question_en": "What are the different names and credit scores of customers who have taken a loan?",
+  "question": "Un customers ke alag naam aur credit scores kya hain jinhone loan liya hai?"
+ },
+ {
+  "i": 2009,
+  "db_id": "inn_1",
+  "question_en": "Find the number of rooms with price higher than 120 for different decor.",
+  "question": "Alag-alag decor ke liye 120 se zyada price wale rooms ki sankhya batao."
+ },
+ {
+  "i": 2011,
+  "db_id": "candidate_poll",
+  "question_en": "what are the names of people who did not participate in the candidate election.",
+  "question": "Un logon ke naam batao jinhone candidate election me hissa nahi liya."
+ },
+ {
+  "i": 2020,
+  "db_id": "game_1",
+  "question_en": "Which game type has most number of games?",
+  "question": "Kis game type ke sabse zyada games hain?"
+ },
+ {
+  "i": 2023,
+  "db_id": "tracking_software_problems",
+  "question_en": "Which product has the most problems? Give me the number of problems and the product name.",
+  "question": "Kis product ki sabse zyada problems hain? Problems ki sankhya aur product ka naam batao."
+ },
+ {
+  "i": 2035,
+  "db_id": "tracking_orders",
+  "question_en": "List the name of all the distinct customers who have orders with status \"Packing\".",
+  "question": "Un sabhi distinct customers ke naam batao jinke orders ka status 'Packing' hai."
+ },
+ {
+  "i": 2041,
+  "db_id": "gas_company",
+  "question_en": "Show all main industry and total market value in each industry.",
+  "question": "Har industry ka main industry aur total market value dikhao."
+ },
+ {
+  "i": 2091,
+  "db_id": "customers_card_transactions",
+  "question_en": "What are the codes of card types that have 5 or more cards?",
+  "question": "Un card types ke codes kya hain jinke 5 ya zyada cards hain?"
+ },
+ {
+  "i": 2093,
+  "db_id": "customers_and_addresses",
+  "question_en": "Find the name and active date of the customer that use email as the contact channel.",
+  "question": "Us customer ka naam aur active date batao jo contact channel ke roop me email use karta hai."
+ },
+ {
+  "i": 2113,
+  "db_id": "twitter_1",
+  "question_en": "Find the name and email of the user followed by the least number of people.",
+  "question": "Sabse kam logon dwara follow kiye gaye user ka naam aur email batao."
+ },
+ {
+  "i": 2122,
+  "db_id": "riding_club",
+  "question_en": "List the name and residence for players whose occupation is not \"Researcher\".",
+  "question": "Un players ka naam aur residence batao jinka occupation 'Researcher' nahi hai."
+ },
+ {
+  "i": 2123,
+  "db_id": "apartment_rentals",
+  "question_en": "What are the top three apartment types in terms of the average room count? Give me the",
+  "question": "Average room count ke hisaab se top teen apartment types kaun se hain? Mujhe unke apartment type codes batao."
+ },
+ {
+  "i": 2144,
+  "db_id": "customer_complaints",
+  "question_en": "Return the names of products that have had complaints filed by the customer who has filed the fewest complaints.",
+  "question": "Un products ke naam batao jinki complaints sabse kam complaints file karne wale customer ne ki hain."
+ },
+ {
+  "i": 2151,
+  "db_id": "music_4",
+  "question_en": "Please list all songs in volumes in ascending alphabetical order.",
+  "question": "Volumes ke sabhi songs alphabetical ascending order me list karo."
+ },
+ {
+  "i": 2153,
+  "db_id": "college_1",
+  "question_en": "Where is the history department?",
+  "question": "History department kahan hai?"
+ },
+ {
+  "i": 2160,
+  "db_id": "student_1",
+  "question_en": "What are the grade number and classroom number of each class in the list?",
+  "question": "List me har class ka grade number aur classroom number kya hai?"
+ },
+ {
+  "i": 2176,
+  "db_id": "customers_and_addresses",
+  "question_en": "What are all the payment methods?",
+  "question": "Sabhi payment methods kaun se hain?"
+ },
+ {
+  "i": 2179,
+  "db_id": "products_gen_characteristics",
+  "question_en": "What are the names, details and data types of the characteristics which are never used by any product?",
+  "question": "Un characteristics ke naam, details aur data types batao jo kisi bhi product me kabhi use nahi hue."
+ },
+ {
+  "i": 2186,
+  "db_id": "products_gen_characteristics",
+  "question_en": "Return the characteristic names of the 'sesame' product.",
+  "question": "'sesame' product ke characteristic names batao."
+ },
+ {
+  "i": 2197,
+  "db_id": "cinema",
+  "question_en": "Show each location and the number of cinemas there.",
+  "question": "Har location aur wahan ke cinemas ki sankhya dikhao."
+ },
+ {
+  "i": 2202,
+  "db_id": "match_season",
+  "question_en": "Show the name of colleges that have at least two players in descending alphabetical order.",
+  "question": "Un colleges ke naam descending alphabetical order me dikhao jinme kam se kam do players hain."
+ },
+ {
+  "i": 2218,
+  "db_id": "customers_and_addresses",
+  "question_en": "Find the list of cities that no customer is living in.",
+  "question": "Un cities ki list batao jahan koi customer nahi rehta."
+ },
+ {
+  "i": 2230,
+  "db_id": "school_finance",
+  "question_en": "Count the number of budgets in year 2001 or before whose budgeted amount is greater than 3000",
+  "question": "Saal 2001 ya usse pehle ke un budgets ki ginti karo jinka budgeted amount 3000 se zyada hai."
+ },
+ {
+  "i": 2233,
+  "db_id": "chinook_1",
+  "question_en": "What are the distinct billing countries of the invoices?",
+  "question": "Invoices ki alag-alag billing countries kya hain?"
+ },
+ {
+  "i": 2251,
+  "db_id": "cre_Theme_park",
+  "question_en": "Which tourist attractions does the visitor with detail 'Vincent' visit?",
+  "question": "Detail 'Vincent' wala visitor kaun se tourist attractions visit karta hai?"
+ },
+ {
+  "i": 2257,
+  "db_id": "workshop_paper",
+  "question_en": "Show the authors of submissions and the acceptance results of their submissions.",
+  "question": "Submissions ke authors aur unke submissions ke acceptance results dikhao."
+ },
+ {
+  "i": 2259,
+  "db_id": "tracking_grants_for_research",
+  "question_en": "Which role is most common for the staff?",
+  "question": "Staff me sabse common role kaunsa hai?"
+ },
+ {
+  "i": 2266,
+  "db_id": "driving_school",
+  "question_en": "List the first name and last name of customers have the amount of outstanding between 1000 and 3000.",
+  "question": "Un customers ka first name aur last name batao jinka outstanding amount 1000 aur 3000 ke beech hai."
+ },
+ {
+  "i": 2271,
+  "db_id": "music_2",
+  "question_en": "What are the song titles on the album \"A Kiss Before You Go: Live in Hamburg\"?",
+  "question": "Album 'A Kiss Before You Go: Live in Hamburg' ke song titles kya hain?"
+ },
+ {
+  "i": 2285,
+  "db_id": "store_1",
+  "question_en": "find the full name of employees who report to Nancy Edwards?",
+  "question": "Nancy Edwards ko report karne wale employees ke full name batao."
+ },
+ {
+  "i": 2312,
+  "db_id": "flight_4",
+  "question_en": "What is the highest elevation of an airport in the country of Iceland?",
+  "question": "Country Iceland ke kisi airport ki sabse zyada elevation kitni hai?"
+ },
+ {
+  "i": 2341,
+  "db_id": "activity_1",
+  "question_en": "How many faculty members participate in an activity?",
+  "question": "Kitne faculty members kisi activity me hissa lete hain?"
+ },
+ {
+  "i": 2353,
+  "db_id": "cinema",
+  "question_en": "Which locations have 2 or more cinemas with capacity over 300?",
+  "question": "Kin locations par 300 se zyada capacity ke 2 ya zyada cinemas hain?"
+ },
+ {
+  "i": 2357,
+  "db_id": "customers_and_invoices",
+  "question_en": "Show ids for all transactions whose amounts are greater than the average.",
+  "question": "Un sabhi transactions ki ids dikhao jinka amount average se zyada hai."
+ },
+ {
+  "i": 2369,
+  "db_id": "perpetrator",
+  "question_en": "What is the name of the perpetrator with the biggest weight.",
+  "question": "Sabse zyada weight wale perpetrator ka naam kya hai?"
+ },
+ {
+  "i": 2395,
+  "db_id": "shop_membership",
+  "question_en": "Show minimum and maximum amount of memberships for all branches opened in 2011 or located at city London.",
+  "question": "2011 me khuli ya city London me sthit sabhi branches ka minimum aur maximum membership amount dikhao."
+ },
+ {
+  "i": 2400,
+  "db_id": "products_for_hire",
+  "question_en": "What are the names of products whose availability equals to 1?",
+  "question": "Un products ke naam batao jinki availability 1 ke barabar hai."
+ },
+ {
+  "i": 2432,
+  "db_id": "train_station",
+  "question_en": "Show the name and service for all trains in order by time.",
+  "question": "Sabhi trains ka naam aur service time ke order me dikhao."
+ },
+ {
+  "i": 2433,
+  "db_id": "hr_1",
+  "question_en": "What are the employee ids for those who had two or more jobs.",
+  "question": "Un employees ki ids batao jinhone do ya zyada jobs ki hain."
+ },
+ {
+  "i": 2438,
+  "db_id": "ship_mission",
+  "question_en": "Show the distinct fate of missions that involve ships with nationality \"United States\"",
+  "question": "Un missions ka distinct fate dikhao jisme nationality 'United States' wale ships shamil hain."
+ },
+ {
+  "i": 2444,
+  "db_id": "college_2",
+  "question_en": "Find the minimum salary for the departments whose average salary is above the average payment of all instructors.",
+  "question": "Un departments ki minimum salary batao jinki average salary sabhi instructors ke average payment se zyada hai."
+ },
+ {
+  "i": 2462,
+  "db_id": "customers_and_invoices",
+  "question_en": "Show the id, the date of account opened, the account name, and other account detail for all accounts.",
+  "question": "Sabhi accounts ki id, account opened date, account name aur other account detail dikhao."
+ },
+ {
+  "i": 2472,
+  "db_id": "department_store",
+  "question_en": "Find the name and address of the customers who have both New and Pending orders.",
+  "question": "Un customers ka naam aur address batao jinke New aur Pending dono orders hain."
+ },
+ {
+  "i": 2480,
+  "db_id": "college_2",
+  "question_en": "Given the titles of all courses, in order of titles and credits.",
+  "question": "Sabhi courses ke titles, titles aur credits ke order me do."
+ },
+ {
+  "i": 2484,
+  "db_id": "soccer_2",
+  "question_en": "What are the names of schools with the top 3 largest size?",
+  "question": "Top 3 sabse bade size wale schools ke naam kya hain?"
+ },
+ {
+  "i": 2505,
+  "db_id": "soccer_2",
+  "question_en": "Find the state of the college which player Charles is attending.",
+  "question": "Us college ka state batao jisme player Charles padh raha hai."
+ },
+ {
+  "i": 2524,
+  "db_id": "performance_attendance",
+  "question_en": "List the names of members who did not attend any performance.",
+  "question": "Un members ke naam batao jinhone kisi bhi performance me hissa nahi liya."
+ },
+ {
+  "i": 2533,
+  "db_id": "debate",
+  "question_en": "What are the date and venue of each debate?",
+  "question": "Har debate ki date aur venue kya hai?"
+ },
+ {
+  "i": 2543,
+  "db_id": "film_rank",
+  "question_en": "Return the low and high estimates for all film markets.",
+  "question": "Sabhi film markets ke low aur high estimates batao."
+ },
+ {
+  "i": 2544,
+  "db_id": "college_1",
+  "question_en": "What are the first names and offices of history professors who don't have Ph.D.s?",
+  "question": "Un history professors ke first names aur offices batao jinke paas Ph.D. nahi hai."
+ },
+ {
+  "i": 2564,
+  "db_id": "e_learning",
+  "question_en": "List all the login names and family names of course author and tutors.",
+  "question": "Course author aur tutors ke sabhi login names aur family names batao."
+ },
+ {
+  "i": 2594,
+  "db_id": "musical",
+  "question_en": "Return the characters and durations for each actor.",
+  "question": "Har actor ke characters aur durations batao."
+ },
+ {
+  "i": 2635,
+  "db_id": "music_2",
+  "question_en": "Find all the albums in 2012.",
+  "question": "2012 ke sabhi albums dhoondho."
+ },
+ {
+  "i": 2646,
+  "db_id": "election",
+  "question_en": "What are the names of parties that have both delegates on \"Appropriations\" committee and",
+  "question": "Un parties ke naam batao jinke delegates 'Appropriations' committee me hain aur 'Economic Matters' committee me bhi."
+ },
+ {
+  "i": 2685,
+  "db_id": "flight_1",
+  "question_en": "Show origins of all flights with destination Honolulu.",
+  "question": "Destination Honolulu wali sabhi flights ke origins dikhao."
+ },
+ {
+  "i": 2709,
+  "db_id": "dorm_1",
+  "question_en": "Find the name of amenity that is most common in all dorms.",
+  "question": "Sabhi dorms me sabse common amenity ka naam batao."
+ },
+ {
+  "i": 2733,
+  "db_id": "network_2",
+  "question_en": "Who has friends that are older than the average age? Print their friends and their ages as well",
+  "question": "Kiske aise friends hain jo average age se bade hain? Unke friends aur unki ages bhi print karo."
+ },
+ {
+  "i": 2738,
+  "db_id": "department_store",
+  "question_en": "Find the product type whose average price is higher than the average price of all products.",
+  "question": "Wo product type batao jiski average price sabhi products ki average price se zyada hai."
+ },
+ {
+  "i": 2748,
+  "db_id": "aircraft",
+  "question_en": "List the name of the aircraft that has been named winning aircraft the most number of times.",
+  "question": "Us aircraft ka naam batao jo sabse zyada baar winning aircraft ghoshit hua hai."
+ },
+ {
+  "i": 2753,
+  "db_id": "flight_4",
+  "question_en": "Find the number of different airports which are the destinations of the American Airlines.",
+  "question": "American Airlines ke destinations ke roop me alag-alag airports ki sankhya batao."
+ },
+ {
+  "i": 2785,
+  "db_id": "wine_1",
+  "question_en": "Find the distinct names of wines produced before the year of 2000 or after the year of 2010.",
+  "question": "Saal 2000 se pehle ya 2010 ke baad bani wines ke alag-alag naam batao."
+ },
+ {
+  "i": 2788,
+  "db_id": "student_assessment",
+  "question_en": "List the first names of people in alphabetical order?",
+  "question": "Logon ke first names alphabetical order me batao."
+ },
+ {
+  "i": 2814,
+  "db_id": "twitter_1",
+  "question_en": "Find the names of users whose emails contain ‘superstar’ or ‘edu’.",
+  "question": "Un users ke naam batao jinke emails me 'superstar' ya 'edu' hai."
+ },
+ {
+  "i": 2817,
+  "db_id": "cre_Doc_Control_Systems",
+  "question_en": "How many documents have the status code done?",
+  "question": "Kitne documents ka status code done hai?"
+ },
+ {
+  "i": 2836,
+  "db_id": "behavior_monitoring",
+  "question_en": "List all cities of addresses in alphabetical order.",
+  "question": "Sabhi addresses ki cities alphabetical order me batao."
+ },
+ {
+  "i": 2838,
+  "db_id": "entrepreneur",
+  "question_en": "Count the number of entrepreneurs.",
+  "question": "Entrepreneurs ki ginti karo."
+ },
+ {
+  "i": 2842,
+  "db_id": "customers_and_invoices",
+  "question_en": "Return the id and full name of the customer with the most accounts.",
+  "question": "Sabse zyada accounts wale customer ki id aur full name batao."
+ },
+ {
+  "i": 2859,
+  "db_id": "tracking_software_problems",
+  "question_en": "What are the ids of the problems which are reported after 1978-06-26?",
+  "question": "1978-06-26 ke baad report hui problems ki ids kya hain?"
+ },
+ {
+  "i": 2874,
+  "db_id": "musical",
+  "question_en": "How many musicals has each nominee been nominated for?",
+  "question": "Har nominee kitne musicals ke liye nominate hua hai?"
+ },
+ {
+  "i": 2897,
+  "db_id": "icfp_1",
+  "question_en": "Which author has written the most papers? Find his or her last name.",
+  "question": "Kis author ne sabse zyada papers likhe hain? Unka last name batao."
+ },
+ {
+  "i": 2899,
+  "db_id": "allergy_1",
+  "question_en": "Show all majors and corresponding number of students.",
+  "question": "Sabhi majors aur unke students ki sankhya dikhao."
+ },
+ {
+  "i": 2907,
+  "db_id": "products_gen_characteristics",
+  "question_en": "List all the characteristic names and data types of product \"cumin\".",
+  "question": "Product 'cumin' ke sabhi characteristic names aur data types batao."
+ },
+ {
+  "i": 2923,
+  "db_id": "game_1",
+  "question_en": "What are the last names for all scholarship students?",
+  "question": "Sabhi scholarship students ke last names kya hain?"
+ },
+ {
+  "i": 2924,
+  "db_id": "inn_1",
+  "question_en": "What is the total number of people who could stay in the modern rooms in this inn?",
+  "question": "Is inn ke modern rooms me total kitne log rah sakte hain?"
+ },
+ {
+  "i": 2930,
+  "db_id": "chinook_1",
+  "question_en": "Find the maximum and minimum durations of tracks in milliseconds.",
+  "question": "Tracks ki maximum aur minimum duration milliseconds me batao."
+ },
+ {
+  "i": 2933,
+  "db_id": "voter_2",
+  "question_en": "Who are the advisors for students that live in a city with city code \"BAL\"?",
+  "question": "City code 'BAL' wali city me rehne wale students ke advisors kaun hain?"
+ },
+ {
+  "i": 2938,
+  "db_id": "music_1",
+  "question_en": "What are the names of the different artists from Bangladesh who never received a rating higher than a 7?",
+  "question": "Bangladesh ke un alag-alag artists ke naam batao jinhe kabhi 7 se zyada rating nahi mili."
+ },
+ {
+  "i": 2941,
+  "db_id": "cre_Theme_park",
+  "question_en": "What are the distinct visit dates?",
+  "question": "Alag-alag visit dates kya hain?"
+ },
+ {
+  "i": 2944,
+  "db_id": "riding_club",
+  "question_en": "How many coaches does each club has? List the club id, name and the number of coaches.",
+  "question": "Har club ke kitne coaches hain? Club id, name aur coaches ki sankhya batao."
+ },
+ {
+  "i": 2949,
+  "db_id": "inn_1",
+  "question_en": "Find all the rooms that have a price higher than 160 and can accommodate more than 2 people. Report room names and ids.",
+  "question": "Wo sabhi rooms dhoondho jinki price 160 se zyada hai aur jinme 2 se zyada log rah sakte hain. Room names aur ids batao."
+ },
+ {
+  "i": 2950,
+  "db_id": "tracking_grants_for_research",
+  "question_en": "For each staff id, what is the description of the role that is involved with the most number of projects?",
+  "question": "Har staff id ke liye, sabse zyada projects se jude role ka description kya hai?"
+ },
+ {
+  "i": 2969,
+  "db_id": "riding_club",
+  "question_en": "Show the names of sponsors of players whose residence is either \"Brandon\" or \"Birtle\".",
+  "question": "Un players ke sponsors ke naam batao jinki residence 'Brandon' ya 'Birtle' hai."
+ },
+ {
+  "i": 3002,
+  "db_id": "movie_1",
+  "question_en": "For directors who had more than one movie, return the titles and produced years of all movies directed by them.",
+  "question": "Jin directors ne ek se zyada movies banayi hain, unki sabhi movies ke titles aur produced years batao."
+ },
+ {
+  "i": 3004,
+  "db_id": "department_store",
+  "question_en": "What are id and name of the products whose price is lower than 600 or higher than 900?",
+  "question": "Un products ki id aur name batao jinki price 600 se kam ya 900 se zyada hai."
+ },
+ {
+  "i": 3039,
+  "db_id": "farm",
+  "question_en": "Show the years and the official names of the host cities of competitions.",
+  "question": "Competitions ke host cities ke years aur official names dikhao."
+ },
+ {
+  "i": 3061,
+  "db_id": "dorm_1",
+  "question_en": "Find the name of amenities of the dorm where the student with last name Smith is living in.",
+  "question": "Us dorm ki amenities ke naam batao jisme last name Smith wala student rehta hai."
+ },
+ {
+  "i": 3090,
+  "db_id": "county_public_safety",
+  "question_en": "What is the location shared by most counties?",
+  "question": "Sabse zyada counties me shared location kaunsi hai?"
+ },
+ {
+  "i": 3104,
+  "db_id": "music_2",
+  "question_en": "What is the type of vocals that the band member with the last name \"Heilo\" played the most?",
+  "question": "Last name 'Heilo' wale band member ne sabse zyada kis type ke vocals diye?"
+ },
+ {
+  "i": 3111,
+  "db_id": "wrestler",
+  "question_en": "What are the reigns and days held of all wrestlers?",
+  "question": "Sabhi wrestlers ke reigns aur days held kya hain?"
+ },
+ {
+  "i": 3113,
+  "db_id": "customer_complaints",
+  "question_en": "Find the last name of the staff whose email address contains \"wrau\".",
+  "question": "Us staff ka last name batao jiske email address me 'wrau' hai."
+ },
+ {
+  "i": 3155,
+  "db_id": "gas_company",
+  "question_en": "Show all company names and headquarters in the descending order of market value.",
+  "question": "Sabhi company names aur headquarters market value ke descending order me dikhao."
+ },
+ {
+  "i": 3186,
+  "db_id": "e_learning",
+  "question_en": "Find the number of students who have the word \"son\" in their personal names.",
+  "question": "Un students ki sankhya batao jinke personal names me 'son' word hai."
+ },
+ {
+  "i": 3197,
+  "db_id": "election",
+  "question_en": "Show the name of the county with the biggest population.",
+  "question": "Sabse zyada population wali county ka naam dikhao."
+ },
+ {
+  "i": 3203,
+  "db_id": "music_2",
+  "question_en": "How many instrument does the musician with last name \"Heilo\" use?",
+  "question": "Last name 'Heilo' wala musician kitne instruments use karta hai?"
+ },
+ {
+  "i": 3215,
+  "db_id": "college_1",
+  "question_en": "What are the first names of student who only took one course?",
+  "question": "Un students ke first names batao jinhone sirf ek course liya."
+ },
+ {
+  "i": 3221,
+  "db_id": "gymnast",
+  "question_en": "What are the names of the five oldest people?",
+  "question": "Paanch sabse bade logon ke naam kya hain?"
+ },
+ {
+  "i": 3248,
+  "db_id": "entertainment_awards",
+  "question_en": "Show the number of audience in year 2008 or 2010.",
+  "question": "Saal 2008 ya 2010 me audience ki sankhya dikhao."
+ },
+ {
+  "i": 3253,
+  "db_id": "sakila_1",
+  "question_en": "Find all the payment dates for the payments with an amount larger than 10 and the payments handled by a staff person with the first name Elsa.",
+  "question": "Un payments ki sabhi payment dates batao jinka amount 10 se zyada hai aur jinhe first name Elsa wale staff ne handle kiya."
+ },
+ {
+  "i": 3267,
+  "db_id": "music_1",
+  "question_en": "What are the names of all songs in English?",
+  "question": "English me sabhi songs ke naam kya hain?"
+ },
+ {
+  "i": 3286,
+  "db_id": "bike_1",
+  "question_en": "How many different bike ids are there?",
+  "question": "Kitni alag bike ids hain?"
+ },
+ {
+  "i": 3303,
+  "db_id": "film_rank",
+  "question_en": "List all countries of markets in ascending alphabetical order.",
+  "question": "Markets ki sabhi countries alphabetical ascending order me batao."
+ },
+ {
+  "i": 3309,
+  "db_id": "company_office",
+  "question_en": "What is the stories of highest building?",
+  "question": "Sabse oonchi building ki stories kya hain?"
+ },
+ {
+  "i": 3318,
+  "db_id": "customers_card_transactions",
+  "question_en": "Show the number of all customers without an account.",
+  "question": "Bina account wale sabhi customers ki sankhya dikhao."
+ },
+ {
+  "i": 3325,
+  "db_id": "music_2",
+  "question_en": "Who is performing in the back stage position for the song \"Der Kapitan\"? Show the first name and last name.",
+  "question": "Song 'Der Kapitan' ke liye back stage position me kaun perform kar raha hai? First name aur last name dikhao."
+ },
+ {
+  "i": 3368,
+  "db_id": "formula_1",
+  "question_en": "List the forename and surname of all distinct drivers who once had laptime less than 93000 milliseconds?",
+  "question": "Un sabhi alag drivers ka forename aur surname batao jinka kabhi laptime 93000 milliseconds se kam raha hai."
+ },
+ {
+  "i": 3373,
+  "db_id": "student_1",
+  "question_en": "Find the last names of the students in third grade that are not taught by COVIN JEROME.",
+  "question": "Third grade ke un students ke last names batao jinhe COVIN JEROME nahi padhate."
+ },
+ {
+  "i": 3377,
+  "db_id": "debate",
+  "question_en": "Show different parties of people along with the number of people in each party.",
+  "question": "Logon ki alag-alag parties aur har party me logon ki sankhya dikhao."
+ },
+ {
+  "i": 3381,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "Return the budget type codes, budget type descriptions and document ids for documents with expenses.",
+  "question": "Expenses wale documents ke budget type codes, budget type descriptions aur document ids batao."
+ },
+ {
+  "i": 3387,
+  "db_id": "game_1",
+  "question_en": "What is the first and last name of all students who play Football or Lacrosse?",
+  "question": "Football ya Lacrosse khelne wale sabhi students ka first aur last name kya hai?"
+ },
+ {
+  "i": 3403,
+  "db_id": "gymnast",
+  "question_en": "Show the hometowns shared by people older than 23 and younger than 20.",
+  "question": "Wo hometowns dikhao jo 23 se bade aur 20 se chhote logon ke saath shared hain."
+ },
+ {
+  "i": 3414,
+  "db_id": "entrepreneur",
+  "question_en": "List the names of entrepreneurs and their companies in descending order of money requested?",
+  "question": "Entrepreneurs aur unki companies ke naam maange gaye paise ke descending order me batao."
+ },
+ {
+  "i": 3425,
+  "db_id": "e_learning",
+  "question_en": "How many tests have result \"Fail\"?",
+  "question": "Kitne tests ka result 'Fail' hai?"
+ },
+ {
+  "i": 3426,
+  "db_id": "local_govt_mdm",
+  "question_en": "List all information about customer master index, and sort them by details in descending order.",
+  "question": "Customer master index ki saari information batao aur details ke descending order me sort karo."
+ },
+ {
+  "i": 3431,
+  "db_id": "icfp_1",
+  "question_en": "Which authors have written a paper with title containing the word \"Monadic\"? Return their last names.",
+  "question": "Kin authors ne aisa paper likha hai jiske title me 'Monadic' word hai? Unke last names batao."
+ },
+ {
+  "i": 3458,
+  "db_id": "company_office",
+  "question_en": "Count the number of distinct company industries.",
+  "question": "Distinct company industries ki ginti karo."
+ },
+ {
+  "i": 3474,
+  "db_id": "document_management",
+  "question_en": "What are the codes of types of documents of which there are for or more?",
+  "question": "Un document types ke codes kya hain jinke chaar ya zyada documents hain?"
+ },
+ {
+  "i": 3486,
+  "db_id": "insurance_policies",
+  "question_en": "What is the most popular payment method?",
+  "question": "Sabse popular payment method kaunsa hai?"
+ },
+ {
+  "i": 3488,
+  "db_id": "swimming",
+  "question_en": "What is the name of the event that happened in the most recent year?",
+  "question": "Sabse recent year me hue event ka naam kya hai?"
+ },
+ {
+  "i": 3491,
+  "db_id": "local_govt_mdm",
+  "question_en": "What is the tax source system code related to the benefits and overpayments? List the code and the benifit id, order by benifit id.",
+  "question": "Benefits aur overpayments se jude tax source system code kya hai? Code aur benefit id batao, benefit id ke order me."
+ },
+ {
+  "i": 3495,
+  "db_id": "bike_1",
+  "question_en": "Find the zip code in which the average mean visibility is lower than 10.",
+  "question": "Wo zip code batao jisme average mean visibility 10 se kam hai."
+ },
+ {
+  "i": 3499,
+  "db_id": "college_2",
+  "question_en": "Find the total number of students and total number of instructors for each department.",
+  "question": "Har department ke liye students ki total sankhya aur instructors ki total sankhya batao."
+ },
+ {
+  "i": 3511,
+  "db_id": "icfp_1",
+  "question_en": "What is the name of the institution the author \"Katsuhiro Ueno\" belongs to?",
+  "question": "Author 'Katsuhiro Ueno' kis institution se hai?"
+ },
+ {
+  "i": 3531,
+  "db_id": "city_record",
+  "question_en": "Please give me a list of cities whose regional population is over 10000000.",
+  "question": "Un cities ki list do jinki regional population 10000000 se zyada hai."
+ },
+ {
+  "i": 3534,
+  "db_id": "music_4",
+  "question_en": "Count the number of artists.",
+  "question": "Artists ki ginti karo."
+ },
+ {
+  "i": 3537,
+  "db_id": "dorm_1",
+  "question_en": "What are the different dorm amenity names in alphabetical order?",
+  "question": "Dorm amenity ke alag-alag naam alphabetical order me batao."
+ },
+ {
+  "i": 3547,
+  "db_id": "products_gen_characteristics",
+  "question_en": "How many products have the color description 'red' and the characteristic name 'slow'?",
+  "question": "Kitne products ka color description 'red' hai aur characteristic name 'slow' hai?"
+ },
+ {
+  "i": 3558,
+  "db_id": "manufactory_1",
+  "question_en": "What are the names and average prices of products for manufacturers whose products cost on average 150 or more?",
+  "question": "Un manufacturers ke products ke naam aur average prices batao jinke products ki average cost 150 ya zyada hai."
+ },
+ {
+  "i": 3563,
+  "db_id": "college_3",
+  "question_en": "What are the full names and gradepoints for all enrollments?",
+  "question": "Sabhi enrollments ke full names aur gradepoints kya hain?"
+ },
+ {
+  "i": 3571,
+  "db_id": "college_2",
+  "question_en": "How many rooms does the Lamberton building have?",
+  "question": "Lamberton building me kitne rooms hain?"
+ },
+ {
+  "i": 3583,
+  "db_id": "cre_Theme_park",
+  "question_en": "Show the names and ids of tourist attractions that are visited at most once.",
+  "question": "Un tourist attractions ke naam aur ids batao jinhe adhiktam ek baar visit kiya gaya."
+ },
+ {
+  "i": 3584,
+  "db_id": "products_for_hire",
+  "question_en": "What is the maximum total amount paid by a customer? List the customer id and amount.",
+  "question": "Ek customer dwara diya gaya maximum total amount kya hai? Customer id aur amount batao."
+ },
+ {
+  "i": 3585,
+  "db_id": "dorm_1",
+  "question_en": "What are the total number of students who are living in a male dorm?",
+  "question": "Male dorm me rehne wale students ki total sankhya kya hai?"
+ },
+ {
+  "i": 3595,
+  "db_id": "sports_competition",
+  "question_en": "What are the different regions of clubs in ascending alphabetical order?",
+  "question": "Clubs ke alag-alag regions alphabetical ascending order me batao."
+ },
+ {
+  "i": 3597,
+  "db_id": "college_2",
+  "question_en": "What are the names of the 3 departments with the most courses?",
+  "question": "Sabse zyada courses wale 3 departments ke naam kya hain?"
+ },
+ {
+  "i": 3598,
+  "db_id": "small_bank_1",
+  "question_en": "What are the names and balances of checking accounts belonging to the customer with the lowest savings balance?",
+  "question": "Sabse kam savings balance wale customer ke checking accounts ke naam aur balances kya hain?"
+ },
+ {
+  "i": 3609,
+  "db_id": "store_product",
+  "question_en": "Find all the stores in the district with the most population.",
+  "question": "Sabse zyada population wale district ke sabhi stores dhoondho."
+ },
+ {
+  "i": 3629,
+  "db_id": "music_2",
+  "question_en": "Find the first name of the band mate that has performed in most songs.",
+  "question": "Us band mate ka first name batao jisne sabse zyada songs me perform kiya hai."
+ },
+ {
+  "i": 3632,
+  "db_id": "network_2",
+  "question_en": "What are the names of the people who are older 40 but no friends under age 30?",
+  "question": "Un logon ke naam batao jo 40 se bade hain lekin jinka koi friend 30 se chhota nahi hai."
+ },
+ {
+  "i": 3650,
+  "db_id": "ship_1",
+  "question_en": "What are the names of ships that have more than one captain?",
+  "question": "Un ships ke naam batao jinke ek se zyada captain hain."
+ },
+ {
+  "i": 3653,
+  "db_id": "wine_1",
+  "question_en": "Give the names and scores of wines made from white grapes.",
+  "question": "White grapes se bani wines ke naam aur scores batao."
+ },
+ {
+  "i": 3671,
+  "db_id": "culture_company",
+  "question_en": "Which publishers did not publish a book in 1989?",
+  "question": "Kin publishers ne 1989 me koi book publish nahi ki?"
+ },
+ {
+  "i": 3708,
+  "db_id": "race_track",
+  "question_en": "Give the different locations of tracks.",
+  "question": "Tracks ki alag-alag locations batao."
+ },
+ {
+  "i": 3709,
+  "db_id": "gymnast",
+  "question_en": "List the distinct hometowns that are not associated with any gymnast.",
+  "question": "Wo alag hometowns batao jo kisi gymnast se jude nahi hain."
+ },
+ {
+  "i": 3724,
+  "db_id": "movie_1",
+  "question_en": "How many movies were made before 2000?",
+  "question": "2000 se pehle kitni movies bani?"
+ },
+ {
+  "i": 3732,
+  "db_id": "medicine_enzyme_interaction",
+  "question_en": "For every medicine id, what are the names of the medicines that can interact with more than one enzyme?",
+  "question": "Har medicine id ke liye, un medicines ke naam batao jo ek se zyada enzyme se interact kar sakti hain."
+ },
+ {
+  "i": 3738,
+  "db_id": "cre_Theme_park",
+  "question_en": "Show the price ranges of hotels with 5 star ratings.",
+  "question": "5 star rating wale hotels ki price ranges dikhao."
+ },
+ {
+  "i": 3756,
+  "db_id": "perpetrator",
+  "question_en": "What are the names of perpetrators?",
+  "question": "Perpetrators ke naam kya hain?"
+ },
+ {
+  "i": 3757,
+  "db_id": "music_2",
+  "question_en": "How many songs have vocals of type lead?",
+  "question": "Kitne songs me vocals ka type lead hai?"
+ },
+ {
+  "i": 3766,
+  "db_id": "workshop_paper",
+  "question_en": "Which submission received the highest score in acceptance result. Show me the result.",
+  "question": "Kis submission ko acceptance result me sabse zyada score mila? Mujhe wo result dikhao."
+ },
+ {
+  "i": 3776,
+  "db_id": "storm_record",
+  "question_en": "What are the names of the regions in alphabetical order?",
+  "question": "Regions ke naam alphabetical order me batao."
+ },
+ {
+  "i": 3791,
+  "db_id": "dorm_1",
+  "question_en": "What is the code of the city with the most students?",
+  "question": "Sabse zyada students wali city ka code kya hai?"
+ },
+ {
+  "i": 3803,
+  "db_id": "soccer_2",
+  "question_en": "Find the names of schools that have some students playing in goalie and mid positions.",
+  "question": "Un schools ke naam batao jinke kuch students goalie aur mid positions me khelte hain."
+ },
+ {
+  "i": 3819,
+  "db_id": "theme_gallery",
+  "question_en": "Return the average and minimum ages across artists from the United States.",
+  "question": "United States ke artists ki average aur minimum age batao."
+ },
+ {
+  "i": 3823,
+  "db_id": "party_host",
+  "question_en": "Count the number of parties.",
+  "question": "Parties ki ginti karo."
+ },
+ {
+  "i": 3826,
+  "db_id": "product_catalog",
+  "question_en": "What are the names of catalog entries with level number 8?",
+  "question": "Level number 8 wale catalog entries ke naam kya hain?"
+ },
+ {
+  "i": 3838,
+  "db_id": "cre_Theme_park",
+  "question_en": "What are the distinct location names?",
+  "question": "Alag-alag location names kya hain?"
+ },
+ {
+  "i": 3860,
+  "db_id": "election",
+  "question_en": "Which delegates are from counties with population smaller than 100000?",
+  "question": "Kaun se delegates un counties se hain jinki population 100000 se kam hai?"
+ },
+ {
+  "i": 3867,
+  "db_id": "formula_1",
+  "question_en": "What are the names of all races held after 2000 in Spain?",
+  "question": "Spain me 2000 ke baad hui sabhi races ke naam kya hain?"
+ },
+ {
+  "i": 3874,
+  "db_id": "machine_repair",
+  "question_en": "List the names of technicians who have not been assigned to repair machines.",
+  "question": "Un technicians ke naam batao jinhe machines repair karne ke liye assign nahi kiya gaya."
+ },
+ {
+  "i": 3894,
+  "db_id": "tracking_software_problems",
+  "question_en": "Find the first and last name of the staff members who reported problems from the product \"rem\" but not \"aut\"?",
+  "question": "Un staff members ka first aur last name batao jinhone product 'rem' se problems report ki lekin 'aut' se nahi."
+ },
+ {
+  "i": 3895,
+  "db_id": "train_station",
+  "question_en": "What are the names of the stations which serve both \"Ananthapuri Express\" and \"Guruvayur Express\" trains?",
+  "question": "Un stations ke naam batao jo 'Ananthapuri Express' aur 'Guruvayur Express' dono trains ko serve karte hain."
+ },
+ {
+  "i": 3904,
+  "db_id": "insurance_and_eClaims",
+  "question_en": "List the names of all the customers in alphabetical order.",
+  "question": "Sabhi customers ke naam alphabetical order me batao."
+ },
+ {
+  "i": 3922,
+  "db_id": "train_station",
+  "question_en": "How many train stations are there?",
+  "question": "Kitne train stations hain?"
+ },
+ {
+  "i": 3938,
+  "db_id": "sakila_1",
+  "question_en": "How many customers have an active value of 1?",
+  "question": "Kitne customers ki active value 1 hai?"
+ },
+ {
+  "i": 3943,
+  "db_id": "behavior_monitoring",
+  "question_en": "What are the monthly rentals of student addresses in Texas state?",
+  "question": "Texas state ke student addresses ke monthly rentals kya hain?"
+ },
+ {
+  "i": 3944,
+  "db_id": "culture_company",
+  "question_en": "Return the publisher that has published the most books.",
+  "question": "Sabse zyada books publish karne wala publisher batao."
+ },
+ {
+  "i": 3947,
+  "db_id": "music_4",
+  "question_en": "What are the maximum and minimum week on top of all volumes?",
+  "question": "Sabhi volumes ke top par maximum aur minimum week kya hain?"
+ },
+ {
+  "i": 3951,
+  "db_id": "network_2",
+  "question_en": "How many friends does Dan have?",
+  "question": "Dan ke kitne friends hain?"
+ },
+ {
+  "i": 3966,
+  "db_id": "customers_and_invoices",
+  "question_en": "Count the number of customers who do not have an account.",
+  "question": "Un customers ki ginti karo jinka koi account nahi hai."
+ },
+ {
+  "i": 3970,
+  "db_id": "wine_1",
+  "question_en": "What is the maximum price of wines from the appelation in the Central Coast area, which was produced before 2005?",
+  "question": "2005 se pehle bani, Central Coast area ke appelation ki wines ki maximum price kya hai?"
+ },
+ {
+  "i": 3975,
+  "db_id": "college_1",
+  "question_en": "How many classes are professor whose last name is Graztevski has?",
+  "question": "Professor jinka last name Graztevski hai, unki kitni classes hain?"
+ },
+ {
+  "i": 3980,
+  "db_id": "insurance_policies",
+  "question_en": "Find the the customer details and id for the customers who had more than one policy.",
+  "question": "Un customers ki details aur id batao jinki ek se zyada policies thi."
+ },
+ {
+  "i": 3996,
+  "db_id": "film_rank",
+  "question_en": "List the name of film studio that have the most number of films.",
+  "question": "Sabse zyada films wale film studio ka naam batao."
+ },
+ {
+  "i": 4002,
+  "db_id": "sports_competition",
+  "question_en": "Find the countries that have never participated in any competition with Friendly type.",
+  "question": "Un countries ko dhoondho jinhone Friendly type ke kisi competition me kabhi hissa nahi liya."
+ },
+ {
+  "i": 4003,
+  "db_id": "small_bank_1",
+  "question_en": "Find the saving balance of the account with the highest checking balance.",
+  "question": "Sabse zyada checking balance wale account ka saving balance batao."
+ },
+ {
+  "i": 4009,
+  "db_id": "protein_institute",
+  "question_en": "Show the institution type with the largest number of institutions.",
+  "question": "Sabse zyada institutions wala institution type dikhao."
+ },
+ {
+  "i": 4012,
+  "db_id": "climbing",
+  "question_en": "Which range contains the most mountains?",
+  "question": "Kis range me sabse zyada mountains hain?"
+ },
+ {
+  "i": 4031,
+  "db_id": "insurance_and_eClaims",
+  "question_en": "Count the number of distinct claim outcome codes.",
+  "question": "Distinct claim outcome codes ki ginti karo."
+ },
+ {
+  "i": 4039,
+  "db_id": "hr_1",
+  "question_en": "What are the full names and department ids for the lowest paid employees across all departments.",
+  "question": "Sabhi departments me sabse kam tankhwah wale employees ke full names aur department ids kya hain?"
+ },
+ {
+  "i": 4046,
+  "db_id": "company_office",
+  "question_en": "How many companies are in either \"Banking\" industry or \"Conglomerate\" industry?",
+  "question": "'Banking' industry ya 'Conglomerate' industry me kitni companies hain?"
+ },
+ {
+  "i": 4063,
+  "db_id": "hospital_1",
+  "question_en": "Which patient is undergoing the most recent treatment?",
+  "question": "Kaunsa patient sabse recent treatment le raha hai?"
+ },
+ {
+  "i": 4066,
+  "db_id": "allergy_1",
+  "question_en": "What are the allergies the girl named Lisa has? And what are the types of them? Order the result by allergy names.",
+  "question": "Lisa naam ki ladki ko kaun si allergies hain? Aur unke types kya hain? Result ko allergy names se sort karo."
+ },
+ {
+  "i": 4088,
+  "db_id": "student_1",
+  "question_en": "Report the number of students in each classroom.",
+  "question": "Har classroom me students ki sankhya batao."
+ },
+ {
+  "i": 4092,
+  "db_id": "tracking_grants_for_research",
+  "question_en": "How many kinds of roles are there for the staff?",
+  "question": "Staff ke liye kitne tarah ke roles hain?"
+ },
+ {
+  "i": 4111,
+  "db_id": "ship_mission",
+  "question_en": "What is the number of ships?",
+  "question": "Ships ki sankhya kitni hai?"
+ },
+ {
+  "i": 4119,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "Show the name, role code, and date of birth for the employee with name 'Armani'.",
+  "question": "Employee jiska naam 'Armani' hai, uska name, role code aur date of birth dikhao."
+ },
+ {
+  "i": 4121,
+  "db_id": "game_1",
+  "question_en": "What type of game is Call of Destiny?",
+  "question": "Call of Destiny kis type ka game hai?"
+ },
+ {
+  "i": 4123,
+  "db_id": "insurance_policies",
+  "question_en": "List the date the claim was made, the date it was settled and the amount settled for all the claims which had exactly one settlement.",
+  "question": "Un sabhi claims ke liye claim ki date, settle hone ki date aur settled amount batao jinki bilkul ek settlement thi."
+ },
+ {
+  "i": 4125,
+  "db_id": "allergy_1",
+  "question_en": "Which students are unaffected by allergies?",
+  "question": "Kaun se students allergies se prabhavit nahi hain?"
+ },
+ {
+  "i": 4145,
+  "db_id": "customers_card_transactions",
+  "question_en": "Count the number of credit cards that the customer with first name Blanche and last name Huels has.",
+  "question": "First name Blanche aur last name Huels wale customer ke kitne credit cards hain?"
+ },
+ {
+  "i": 4161,
+  "db_id": "customers_and_invoices",
+  "question_en": "How many transaction does each account have? Show the number and account id.",
+  "question": "Har account ke kitne transactions hain? Sankhya aur account id dikhao."
+ },
+ {
+  "i": 4173,
+  "db_id": "student_assessment",
+  "question_en": "Find id of the candidate who most recently accessed the course?",
+  "question": "Us candidate ki id batao jisne course ko sabse recently access kiya."
+ },
+ {
+  "i": 4174,
+  "db_id": "product_catalog",
+  "question_en": "Find the attribute data type for the attribute named \"Green\".",
+  "question": "Attribute 'Green' ka attribute data type batao."
+ },
+ {
+  "i": 4183,
+  "db_id": "product_catalog",
+  "question_en": "What is the attribute data type of the attribute with name \"Green\"?",
+  "question": "Name 'Green' wale attribute ka attribute data type kya hai?"
+ },
+ {
+  "i": 4187,
+  "db_id": "allergy_1",
+  "question_en": "What is the minimum, mean, and maximum age across all students?",
+  "question": "Sabhi students ki minimum, mean aur maximum age kya hai?"
+ },
+ {
+  "i": 4189,
+  "db_id": "local_govt_and_lot",
+  "question_en": "How many services has each resident requested? List the resident id, details, and the count in descending order of the count.",
+  "question": "Har resident ne kitni services request ki hain? Resident id, details aur count, count ke descending order me batao."
+ },
+ {
+  "i": 4196,
+  "db_id": "farm",
+  "question_en": "Please show the different statuses of cities and the average population of cities with each status.",
+  "question": "Cities ke alag-alag statuses aur har status ki cities ki average population dikhao."
+ },
+ {
+  "i": 4213,
+  "db_id": "formula_1",
+  "question_en": "What is the maximum fastest lap speed in race named 'Monaco Grand Prix' in 2008 ?",
+  "question": "Saal 2008 me 'Monaco Grand Prix' naam ki race me maximum fastest lap speed kya thi?"
+ },
+ {
+  "i": 4218,
+  "db_id": "cre_Doc_Control_Systems",
+  "question_en": "What document type codes do we have?",
+  "question": "Humare paas kaun se document type codes hain?"
+ },
+ {
+  "i": 4261,
+  "db_id": "swimming",
+  "question_en": "Find the country that has the most stadiums.",
+  "question": "Sabse zyada stadiums wala country dhoondho."
+ },
+ {
+  "i": 4276,
+  "db_id": "tracking_grants_for_research",
+  "question_en": "How many project staff worked as leaders or started working before '1989-04-24 23:51:54'?",
+  "question": "Kitne project staff leader ke roop me kaam kiye ya '1989-04-24 23:51:54' se pehle kaam shuru kiya?"
+ },
+ {
+  "i": 4280,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "How many documents do not have any expense?",
+  "question": "Kitne documents ka koi expense nahi hai?"
+ },
+ {
+  "i": 4298,
+  "db_id": "college_1",
+  "question_en": "Find the total number of hours have done for all students in each department.",
+  "question": "Har department me sabhi students dwara kiye gaye total hours dhoondho."
+ },
+ {
+  "i": 4325,
+  "db_id": "products_gen_characteristics",
+  "question_en": "What is the name of the product with the color description 'yellow'?",
+  "question": "Color description 'yellow' wale product ka naam kya hai?"
+ },
+ {
+  "i": 4339,
+  "db_id": "college_1",
+  "question_en": "Find the name and address of the department that has the highest number of students.",
+  "question": "Sabse zyada students wale department ka naam aur address batao."
+ },
+ {
+  "i": 4362,
+  "db_id": "movie_1",
+  "question_en": "What are the names of all movies made before 1980 or had James Cameron as the director?",
+  "question": "1980 se pehle bani ya James Cameron director wali sabhi movies ke naam kya hain?"
+ },
+ {
+  "i": 4363,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "What are all the document type codes and document type names?",
+  "question": "Sabhi document type codes aur document type names kya hain?"
+ },
+ {
+  "i": 4373,
+  "db_id": "hr_1",
+  "question_en": "What are the full name (first and last name) and salary for all employees who does not have any value for commission?",
+  "question": "Un sabhi employees ka full name (first aur last name) aur salary batao jinki commission ki koi value nahi hai."
+ },
+ {
+  "i": 4377,
+  "db_id": "coffee_shop",
+  "question_en": "Find the purchase time, age and address of each member, and show the results in the order of purchase time.",
+  "question": "Har member ka purchase time, age aur address batao, aur result purchase time ke order me dikhao."
+ },
+ {
+  "i": 4378,
+  "db_id": "body_builder",
+  "question_en": "What are the clean and jerk score of the body builder with the highest total score?",
+  "question": "Sabse zyada total score wale body builder ka clean aur jerk score kya hai?"
+ },
+ {
+  "i": 4461,
+  "db_id": "store_1",
+  "question_en": "How many employees who are IT staff are from each city?",
+  "question": "Har city se kitne employees IT staff hain?"
+ },
+ {
+  "i": 4470,
+  "db_id": "match_season",
+  "question_en": "What are the different positions of players from UCLA or Duke colleges?",
+  "question": "UCLA ya Duke colleges ke players ki alag-alag positions kya hain?"
+ },
+ {
+  "i": 4476,
+  "db_id": "products_gen_characteristics",
+  "question_en": "What are the names of the products that have a color description of 'red' and the 'fast' characteristic?",
+  "question": "Un products ke naam batao jinka color description 'red' hai aur characteristic 'fast' hai."
+ },
+ {
+  "i": 4478,
+  "db_id": "scientist_1",
+  "question_en": "Find the total hours of the projects that scientists named Michael Rogers or Carol Smith are assigned to.",
+  "question": "Un projects ke total hours batao jinme scientists Michael Rogers ya Carol Smith assign hain."
+ },
+ {
+  "i": 4484,
+  "db_id": "sakila_1",
+  "question_en": "What is the full name and id of the customer who has the lowest total amount of payment?",
+  "question": "Sabse kam total payment amount wale customer ka full name aur id kya hai?"
+ },
+ {
+  "i": 4492,
+  "db_id": "customer_deliveries",
+  "question_en": "Show the details of all trucks in the order of their license number.",
+  "question": "Sabhi trucks ki details license number ke order me dikhao."
+ },
+ {
+  "i": 4522,
+  "db_id": "flight_4",
+  "question_en": "Find the names of the top 10 airlines that operate the most number of routes.",
+  "question": "Sabse zyada routes chalane wali top 10 airlines ke naam batao."
+ },
+ {
+  "i": 4524,
+  "db_id": "store_1",
+  "question_en": "List the name of tracks belongs to genre Rock and whose media type is MPEG audio file.",
+  "question": "Genre Rock ke aur media type MPEG audio file wale tracks ke naam batao."
+ },
+ {
+  "i": 4527,
+  "db_id": "loan_1",
+  "question_en": "Find the name of customers who do not have an saving account.",
+  "question": "Un customers ke naam batao jinka saving account nahi hai."
+ },
+ {
+  "i": 4535,
+  "db_id": "cinema",
+  "question_en": "Count the number of cinemas.",
+  "question": "Cinemas ki ginti karo."
+ },
+ {
+  "i": 4548,
+  "db_id": "city_record",
+  "question_en": "Which city has the highest temperature in February?",
+  "question": "February me kis city ka temperature sabse zyada hai?"
+ },
+ {
+  "i": 4583,
+  "db_id": "university_basketball",
+  "question_en": "List all information regarding the basketball match.",
+  "question": "Basketball match ke baare me saari information batao."
+ },
+ {
+  "i": 4584,
+  "db_id": "tracking_share_transactions",
+  "question_en": "Show the number of transactions for different investors.",
+  "question": "Alag-alag investors ke liye transactions ki sankhya dikhao."
+ },
+ {
+  "i": 4589,
+  "db_id": "customers_and_addresses",
+  "question_en": "What are the names of customers who live in Colorado state?",
+  "question": "Colorado state me rehne wale customers ke naam kya hain?"
+ },
+ {
+  "i": 4606,
+  "db_id": "match_season",
+  "question_en": "What are the names of teams that do no have match season record?",
+  "question": "Un teams ke naam batao jinka match season record nahi hai."
+ },
+ {
+  "i": 4616,
+  "db_id": "customer_complaints",
+  "question_en": "Return the city with the customer type code \"Good Credit Rating\" that had the fewest customers.",
+  "question": "Customer type code 'Good Credit Rating' wale sabse kam customers wali city batao."
+ },
+ {
+  "i": 4630,
+  "db_id": "scientist_1",
+  "question_en": "Find the average hours of all projects.",
+  "question": "Sabhi projects ke average hours dhoondho."
+ },
+ {
+  "i": 4641,
+  "db_id": "hr_1",
+  "question_en": "What are all the employees without a department number?",
+  "question": "Bina department number wale sabhi employees kaun se hain?"
+ },
+ {
+  "i": 4642,
+  "db_id": "department_store",
+  "question_en": "Return the id of the staff whose Staff Department Assignment was earlier than that of any Clerical Staff.",
+  "question": "Us staff ki id batao jiska Staff Department Assignment kisi bhi Clerical Staff se pehle tha."
+ },
+ {
+  "i": 4649,
+  "db_id": "phone_market",
+  "question_en": "List the distinct carriers of phones with memories bigger than 32.",
+  "question": "32 se zyada memory wale phones ke alag-alag carriers batao."
+ },
+ {
+  "i": 4670,
+  "db_id": "gymnast",
+  "question_en": "List the names of gymnasts in ascending order by their heights.",
+  "question": "Gymnasts ke naam unki height ke ascending order me batao."
+ },
+ {
+  "i": 4680,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "Count the number of budget codes.",
+  "question": "Budget codes ki ginti karo."
+ },
+ {
+  "i": 4683,
+  "db_id": "election",
+  "question_en": "Show the delegate from district 1 in election.",
+  "question": "Election me district 1 ka delegate dikhao."
+ },
+ {
+  "i": 4704,
+  "db_id": "club_1",
+  "question_en": "Where is the club \"Pen and Paper Gaming\" located?",
+  "question": "Club 'Pen and Paper Gaming' kahan sthit hai?"
+ },
+ {
+  "i": 4707,
+  "db_id": "performance_attendance",
+  "question_en": "Show different locations and the number of performances at each location.",
+  "question": "Alag-alag locations aur har location par performances ki sankhya dikhao."
+ },
+ {
+  "i": 4711,
+  "db_id": "club_1",
+  "question_en": "How many clubs does the student named \"Eric Tai\" belong to?",
+  "question": "Student 'Eric Tai' kitne clubs ka member hai?"
+ },
+ {
+  "i": 4712,
+  "db_id": "game_1",
+  "question_en": "What is the total number of games played?",
+  "question": "Total khele gaye games ki sankhya kya hai?"
+ },
+ {
+  "i": 4715,
+  "db_id": "ship_mission",
+  "question_en": "Show codes and fates of missions, and names of ships involved.",
+  "question": "Missions ke codes aur fates, aur shamil ships ke naam dikhao."
+ },
+ {
+  "i": 4720,
+  "db_id": "college_2",
+  "question_en": "Give the name and building of the departments with greater than average budget.",
+  "question": "Un departments ka naam aur building batao jinka budget average se zyada hai."
+ },
+ {
+  "i": 4729,
+  "db_id": "loan_1",
+  "question_en": "What is the average number of customers across banks in the state of Utah?",
+  "question": "Utah state me banks ke customers ki average sankhya kya hai?"
+ },
+ {
+  "i": 4730,
+  "db_id": "customers_and_invoices",
+  "question_en": "Show the account name, id and the number of transactions for each account.",
+  "question": "Har account ka account name, id aur transactions ki sankhya dikhao."
+ },
+ {
+  "i": 4733,
+  "db_id": "city_record",
+  "question_en": "In February, which city marks the highest temperature?",
+  "question": "February me, kaunsi city ka temperature sabse zyada hota hai?"
+ },
+ {
+  "i": 4743,
+  "db_id": "music_1",
+  "question_en": "What is the language used most often in the songs?",
+  "question": "Songs me sabse zyada kaunsi language use hoti hai?"
+ },
+ {
+  "i": 4755,
+  "db_id": "activity_1",
+  "question_en": "Which students participate in both Canoeing and Kayaking as their activities? Tell me their student ids.",
+  "question": "Kaun se students Canoeing aur Kayaking dono activities me hissa lete hain? Unki student ids batao."
+ },
+ {
+  "i": 4761,
+  "db_id": "wrestler",
+  "question_en": "Return the elimination movies of wrestlers on Team Orton.",
+  "question": "Team Orton ke wrestlers ke elimination movies batao."
+ },
+ {
+  "i": 4780,
+  "db_id": "school_bus",
+  "question_en": "Show the school name and type for schools without a school bus.",
+  "question": "Bina school bus wale schools ka school name aur type dikhao."
+ },
+ {
+  "i": 4782,
+  "db_id": "match_season",
+  "question_en": "Show all official native languages that contain the word \"English\".",
+  "question": "Un sabhi official native languages ko dikhao jinme 'English' word hai."
+ },
+ {
+  "i": 4792,
+  "db_id": "party_people",
+  "question_en": "What are the names of parties that have no members?",
+  "question": "Un parties ke naam batao jinke koi members nahi hain."
+ },
+ {
+  "i": 4793,
+  "db_id": "csu_1",
+  "question_en": "What campuses are located in Chico?",
+  "question": "Chico me kaun se campuses hain?"
+ },
+ {
+  "i": 4809,
+  "db_id": "device",
+  "question_en": "What are the different software platforms for devices, and how many devices have each?",
+  "question": "Devices ke alag-alag software platforms kya hain, aur har ek ke kitne devices hain?"
+ },
+ {
+  "i": 4816,
+  "db_id": "college_2",
+  "question_en": "Which semeseter and year had the fewest students?",
+  "question": "Kis semester aur year me sabse kam students the?"
+ },
+ {
+  "i": 4826,
+  "db_id": "soccer_2",
+  "question_en": "Find the states where have the colleges whose enrollments are less than the largest size.",
+  "question": "Un states ko dhoondho jahan un colleges hain jinki enrollments sabse bade size se kam hain."
+ },
+ {
+  "i": 4829,
+  "db_id": "department_store",
+  "question_en": "What are the phone numbers of all customers and suppliers.",
+  "question": "Sabhi customers aur suppliers ke phone numbers kya hain?"
+ },
+ {
+  "i": 4839,
+  "db_id": "products_gen_characteristics",
+  "question_en": "Give the color description that is least common across products.",
+  "question": "Products me sabse kam common color description batao."
+ },
+ {
+  "i": 4845,
+  "db_id": "customer_complaints",
+  "question_en": "Of complaints with the type code \"Product Failure\", how many had each different status code?",
+  "question": "Type code 'Product Failure' wali complaints me se, har alag status code ki kitni thi?"
+ },
+ {
+  "i": 4852,
+  "db_id": "store_product",
+  "question_en": "What is the average pages per minute color?",
+  "question": "Average pages per minute color kya hai?"
+ },
+ {
+  "i": 4854,
+  "db_id": "movie_1",
+  "question_en": "For any rating where the name of reviewer is the same as the director of the movie, return the reviewer name, movie title, and number of stars.",
+  "question": "Jis rating me reviewer ka naam movie ke director ke same hai, uska reviewer name, movie title aur stars ki sankhya batao."
+ },
+ {
+  "i": 4859,
+  "db_id": "apartment_rentals",
+  "question_en": "Show the first names and last names of all the guests that have apartment bookings with status code \"Confirmed\".",
+  "question": "Un sabhi guests ke first names aur last names dikhao jinki apartment bookings ka status code 'Confirmed' hai."
+ },
+ {
+  "i": 4868,
+  "db_id": "college_2",
+  "question_en": "Give the title and credits for the course that is taught in the classroom with the greatest capacity.",
+  "question": "Sabse zyada capacity wale classroom me padhaye jane wale course ka title aur credits batao."
+ },
+ {
+  "i": 4870,
+  "db_id": "activity_1",
+  "question_en": "Find the first names of the faculty members who participate in Canoeing and Kayaking.",
+  "question": "Un faculty members ke first names batao jo Canoeing aur Kayaking me hissa lete hain."
+ },
+ {
+  "i": 4873,
+  "db_id": "customers_and_invoices",
+  "question_en": "What are the different product names, and what is the sum of quantity ordered for each product?",
+  "question": "Alag-alag product names kya hain, aur har product ke liye order ki gayi quantity ka sum kitna hai?"
+ },
+ {
+  "i": 4892,
+  "db_id": "railway",
+  "question_en": "Show the locations that have more than one railways.",
+  "question": "Un locations dikhao jahan ek se zyada railways hain."
+ },
+ {
+  "i": 4899,
+  "db_id": "chinook_1",
+  "question_en": "What is the average duration in milliseconds of tracks that belong to Latin or Pop genre?",
+  "question": "Latin ya Pop genre ke tracks ki average duration milliseconds me kya hai?"
+ },
+ {
+  "i": 4918,
+  "db_id": "customers_and_addresses",
+  "question_en": "Find the total amount of products ordered before 2018-03-17 07:13:53.",
+  "question": "2018-03-17 07:13:53 se pehle order kiye gaye products ki total amount dhoondho."
+ },
+ {
+  "i": 4924,
+  "db_id": "icfp_1",
+  "question_en": "Find the country that the most papers are affiliated with.",
+  "question": "Wo country dhoondho jisse sabse zyada papers affiliated hain."
+ },
+ {
+  "i": 4975,
+  "db_id": "soccer_2",
+  "question_en": "Find the max, average and min training hours of all players.",
+  "question": "Sabhi players ke maximum, average aur minimum training hours dhoondho."
+ },
+ {
+  "i": 4984,
+  "db_id": "loan_1",
+  "question_en": "What is the total amount of money loaned by banks in New York state?",
+  "question": "New York state ke banks dwara diye gaye loans ka total amount kya hai?"
+ },
+ {
+  "i": 4990,
+  "db_id": "body_builder",
+  "question_en": "What are the names of body builders in descending order of total scores?",
+  "question": "Body builders ke naam total scores ke descending order me batao."
+ },
+ {
+  "i": 4991,
+  "db_id": "store_1",
+  "question_en": "What are the titles of all the Aerosmith albums?",
+  "question": "Aerosmith ke sabhi albums ke titles kya hain?"
+ },
+ {
+  "i": 5004,
+  "db_id": "activity_1",
+  "question_en": "Find the ids of the students who participate in Canoeing and Kayaking.",
+  "question": "Un students ki ids dhoondho jo Canoeing aur Kayaking me hissa lete hain."
+ },
+ {
+  "i": 5035,
+  "db_id": "storm_record",
+  "question_en": "List name, dates active, and number of deaths for all storms with at least 1 death.",
+  "question": "Kam se kam 1 death wale sabhi storms ka name, dates active aur deaths ki sankhya batao."
+ },
+ {
+  "i": 5056,
+  "db_id": "race_track",
+  "question_en": "What are the years of opening for tracks with seating between 4000 and 5000?",
+  "question": "4000 se 5000 ke beech seating wale tracks ke opening years kya hain?"
+ },
+ {
+  "i": 5057,
+  "db_id": "hr_1",
+  "question_en": "List the full name (first and last name), and salary for those employees who earn below 6000.",
+  "question": "6000 se kam kamane wale employees ka full name (first aur last name) aur salary batao."
+ },
+ {
+  "i": 5058,
+  "db_id": "college_1",
+  "question_en": "What is the first and last name of the youngest student with a GPA above 3, and what is their GPA?",
+  "question": "3 se zyada GPA wale sabse chhote student ka first aur last name kya hai, aur unka GPA kya hai?"
+ },
+ {
+  "i": 5087,
+  "db_id": "inn_1",
+  "question_en": "Return the name and number of reservations made for each of the rooms.",
+  "question": "Har room ke naam aur ki gayi reservations ki sankhya batao."
+ },
+ {
+  "i": 5095,
+  "db_id": "ship_mission",
+  "question_en": "What are the names of the ships that are not from the United States?",
+  "question": "Un ships ke naam kya hain jo United States ke nahi hain?"
+ },
+ {
+  "i": 5100,
+  "db_id": "music_4",
+  "question_en": "What is the average age of all artists?",
+  "question": "Sabhi artists ki average age kya hai?"
+ },
+ {
+  "i": 5117,
+  "db_id": "phone_1",
+  "question_en": "List the hardware model name for the phones that have screen mode type \"Text\" or RAM size greater than 32.",
+  "question": "Un phones ka hardware model name batao jinka screen mode type 'Text' hai ya RAM size 32 se zyada hai."
+ },
+ {
+  "i": 5132,
+  "db_id": "products_gen_characteristics",
+  "question_en": "List all the product names with the color description \"white\".",
+  "question": "Color description 'white' wale sabhi product names batao."
+ },
+ {
+  "i": 5145,
+  "db_id": "driving_school",
+  "question_en": "How many employees have a first name of Ludie?",
+  "question": "Kitne employees ka first name Ludie hai?"
+ },
+ {
+  "i": 5196,
+  "db_id": "movie_1",
+  "question_en": "What are the names of all directors who have made one movie except for the director named NULL?",
+  "question": "Un sabhi directors ke naam batao jinhone ek movie banayi hai, director 'NULL' naam ke alawa."
+ },
+ {
+  "i": 5205,
+  "db_id": "tracking_software_problems",
+  "question_en": "Which problems are reported by the staff with first name \"Christop\"? Show the descriptions of the problems.",
+  "question": "First name 'Christop' wale staff ne kaun si problems report ki? Problems ke descriptions dikhao."
+ },
+ {
+  "i": 5215,
+  "db_id": "protein_institute",
+  "question_en": "List the names of buildings with at least 200 feet of height and with at least 20 floors.",
+  "question": "Un buildings ke naam batao jinki height kam se kam 200 feet hai aur jinme kam se kam 20 floors hain."
+ },
+ {
+  "i": 5223,
+  "db_id": "tracking_share_transactions",
+  "question_en": "Show the minimum amount of transactions whose type code is \"PUR\" and whose share count is bigger than 50.",
+  "question": "Type code 'PUR' wale aur 50 se zyada share count wale transactions ka minimum amount dikhao."
+ },
+ {
+  "i": 5247,
+  "db_id": "music_4",
+  "question_en": "Return the issue date of the volume that has spent the fewest weeks on top.",
+  "question": "Sabse kam hafte top par rehne wale volume ki issue date batao."
+ },
+ {
+  "i": 5252,
+  "db_id": "party_host",
+  "question_en": "Show the nations that have both hosts older than 45 and hosts younger than 35.",
+  "question": "Wo nations dikhao jinke hosts 45 se bade aur 35 se chhote, dono hain."
+ },
+ {
+  "i": 5262,
+  "db_id": "voter_2",
+  "question_en": "What is the average age of female (sex is F) students?",
+  "question": "Female (sex F) students ki average age kya hai?"
+ },
+ {
+  "i": 5263,
+  "db_id": "flight_4",
+  "question_en": "What are the countries with the most airlines whose active status is Y?",
+  "question": "Active status Y wali sabse zyada airlines wale countries kaun se hain?"
+ },
+ {
+  "i": 5283,
+  "db_id": "wine_1",
+  "question_en": "What are the appelations for wines produced after 2008 but not in the Central Coast area?",
+  "question": "2008 ke baad bani lekin Central Coast area ke bahar ki wines ke appelations kya hain?"
+ },
+ {
+  "i": 5288,
+  "db_id": "department_store",
+  "question_en": "What are the names and genders of staff who have held the title Sales Person, but never Clerical Staff?",
+  "question": "Un staff ke naam aur genders batao jinhone title Sales Person rakha hai lekin kabhi Clerical Staff nahi."
+ },
+ {
+  "i": 5293,
+  "db_id": "e_government",
+  "question_en": "Find the last name of the first ever contact person of the organization with the highest UK Vat number.",
+  "question": "Sabse zyada UK Vat number wali organization ke sabse pehle contact person ka last name dhoondho."
+ },
+ {
+  "i": 5294,
+  "db_id": "student_1",
+  "question_en": "Find the grade studying in room 105.",
+  "question": "Room 105 me padhne wala grade dhoondho."
+ },
+ {
+  "i": 5295,
+  "db_id": "assets_maintenance",
+  "question_en": "Which part has the least chargeable amount? List the part id and amount.",
+  "question": "Kis part ka chargeable amount sabse kam hai? Part id aur amount batao."
+ },
+ {
+  "i": 5297,
+  "db_id": "movie_1",
+  "question_en": "Find the names of all reviewers who have contributed three or more ratings.",
+  "question": "Un sabhi reviewers ke naam dhoondho jinhone teen ya zyada ratings di hain."
+ },
+ {
+  "i": 5299,
+  "db_id": "party_people",
+  "question_en": "Who are the ministers who took office after 1961 or before 1959?",
+  "question": "1961 ke baad ya 1959 se pehle office sambhalne wale ministers kaun hain?"
+ },
+ {
+  "i": 5303,
+  "db_id": "school_player",
+  "question_en": "What are the denominations used by both schools founded before 1890 and schools founded  after 1900?",
+  "question": "Un denominations ke naam batao jo 1890 se pehle bane schools aur 1900 ke baad bane schools dono use karte hain."
+ },
+ {
+  "i": 5312,
+  "db_id": "swimming",
+  "question_en": "Find the names of the swimmers who have no record.",
+  "question": "Un swimmers ke naam dhoondho jinka koi record nahi hai."
+ },
+ {
+  "i": 5326,
+  "db_id": "store_1",
+  "question_en": "What are the names of all the tracks that are in both the Movies and music playlists?",
+  "question": "Un sabhi tracks ke naam kya hain jo Movies aur music dono playlists me hain?"
+ },
+ {
+  "i": 5332,
+  "db_id": "e_government",
+  "question_en": "What are the first, middle, and last names of all individuals, ordered by last name?",
+  "question": "Sabhi individuals ke first, middle aur last names last name ke order me kya hain?"
+ },
+ {
+  "i": 5337,
+  "db_id": "sakila_1",
+  "question_en": "How many addresses are in the district of California?",
+  "question": "California district me kitne addresses hain?"
+ },
+ {
+  "i": 5349,
+  "db_id": "music_1",
+  "question_en": "Find the id of songs that are available in mp4 format and have resolution lower than 1000.",
+  "question": "Un songs ki id dhoondho jo mp4 format me available hain aur jinka resolution 1000 se kam hai."
+ },
+ {
+  "i": 5365,
+  "db_id": "storm_record",
+  "question_en": "Count the number of regions.",
+  "question": "Regions ki ginti karo."
+ },
+ {
+  "i": 5389,
+  "db_id": "film_rank",
+  "question_en": "What are the years of film market estimation for the market of Japan, ordered by year descending?",
+  "question": "Japan ke market ke film market estimation ke years kya hain, year descending order me?"
+ },
+ {
+  "i": 5395,
+  "db_id": "driving_school",
+  "question_en": "What are the last names that are used by customers and staff?",
+  "question": "Customers aur staff dwara use kiye gaye last names kaun se hain?"
+ },
+ {
+  "i": 5401,
+  "db_id": "department_store",
+  "question_en": "Return the phone numbers for all customers and suppliers.",
+  "question": "Sabhi customers aur suppliers ke phone numbers batao."
+ },
+ {
+  "i": 5405,
+  "db_id": "e_government",
+  "question_en": "Which is the email of the party that has used the services the most number of times?",
+  "question": "Us party ki email kya hai jisne services sabse zyada baar use ki?"
+ },
+ {
+  "i": 5417,
+  "db_id": "aircraft",
+  "question_en": "What are the names of all aicrafts that have never won any match?",
+  "question": "Un sabhi aircrafts ke naam kya hain jinhone kabhi koi match nahi jeeta?"
+ },
+ {
+  "i": 5427,
+  "db_id": "store_1",
+  "question_en": "How many albums does Billy Cobham has?",
+  "question": "Billy Cobham ke kitne albums hain?"
+ },
+ {
+  "i": 5429,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "What are the ids of all the employees who have destroyed documents?",
+  "question": "Un sabhi employees ki ids kya hain jinhone documents destroy kiye hain?"
+ },
+ {
+  "i": 5442,
+  "db_id": "csu_1",
+  "question_en": "Find the campus fee of \"San Jose State University\" in year 2000.",
+  "question": "Saal 2000 me 'San Jose State University' ki campus fee dhoondho."
+ },
+ {
+  "i": 5458,
+  "db_id": "device",
+  "question_en": "What are the names of device shops, and what are the carriers that they carry devices in stock for?",
+  "question": "Device shops ke naam kya hain, aur wo kin carriers ke devices stock me rakhte hain?"
+ },
+ {
+  "i": 5459,
+  "db_id": "manufactory_1",
+  "question_en": "What are the names and prices of all products in the store?",
+  "question": "Store ke sabhi products ke naam aur prices kya hain?"
+ },
+ {
+  "i": 5469,
+  "db_id": "flight_1",
+  "question_en": "What are the ids of all employees that don't have certificates?",
+  "question": "Un sabhi employees ki ids kya hain jinke paas certificates nahi hain?"
+ },
+ {
+  "i": 5472,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "How many document types are there?",
+  "question": "Kitne document types hain?"
+ },
+ {
+  "i": 5478,
+  "db_id": "sports_competition",
+  "question_en": "which countries did participated in both Friendly and Tournament type competitions.",
+  "question": "Kin countries ne Friendly aur Tournament dono type ke competitions me hissa liya?"
+ },
+ {
+  "i": 5483,
+  "db_id": "club_1",
+  "question_en": "Find the first name and last name for the \"CTO\" of the club \"Hopkins Student Enterprises\"?",
+  "question": "Club 'Hopkins Student Enterprises' ke 'CTO' ka first aur last name dhoondho."
+ },
+ {
+  "i": 5486,
+  "db_id": "local_govt_mdm",
+  "question_en": "How many business rates are related to each cmi cross reference? List cross reference id, master customer id and the n",
+  "question": "Har cmi cross reference se kitne business rates jude hain? Cross reference id, master customer id aur business rates ki sankhya batao."
+ },
+ {
+  "i": 5495,
+  "db_id": "csu_1",
+  "question_en": "What are the names of the campus that have more faculties in 2002 than the maximum number in Orange county?",
+  "question": "Un campuses ke naam kya hain jinme 2002 me Orange county ki maximum sankhya se zyada faculties hain?"
+ },
+ {
+  "i": 5502,
+  "db_id": "customers_and_products_contacts",
+  "question_en": "How many addresses are there in country USA?",
+  "question": "Country USA me kitne addresses hain?"
+ },
+ {
+  "i": 5509,
+  "db_id": "game_1",
+  "question_en": "Show first name for all students with major 600.",
+  "question": "Major 600 wale sabhi students ka first name dikhao."
+ },
+ {
+  "i": 5536,
+  "db_id": "soccer_2",
+  "question_en": "What are the name of the players who received a card in descending order of the hours of training?",
+  "question": "Jin players ko card mila, unke naam training hours ke descending order me batao."
+ },
+ {
+  "i": 5537,
+  "db_id": "journal_committee",
+  "question_en": "Show the names of editors and the theme of journals for which they serve on committees.",
+  "question": "Editors ke naam aur un journals ki theme dikhao jinki committees me wo kaam karte hain."
+ },
+ {
+  "i": 5542,
+  "db_id": "formula_1",
+  "question_en": "For each id of a driver who participated in at most 30 races, how many races did they participate in?",
+  "question": "Har us driver id ke liye jisne adhiktam 30 races me hissa liya, unhone kitni races me hissa liya?"
+ },
+ {
+  "i": 5572,
+  "db_id": "store_1",
+  "question_en": "List the name of albums that are released by aritist whose name has 'Led'",
+  "question": "Un albums ke naam batao jo aise artist ne release kiye jinke naam me 'Led' hai."
+ },
+ {
+  "i": 5584,
+  "db_id": "sports_competition",
+  "question_en": "What are the different years for all competitions that are not of type equal to tournament?",
+  "question": "Un sabhi competitions ke alag-alag years kya hain jinka type tournament ke barabar nahi hai?"
+ },
+ {
+  "i": 5635,
+  "db_id": "flight_1",
+  "question_en": "What is the count of distinct employees with certificates?",
+  "question": "Certificates wale distinct employees ki ginti kitni hai?"
+ },
+ {
+  "i": 5653,
+  "db_id": "machine_repair",
+  "question_en": "Please show the team that has the most number of technicians.",
+  "question": "Wo team dikhao jiske sabse zyada technicians hain."
+ },
+ {
+  "i": 5658,
+  "db_id": "movie_1",
+  "question_en": "Find the names of all reviewers who rated Gone with the Wind.",
+  "question": "Un sabhi reviewers ke naam dhoondho jinhone Gone with the Wind ko rate kiya."
+ },
+ {
+  "i": 5699,
+  "db_id": "workshop_paper",
+  "question_en": "Which colleges have both authors with submission score above 90 and authors with submission score below 80?",
+  "question": "Kin colleges me 90 se zyada submission score wale authors aur 80 se kam submission score wale authors dono hain?"
+ },
+ {
+  "i": 5701,
+  "db_id": "small_bank_1",
+  "question_en": "What is the name and checking balance of the account which has the lowest savings balance?",
+  "question": "Sabse kam savings balance wale account ka naam aur checking balance kya hai?"
+ },
+ {
+  "i": 5702,
+  "db_id": "candidate_poll",
+  "question_en": "find the names of people who are taller than 200 or lower than 190.",
+  "question": "Un logon ke naam dhoondho jinki height 200 se zyada ya 190 se kam hai."
+ },
+ {
+  "i": 5715,
+  "db_id": "customers_and_addresses",
+  "question_en": "Which customers use \"Cash\" for payment method? Return the customer names.",
+  "question": "Kaun se customers payment method ke liye 'Cash' use karte hain? Customer names batao."
+ },
+ {
+  "i": 5733,
+  "db_id": "e_government",
+  "question_en": "How many cities are there in state \"Colorado\"?",
+  "question": "State 'Colorado' me kitni cities hain?"
+ },
+ {
+  "i": 5752,
+  "db_id": "decoration_competition",
+  "question_en": "Which countries have more than two members?",
+  "question": "Kin countries ke do se zyada members hain?"
+ },
+ {
+  "i": 5760,
+  "db_id": "cre_Theme_park",
+  "question_en": "Find the names of the tourist attractions that is either accessible by walk or at address 660 Shea Crescent.",
+  "question": "Un tourist attractions ke naam dhoondho jinhe ya to paidal pahuncha ja sakta hai ya jo address 660 Shea Crescent par hain."
+ },
+ {
+  "i": 5763,
+  "db_id": "sakila_1",
+  "question_en": "What is the title and id of the film that has the greatest number of copies in inventory?",
+  "question": "Inventory me sabse zyada copies wali film ka title aur id batao."
+ },
+ {
+  "i": 5795,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "What are the ids and details of all accounts?",
+  "question": "Sabhi accounts ki ids aur details kya hain?"
+ },
+ {
+  "i": 5808,
+  "db_id": "loan_1",
+  "question_en": "What are the names of all customers, ordered by account balance?",
+  "question": "Sabhi customers ke naam account balance ke order me batao."
+ },
+ {
+  "i": 5822,
+  "db_id": "wedding",
+  "question_en": "Show the organizer and name for churches that opened between 1830 and 1840.",
+  "question": "1830 aur 1840 ke beech khuli churches ka organizer aur name dikhao."
+ },
+ {
+  "i": 5847,
+  "db_id": "school_bus",
+  "question_en": "Show the home city with the most number of drivers.",
+  "question": "Sabse zyada drivers wali home city dikhao."
+ },
+ {
+  "i": 5856,
+  "db_id": "college_3",
+  "question_en": "Find the names of departments that are either in division AS or in division EN and in Building NEB.",
+  "question": "Un departments ke naam dhoondho jo ya to division AS me hain ya division EN me aur Building NEB me hain."
+ },
+ {
+  "i": 5857,
+  "db_id": "store_product",
+  "question_en": "Find products with max page size as \"A4\" and pages per minute color smaller than 5.",
+  "question": "Max page size 'A4' aur pages per minute color 5 se kam wale products dhoondho."
+ },
+ {
+  "i": 5862,
+  "db_id": "phone_1",
+  "question_en": "Find the details for all chip models.",
+  "question": "Sabhi chip models ki details dhoondho."
+ },
+ {
+  "i": 5869,
+  "db_id": "election",
+  "question_en": "Who are the lieutenant governor and comptroller from the democratic party?",
+  "question": "Democratic party ke lieutenant governor aur comptroller kaun hain?"
+ },
+ {
+  "i": 5877,
+  "db_id": "small_bank_1",
+  "question_en": "Find the total saving balance for each account name.",
+  "question": "Har account name ke liye total saving balance dhoondho."
+ },
+ {
+  "i": 5894,
+  "db_id": "hr_1",
+  "question_en": "display the job title of jobs which minimum salary is greater than 9000.",
+  "question": "Un jobs ke job title dikhao jinki minimum salary 9000 se zyada hai."
+ },
+ {
+  "i": 5897,
+  "db_id": "hr_1",
+  "question_en": "What are the first name and department name of all employees?",
+  "question": "Sabhi employees ka first name aur department name kya hai?"
+ },
+ {
+  "i": 5904,
+  "db_id": "gymnast",
+  "question_en": "List the names of the top 5 oldest people.",
+  "question": "Top 5 sabse bade logon ke naam batao."
+ },
+ {
+  "i": 5919,
+  "db_id": "game_1",
+  "question_en": "How many games are played for all football games by students on scholarship?",
+  "question": "Scholarship wale students dwara khele gaye sabhi football games ke kitne games hue?"
+ },
+ {
+  "i": 5928,
+  "db_id": "tracking_software_problems",
+  "question_en": "For which product was there a problem reported by Christop Berge, with closure authorised by Ashley Medhurst? Return the product ids.",
+  "question": "Christop Berge dwara report ki gayi aur Ashley Medhurst dwara closure authorise ki gayi problem kis product ki thi? Product ids batao."
+ },
+ {
+  "i": 5943,
+  "db_id": "soccer_2",
+  "question_en": "How many different colleges were represented at tryouts?",
+  "question": "Tryouts me kitne alag colleges ka pratinidhitva tha?"
+ },
+ {
+  "i": 5951,
+  "db_id": "party_people",
+  "question_en": "Show all distinct region names ordered by their labels.",
+  "question": "Sabhi distinct region names unke labels ke order me dikhao."
+ },
+ {
+  "i": 5961,
+  "db_id": "flight_4",
+  "question_en": "In how many cities are there airports in the country of Greenland?",
+  "question": "Greenland country me kitni cities me airports hain?"
+ },
+ {
+  "i": 5979,
+  "db_id": "hospital_1",
+  "question_en": "Find the physician who was trained in the most expensive procedure?",
+  "question": "Us physician ko dhoondho jisne sabse mehngi procedure me training li."
+ },
+ {
+  "i": 5999,
+  "db_id": "college_2",
+  "question_en": "Find the name of the students who have more than one advisor?",
+  "question": "Un students ke naam dhoondho jinke ek se zyada advisor hain."
+ },
+ {
+  "i": 6018,
+  "db_id": "college_1",
+  "question_en": "What is the last name of the student who received an A in the class with the code 10018?",
+  "question": "Code 10018 wali class me A grade pane wale student ka last name kya hai?"
+ },
+ {
+  "i": 6039,
+  "db_id": "movie_1",
+  "question_en": "Find the names of all reviewers who have ratings with a NULL value for the date.",
+  "question": "Un sabhi reviewers ke naam dhoondho jinki ratings me date ki value NULL hai."
+ },
+ {
+  "i": 6041,
+  "db_id": "university_basketball",
+  "question_en": "What is all the information about the basketball match?",
+  "question": "Basketball match ke baare me saari information kya hai?"
+ },
+ {
+  "i": 6042,
+  "db_id": "wine_1",
+  "question_en": "Find the distinct names of all wines that have prices higher than some wines from John Anthony winery.",
+  "question": "Un sabhi wines ke alag naam dhoondho jinki price John Anthony winery ki kuch wines se zyada hai."
+ },
+ {
+  "i": 6065,
+  "db_id": "assets_maintenance",
+  "question_en": "How many engineers did each staff contact? List both the contact staff name and number of engineers contacted.",
+  "question": "Har staff ne kitne engineers se contact kiya? Contact staff ka naam aur contact kiye gaye engineers ki sankhya batao."
+ },
+ {
+  "i": 6089,
+  "db_id": "icfp_1",
+  "question_en": "Which authors belong to the institution \"Google\"? Show the first names and last names.",
+  "question": "Kaun se authors institution 'Google' se hain? First names aur last names dikhao."
+ },
+ {
+  "i": 6113,
+  "db_id": "music_4",
+  "question_en": "Please show the categories of the music festivals with count more than 1.",
+  "question": "Un music festivals ki categories dikhao jinki count 1 se zyada hai."
+ },
+ {
+  "i": 6114,
+  "db_id": "railway",
+  "question_en": "Show the working years of managers in descending order of their level.",
+  "question": "Managers ke working years unke level ke descending order me dikhao."
+ },
+ {
+  "i": 6121,
+  "db_id": "college_2",
+  "question_en": "What is the title and credits of the course that is taught in the largest classroom (with the highest capacity)?",
+  "question": "Sabse bade classroom (sabse zyada capacity wale) me padhaye jane wale course ka title aur credits kya hain?"
+ },
+ {
+  "i": 6133,
+  "db_id": "dorm_1",
+  "question_en": "What are the names of the amenities that Smith Hall has?",
+  "question": "Smith Hall me kaun si amenities hain, unke naam batao."
+ },
+ {
+  "i": 6167,
+  "db_id": "entrepreneur",
+  "question_en": "What are the companies of entrepreneurs, ordered descending by amount of money requested?",
+  "question": "Entrepreneurs ki companies maange gaye paise ke descending order me kya hain?"
+ },
+ {
+  "i": 6182,
+  "db_id": "soccer_2",
+  "question_en": "How many states that have some college students playing in the mid position but not in the goalie position.",
+  "question": "Kitne states me kuch college students mid position me khelte hain lekin goalie position me nahi?"
+ },
+ {
+  "i": 6188,
+  "db_id": "chinook_1",
+  "question_en": "What are the names and ids of artists with 3 or more albums, listed in alphabetical order?",
+  "question": "3 ya zyada albums wale artists ke naam aur ids alphabetical order me batao."
+ },
+ {
+  "i": 6205,
+  "db_id": "game_injury",
+  "question_en": "For each injury accident, find the date of the game and the name of the injured player in the game, and sort the results in descending order of game season.",
+  "question": "Har injury accident ke liye game ki date aur us game me injured player ka naam dhoondho, aur results ko game season ke descending order me sort karo."
+ },
+ {
+  "i": 6221,
+  "db_id": "student_assessment",
+  "question_en": "What is the id of the candidate who most recently accessed the course?",
+  "question": "Us candidate ki id kya hai jisne course ko sabse recently access kiya?"
+ },
+ {
+  "i": 6223,
+  "db_id": "e_government",
+  "question_en": "What is the last name of the contact individual from the Labour party organization who was contacted most recently?",
+  "question": "Labour party organization ke us contact individual ka last name kya hai jisse sabse recently contact kiya gaya?"
+ },
+ {
+  "i": 6230,
+  "db_id": "college_1",
+  "question_en": "What are the total number of students enrolled in ACCT-211?",
+  "question": "ACCT-211 me enrolled students ki total sankhya kya hai?"
+ },
+ {
+  "i": 6236,
+  "db_id": "theme_gallery",
+  "question_en": "What is the theme and artist name for the exhibition with a ticket price higher than the average?",
+  "question": "Average se zyada ticket price wali exhibition ki theme aur artist name kya hain?"
+ },
+ {
+  "i": 6247,
+  "db_id": "soccer_2",
+  "question_en": "How many colleges has more than 15000 students?",
+  "question": "Kitne colleges me 15000 se zyada students hain?"
+ },
+ {
+  "i": 6252,
+  "db_id": "college_1",
+  "question_en": "Find the first name and office of the professor who is in the history department and has a Ph.D. degree.",
+  "question": "History department ke aur Ph.D. degree wale professor ka first name aur office dhoondho."
+ },
+ {
+  "i": 6255,
+  "db_id": "store_1",
+  "question_en": "What are the titles of all albums that start with A in alphabetical order?",
+  "question": "'A' se shuru hone wale sabhi albums ke titles alphabetical order me batao."
+ },
+ {
+  "i": 6272,
+  "db_id": "document_management",
+  "question_en": "Find the average access counts of documents with functional area \"Acknowledgement\".",
+  "question": "Functional area 'Acknowledgement' wale documents ke average access counts dhoondho."
+ },
+ {
+  "i": 6280,
+  "db_id": "student_1",
+  "question_en": "How many students does KAWA GORDON teaches?",
+  "question": "KAWA GORDON kitne students ko padhate hain?"
+ },
+ {
+  "i": 6283,
+  "db_id": "customers_campaigns_ecommerce",
+  "question_en": "Show the names of customers having an order with shipping method FedEx and order status Paid.",
+  "question": "Un customers ke naam dikhao jinka order shipping method FedEx aur order status Paid wala hai."
+ },
+ {
+  "i": 6284,
+  "db_id": "wine_1",
+  "question_en": "Find the country of all appelations who have at most three wines.",
+  "question": "Un sabhi appelations ki country dhoondho jinki adhiktam teen wines hain."
+ },
+ {
+  "i": 6296,
+  "db_id": "college_2",
+  "question_en": "Find the name of the courses that do not have any prerequisite?",
+  "question": "Un courses ke naam dhoondho jinka koi prerequisite nahi hai."
+ },
+ {
+  "i": 6302,
+  "db_id": "college_1",
+  "question_en": "Find the first names of professors who are teaching more than one class.",
+  "question": "Un professors ke first names dhoondho jo ek se zyada class padha rahe hain."
+ },
+ {
+  "i": 6330,
+  "db_id": "allergy_1",
+  "question_en": "What are the average ages for male and female students?",
+  "question": "Male aur female students ki average ages kya hain?"
+ },
+ {
+  "i": 6337,
+  "db_id": "hospital_1",
+  "question_en": "Which patients made more than one appointment? Tell me the name and phone number of these patients.",
+  "question": "Kin patients ne ek se zyada appointment li? In patients ka naam aur phone number batao."
+ },
+ {
+  "i": 6342,
+  "db_id": "products_gen_characteristics",
+  "question_en": "List all characteristics of product named \"sesame\" with type code \"Grade\".",
+  "question": "Product 'sesame' jiska type code 'Grade' hai, uski sabhi characteristics batao."
+ },
+ {
+  "i": 6347,
+  "db_id": "hospital_1",
+  "question_en": "List the names of all distinct medications, ordered in an alphabetical order.",
+  "question": "Sabhi alag medications ke naam alphabetical order me batao."
+ },
+ {
+  "i": 6376,
+  "db_id": "store_product",
+  "question_en": "What are the different district names in order of descending city area?",
+  "question": "City area ke descending order me alag-alag district names kya hain?"
+ },
+ {
+  "i": 6389,
+  "db_id": "college_1",
+  "question_en": "What are the first names of all students who got a grade C in a class?",
+  "question": "Un sabhi students ke first names kya hain jinhe kisi class me grade C mila?"
+ },
+ {
+  "i": 6400,
+  "db_id": "network_2",
+  "question_en": "How many different cities are they from?",
+  "question": "Wo kitni alag cities se hain?"
+ },
+ {
+  "i": 6402,
+  "db_id": "college_2",
+  "question_en": "Find the total budgets of the Marketing or Finance department.",
+  "question": "Marketing ya Finance department ke total budgets dhoondho."
+ },
+ {
+  "i": 6407,
+  "db_id": "phone_1",
+  "question_en": "Find all phones that have word 'Full' in their accreditation types. List the Hardware Model name and Company name.",
+  "question": "Un sabhi phones ko dhoondho jinke accreditation types me 'Full' word hai. Hardware Model name aur Company name batao."
+ },
+ {
+  "i": 6411,
+  "db_id": "store_1",
+  "question_en": "What are the states with the most invoices?",
+  "question": "Sabse zyada invoices wale states kaun se hain?"
+ },
+ {
+  "i": 6441,
+  "db_id": "manufactory_1",
+  "question_en": "Find the number of manufactures that are based in Tokyo or Beijing.",
+  "question": "Tokyo ya Beijing me based manufactures ki sankhya dhoondho."
+ },
+ {
+  "i": 6464,
+  "db_id": "customers_and_addresses",
+  "question_en": "Find the name of the customers who use the most frequently used payment method.",
+  "question": "Un customers ke naam dhoondho jo sabse zyada use hone wala payment method use karte hain."
+ },
+ {
+  "i": 6465,
+  "db_id": "dorm_1",
+  "question_en": "Find the average age of students living in each dorm and the name of dorm.",
+  "question": "Har dorm me rehne wale students ki average age aur dorm ka naam dhoondho."
+ },
+ {
+  "i": 6492,
+  "db_id": "school_player",
+  "question_en": "List the locations of schools in ascending order of enrollment.",
+  "question": "Schools ki locations enrollment ke ascending order me batao."
+ },
+ {
+  "i": 6504,
+  "db_id": "e_learning",
+  "question_en": "Find the student ID and middle name for all the students with at most two enrollments.",
+  "question": "Un sabhi students ki student ID aur middle name dhoondho jinki adhiktam do enrollments hain."
+ },
+ {
+  "i": 6539,
+  "db_id": "device",
+  "question_en": "Show the name of the shop that has the most kind of devices in stock.",
+  "question": "Us shop ka naam dikhao jiske stock me sabse zyada kisam ke devices hain."
+ },
+ {
+  "i": 6543,
+  "db_id": "cre_Theme_park",
+  "question_en": "What are the star rating descriptions of the hotels with price above 10000?",
+  "question": "10000 se zyada price wale hotels ke star rating descriptions kya hain?"
+ },
+ {
+  "i": 6556,
+  "db_id": "school_finance",
+  "question_en": "Find the names of schools that have more than one donator with donation amount above 8.5.",
+  "question": "Un schools ke naam dhoondho jinke ek se zyada donator hain jinka donation amount 8.5 se zyada hai."
+ },
+ {
+  "i": 6566,
+  "db_id": "aircraft",
+  "question_en": "List all pilot names in ascending alphabetical order.",
+  "question": "Sabhi pilot names alphabetical ascending order me batao."
+ },
+ {
+  "i": 6577,
+  "db_id": "customers_and_addresses",
+  "question_en": "Find the names of customers who ordered both products Latte and Americano.",
+  "question": "Un customers ke naam dhoondho jinhone products Latte aur Americano dono order kiye."
+ },
+ {
+  "i": 6579,
+  "db_id": "activity_1",
+  "question_en": "How many activities does Mark Giuliano participate in?",
+  "question": "Mark Giuliano kitni activities me hissa lete hain?"
+ },
+ {
+  "i": 6588,
+  "db_id": "election",
+  "question_en": "Return all the information for each election record.",
+  "question": "Har election record ki saari information return karo."
+ },
+ {
+  "i": 6593,
+  "db_id": "election",
+  "question_en": "Which counties have two or more delegates? Give me the county names.",
+  "question": "Kin counties ke do ya zyada delegates hain? County names batao."
+ },
+ {
+  "i": 6606,
+  "db_id": "company_office",
+  "question_en": "Sort the company names in descending order of the company's market value.",
+  "question": "Company names ko company ki market value ke descending order me sort karo."
+ },
+ {
+  "i": 6625,
+  "db_id": "dorm_1",
+  "question_en": "What is the last name of every student who is either female or living in a city with the code BAL or male and under 20?",
+  "question": "Har us student ka last name kya hai jo ya to female hai ya city code BAL me rehta hai, ya male hai aur 20 se kam age ka hai?"
+ }
+]

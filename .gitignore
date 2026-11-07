@@ -1,0 +1,13 @@
+outputs/
+data/
+results/
+spider/
+spider_data/
+llama.cpp-master/
+llama.zip
+*.gguf
+*.safetensors
+__pycache__/
+*.pyc
+.venv/
+unsloth_compiled_cache/

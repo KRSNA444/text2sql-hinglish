@@ -1,0 +1,3602 @@
+[
+ {
+  "i": 0,
+  "db_id": "book_2",
+  "question_en": "List the writers of the books in ascending alphabetical order.",
+  "sql": "SELECT Writer FROM book ORDER BY Writer ASC"
+ },
+ {
+  "i": 1,
+  "db_id": "party_people",
+  "question_en": "Show all member names who are not in charge of any event.",
+  "sql": "SELECT member_name FROM member EXCEPT SELECT T1.member_name FROM member AS T1 JOIN party_events AS T2 ON T1.member_id  =  T2.member_in_charge_id"
+ },
+ {
+  "i": 16,
+  "db_id": "store_1",
+  "question_en": "List the name of all tracks in the playlists of Movies.",
+  "sql": "SELECT T1.name FROM tracks AS T1 JOIN playlist_tracks AS T2 ON T1.id = T2.track_id JOIN playlists AS T3 ON T3.id = T2.playlist_id WHERE T3.name = \"Movies\";"
+ },
+ {
+  "i": 24,
+  "db_id": "bike_1",
+  "question_en": "What are the name, latitude, and city of the station with the lowest latitude?",
+  "sql": "SELECT name ,  lat ,  city FROM station ORDER BY lat LIMIT 1"
+ },
+ {
+  "i": 26,
+  "db_id": "solvency_ii",
+  "question_en": "Show the names of products that are in at least two events.",
+  "sql": "SELECT T1.Product_Name FROM Products AS T1 JOIN Products_in_Events AS T2 ON T1.Product_ID  =  T2.Product_ID GROUP BY T1.Product_Name HAVING COUNT(*)  >=  2"
+ },
+ {
+  "i": 33,
+  "db_id": "sakila_1",
+  "question_en": "What are the first names of customers who have not rented any films after '2005-08-23 02:06:01'?",
+  "sql": "SELECT first_name FROM customer WHERE customer_id NOT IN( SELECT customer_id FROM rental WHERE rental_date  >  '2005-08-23 02:06:01' )"
+ },
+ {
+  "i": 36,
+  "db_id": "student_assessment",
+  "question_en": "How many courses do the student whose id is 171 attend?",
+  "sql": "SELECT count(*) FROM courses AS T1 JOIN student_course_attendance AS T2 ON T1.course_id = T2.course_id WHERE T2.student_id = 171"
+ },
+ {
+  "i": 41,
+  "db_id": "machine_repair",
+  "question_en": "What is the starting year of the oldest technicians?",
+  "sql": "SELECT Starting_Year FROM technician ORDER BY Age DESC LIMIT 1"
+ },
+ {
+  "i": 45,
+  "db_id": "college_3",
+  "question_en": "Find the first names of students whose first names contain letter \"a\".",
+  "sql": "SELECT DISTINCT Fname FROM STUDENT WHERE Fname LIKE '%a%'"
+ },
+ {
+  "i": 51,
+  "db_id": "swimming",
+  "question_en": "How many stadiums does each country have?",
+  "sql": "SELECT country ,  count(*) FROM stadium GROUP BY country"
+ },
+ {
+  "i": 52,
+  "db_id": "college_2",
+  "question_en": "What are the names of all instructors in the Comp. Sci. department?",
+  "sql": "SELECT name FROM instructor WHERE dept_name  =  'Comp. Sci.'"
+ },
+ {
+  "i": 53,
+  "db_id": "student_assessment",
+  "question_en": "What are the ids of the students who registered for course 301 most recently?",
+  "sql": "SELECT student_id FROM student_course_attendance WHERE course_id = 301 ORDER BY date_of_attendance DESC LIMIT 1"
+ },
+ {
+  "i": 63,
+  "db_id": "customers_and_addresses",
+  "question_en": "What are the name and active date of the customers whose contact channel code is email?",
+  "sql": "SELECT t1.customer_name ,  t2.active_from_date FROM customers AS t1 JOIN customer_contact_channels AS t2 ON t1.customer_id  =  t2.customer_id WHERE t2.channel_code  =  'Email'"
+ },
+ {
+  "i": 64,
+  "db_id": "ship_mission",
+  "question_en": "Show different types of ships and the number of ships of each type.",
+  "sql": "SELECT TYPE ,  COUNT(*) FROM ship GROUP BY TYPE"
+ },
+ {
+  "i": 74,
+  "db_id": "machine_repair",
+  "question_en": "How many technicians are there?",
+  "sql": "SELECT count(*) FROM technician"
+ },
+ {
+  "i": 75,
+  "db_id": "ship_1",
+  "question_en": "What is the name, type, and flag of the ship that was built in the most recent year?",
+  "sql": "SELECT name ,  TYPE ,  flag FROM ship ORDER BY built_year DESC LIMIT 1"
+ },
+ {
+  "i": 79,
+  "db_id": "company_office",
+  "question_en": "Which buildings have more than one company offices? Give me the building names.",
+  "sql": "SELECT T2.name FROM Office_locations AS T1 JOIN buildings AS T2 ON T1.building_id  =  T2.id JOIN Companies AS T3 ON T1.company_id  =  T3.id GROUP BY T1.building_id HAVING COUNT(*)  >  1"
+ },
+ {
+  "i": 147,
+  "db_id": "sports_competition",
+  "question_en": "which country did participated in the most number of Tournament competitions?",
+  "sql": "SELECT country FROM competition WHERE competition_type  =  'Tournament' GROUP BY country ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 148,
+  "db_id": "voter_2",
+  "question_en": "Return all the distinct secretary votes made in the fall election cycle.",
+  "sql": "SELECT DISTINCT Secretary_Vote FROM VOTING_RECORD WHERE ELECTION_CYCLE  =  \"Fall\""
+ },
+ {
+  "i": 149,
+  "db_id": "college_1",
+  "question_en": "How many departments does the college has?",
+  "sql": "SELECT count(DISTINCT dept_name) FROM department"
+ },
+ {
+  "i": 161,
+  "db_id": "workshop_paper",
+  "question_en": "Show each author and the number of workshops they submitted to.",
+  "sql": "SELECT T2.Author ,  COUNT(DISTINCT T1.workshop_id) FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID GROUP BY T2.Author"
+ },
+ {
+  "i": 177,
+  "db_id": "voter_2",
+  "question_en": "How many distinct president votes are recorded?",
+  "sql": "SELECT count(DISTINCT President_Vote) FROM VOTING_RECORD"
+ },
+ {
+  "i": 206,
+  "db_id": "tracking_software_problems",
+  "question_en": "Which problems were reported by the staff named Dameon Frami or Jolie Weber? Give me the ids of the problems.",
+  "sql": "SELECT product_id FROM problems AS T1 JOIN staff AS T2 ON T1.reported_by_staff_id = T2.staff_id WHERE T2.staff_first_name = \"Dameon\" AND T2.staff_last_name = \"Frami\" UNION SELECT product_id FROM problems AS T1 JOIN staff AS T2 ON T1.reported_by_staff_id = T2.staff_id WHERE T2.staff_first_name = \"Jolie\" AND T2.staff_last_name = \"Weber\""
+ },
+ {
+  "i": 214,
+  "db_id": "music_2",
+  "question_en": "How many songs have used the instrument \"drums\"?",
+  "sql": "SELECT count(*) FROM instruments WHERE instrument  =  \"drums\""
+ },
+ {
+  "i": 215,
+  "db_id": "product_catalog",
+  "question_en": "Which attribute definitions have attribute value 0? Give me the attribute name and attribute ID.",
+  "sql": "SELECT t1.attribute_name ,  t1.attribute_id FROM Attribute_Definitions AS t1 JOIN Catalog_Contents_Additional_Attributes AS t2 ON t1.attribute_id  =  t2.attribute_id WHERE t2.attribute_value  =  0"
+ },
+ {
+  "i": 221,
+  "db_id": "game_1",
+  "question_en": "Show all student IDs with the number of sports and total number of games played",
+  "sql": "SELECT StuID ,  count(*) ,  sum(gamesplayed) FROM Sportsinfo GROUP BY StuID"
+ },
+ {
+  "i": 223,
+  "db_id": "machine_repair",
+  "question_en": "What is the starting year for the oldest technician?",
+  "sql": "SELECT Starting_Year FROM technician ORDER BY Age DESC LIMIT 1"
+ },
+ {
+  "i": 225,
+  "db_id": "body_builder",
+  "question_en": "List the height and weight of people in descending order of height.",
+  "sql": "SELECT Height ,  Weight FROM people ORDER BY Height DESC"
+ },
+ {
+  "i": 231,
+  "db_id": "entertainment_awards",
+  "question_en": "List the name of artworks in ascending alphabetical order.",
+  "sql": "SELECT Name FROM artwork ORDER BY Name ASC"
+ },
+ {
+  "i": 276,
+  "db_id": "tracking_software_problems",
+  "question_en": "List the names of all the distinct product names in alphabetical order?",
+  "sql": "SELECT DISTINCT product_name FROM product ORDER BY product_name"
+ },
+ {
+  "i": 283,
+  "db_id": "apartment_rentals",
+  "question_en": "Return each apartment type code with the number of apartments having that apartment type, in ascending order of the number of apartments.",
+  "sql": "SELECT apt_type_code ,  COUNT(*) FROM Apartments GROUP BY apt_type_code ORDER BY COUNT(*) ASC"
+ },
+ {
+  "i": 285,
+  "db_id": "insurance_policies",
+  "question_en": "List the details of the customers who do not have any policies.",
+  "sql": "SELECT customer_details FROM Customers EXCEPT SELECT T1.customer_details FROM Customers AS T1 JOIN Customer_Policies AS T2 ON T1.customer_id  =  T2.customer_id"
+ },
+ {
+  "i": 303,
+  "db_id": "book_2",
+  "question_en": "What is the number of distinct publication dates?",
+  "sql": "SELECT COUNT (DISTINCT Publication_Date) FROM publication"
+ },
+ {
+  "i": 318,
+  "db_id": "storm_record",
+  "question_en": "Return the names of the regions affected by storms that had a death count of at least 10.",
+  "sql": "SELECT T2.region_name FROM affected_region AS T1 JOIN region AS T2 ON T1.region_id  =  T2.region_id JOIN storm AS T3 ON T1.storm_id  =  T3.storm_id WHERE T3.number_deaths  >=  10"
+ },
+ {
+  "i": 328,
+  "db_id": "restaurant_1",
+  "question_en": "What is the age of student Linda Smith?",
+  "sql": "SELECT Age FROM Student WHERE Fname = \"Linda\" AND Lname = \"Smith\";"
+ },
+ {
+  "i": 329,
+  "db_id": "flight_1",
+  "question_en": "What is the salary and name of the employee who has the most number of certificates on aircrafts with distance more than 5000?",
+  "sql": "SELECT T1.name FROM Employee AS T1 JOIN Certificate AS T2 ON T1.eid  =  T2.eid JOIN Aircraft AS T3 ON T3.aid  =  T2.aid WHERE T3.distance  >  5000 GROUP BY T1.eid ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 331,
+  "db_id": "e_learning",
+  "question_en": "What are the names and descriptions of the all courses under the \"Computer Science\" subject?",
+  "sql": "SELECT T1.course_name ,  T1.course_description FROM Courses AS T1 JOIN Subjects AS T2 ON T1.subject_id  =  T2.subject_id WHERE T2.subject_name  =  \"Computer Science\""
+ },
+ {
+  "i": 336,
+  "db_id": "city_record",
+  "question_en": "Which city has the lowest GDP? Please list the city name and its GDP.",
+  "sql": "SELECT city ,  GDP FROM city ORDER BY GDP LIMIT 1"
+ },
+ {
+  "i": 359,
+  "db_id": "wine_1",
+  "question_en": "What is the area for the appelation which produced the most wines prior to 2010?",
+  "sql": "SELECT T1.Area FROM APPELLATIONS AS T1 JOIN WINE AS T2 ON T1.Appelation  =  T2.Appelation GROUP BY T2.Appelation HAVING T2.year  <  2010 ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 373,
+  "db_id": "phone_1",
+  "question_en": "Find the names of the chip models that are not used by any phone with full accreditation type.",
+  "sql": "SELECT model_name FROM chip_model EXCEPT SELECT chip_model FROM phone WHERE Accreditation_type  =  'Full'"
+ },
+ {
+  "i": 382,
+  "db_id": "e_learning",
+  "question_en": "Find the latest logon date of the students whose family name is \"Jaskolski\" or \"Langosh\".",
+  "sql": "SELECT date_of_latest_logon FROM Students WHERE family_name  =  \"Jaskolski\" OR family_name  =  \"Langosh\""
+ },
+ {
+  "i": 392,
+  "db_id": "school_bus",
+  "question_en": "List names for drivers from Hartford city and younger than 40.",
+  "sql": "SELECT name FROM driver WHERE home_city  =  'Hartford' AND age  <  40"
+ },
+ {
+  "i": 393,
+  "db_id": "workshop_paper",
+  "question_en": "Show different colleges along with the number of authors of submission from each college.",
+  "sql": "SELECT College ,  COUNT(*) FROM submission GROUP BY College"
+ },
+ {
+  "i": 399,
+  "db_id": "flight_1",
+  "question_en": "What are the origins of all flights that are headed to Honolulu?",
+  "sql": "SELECT origin FROM Flight WHERE destination  =  \"Honolulu\""
+ },
+ {
+  "i": 418,
+  "db_id": "dorm_1",
+  "question_en": "How many students are older than 20 in each dorm?",
+  "sql": "SELECT count(*) ,  T3.dorm_name FROM student AS T1 JOIN lives_in AS T2 ON T1.stuid  =  T2.stuid JOIN dorm AS T3 ON T3.dormid  =  T2.dormid WHERE T1.age  >  20 GROUP BY T3.dorm_name"
+ },
+ {
+  "i": 421,
+  "db_id": "bike_1",
+  "question_en": "What are all the different start station names for a trip that lasted less than 100?",
+  "sql": "SELECT DISTINCT start_station_name FROM trip WHERE duration  <  100"
+ },
+ {
+  "i": 450,
+  "db_id": "store_1",
+  "question_en": "List the name of tracks belongs to genre Rock or genre Jazz.",
+  "sql": "SELECT T2.name FROM genres AS T1 JOIN tracks AS T2 ON T1.id = T2.genre_id WHERE T1.name = \"Rock\" OR T1.name = \"Jazz\""
+ },
+ {
+  "i": 456,
+  "db_id": "college_2",
+  "question_en": "What are the names of instructors who advise more than one student?",
+  "sql": "SELECT T1.name FROM instructor AS T1 JOIN advisor AS T2 ON T1.id  =  T2.i_id GROUP BY T2.i_id HAVING count(*)  >  1"
+ },
+ {
+  "i": 480,
+  "db_id": "customers_and_addresses",
+  "question_en": "Which city is post code 255 located in?",
+  "sql": "SELECT city FROM addresses WHERE zip_postcode  =  255"
+ },
+ {
+  "i": 488,
+  "db_id": "bike_1",
+  "question_en": "What is the installation date for each ending station on all the trips?",
+  "sql": "SELECT T1.id ,  T2.installation_date FROM trip AS T1 JOIN station AS T2 ON T1.end_station_id  =  T2.id"
+ },
+ {
+  "i": 508,
+  "db_id": "tracking_share_transactions",
+  "question_en": "Show the number of transactions with transaction type code \"SALE\" for different investors if it is larger than 0.",
+  "sql": "SELECT investor_id ,  COUNT(*) FROM TRANSACTIONS WHERE transaction_type_code  =  \"SALE\" GROUP BY investor_id"
+ },
+ {
+  "i": 511,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "Return the day Number and stored date for all the documents.",
+  "sql": "SELECT T2.day_Number ,  T1.Date_Stored FROM All_documents AS T1 JOIN Ref_calendar AS T2 ON T1.date_stored  =  T2.calendar_date"
+ },
+ {
+  "i": 512,
+  "db_id": "film_rank",
+  "question_en": "Count the number of films.",
+  "sql": "SELECT count(*) FROM film"
+ },
+ {
+  "i": 529,
+  "db_id": "theme_gallery",
+  "question_en": "Return the themes, dates, and attendance for exhibitions that happened in 2004.",
+  "sql": "SELECT T2.theme ,  T1.date ,  T1.attendance FROM exhibition_record AS T1 JOIN exhibition AS T2 ON T1.exhibition_id  =  T2.exhibition_id WHERE T2.year  =  2004"
+ },
+ {
+  "i": 542,
+  "db_id": "insurance_and_eClaims",
+  "question_en": "Find the total and average amount paid in claim headers.",
+  "sql": "SELECT sum(amount_piad) ,  avg(amount_piad) FROM claim_headers"
+ },
+ {
+  "i": 572,
+  "db_id": "hr_1",
+  "question_en": "display the employee ID and job name for all those jobs in department 80.",
+  "sql": "SELECT T1.employee_id ,  T2.job_title FROM employees AS T1 JOIN jobs AS T2 ON T1.job_id  =  T2.job_id WHERE T1.department_id = 80"
+ },
+ {
+  "i": 578,
+  "db_id": "behavior_monitoring",
+  "question_en": "Find the id and last name of the student that has the most behavior incidents?",
+  "sql": "SELECT T1.student_id ,  T2.last_name FROM Behavior_Incident AS T1 JOIN Students AS T2 ON T1.student_id  =  T2.student_id GROUP BY T1.student_id ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 579,
+  "db_id": "tracking_orders",
+  "question_en": "Which customers have both \"On Road\" and \"Shipped\" as order status? List the customer names.",
+  "sql": "SELECT T1.customer_name FROM customers AS T1 JOIN orders AS T2 ON T1.customer_id = T2.customer_id WHERE T2.order_status = \"On Road\" INTERSECT SELECT T1.customer_name FROM customers AS T1 JOIN orders AS T2 ON T1.customer_id = T2.customer_id WHERE T2.order_status = \"Shipped\""
+ },
+ {
+  "i": 632,
+  "db_id": "protein_institute",
+  "question_en": "Show institution names along with the number of proteins for each institution.",
+  "sql": "SELECT T1.institution ,  count(*) FROM institution AS T1 JOIN protein AS T2 ON T1.institution_id  =  T2.institution_id GROUP BY T1.institution_id"
+ },
+ {
+  "i": 646,
+  "db_id": "twitter_1",
+  "question_en": "Find the number of followers for each user.",
+  "sql": "SELECT count(*) FROM follows GROUP BY f1"
+ },
+ {
+  "i": 648,
+  "db_id": "allergy_1",
+  "question_en": "Give the city that the student whose family name is Kim lives in.",
+  "sql": "SELECT city_code FROM Student WHERE LName  =  \"Kim\""
+ },
+ {
+  "i": 658,
+  "db_id": "theme_gallery",
+  "question_en": "How many artists do we have?",
+  "sql": "SELECT count(*) FROM artist"
+ },
+ {
+  "i": 679,
+  "db_id": "aircraft",
+  "question_en": "What are the number of international and domestic passengers of the airport named London \"Heathrow\"?",
+  "sql": "SELECT International_Passengers ,  Domestic_Passengers FROM airport WHERE Airport_Name  =  \"London Heathrow\""
+ },
+ {
+  "i": 685,
+  "db_id": "flight_1",
+  "question_en": "What are the destinations and number of flights to each one?",
+  "sql": "SELECT destination ,  count(*) FROM Flight GROUP BY destination"
+ },
+ {
+  "i": 699,
+  "db_id": "hr_1",
+  "question_en": "display those departments where more than ten employees work who got a commission percentage.",
+  "sql": "SELECT department_id FROM employees GROUP BY department_id HAVING COUNT(commission_pct) > 10"
+ },
+ {
+  "i": 710,
+  "db_id": "perpetrator",
+  "question_en": "What are the names of perpetrators whose country is not \"China\"?",
+  "sql": "SELECT T1.Name FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID WHERE T2.Country != \"China\""
+ },
+ {
+  "i": 717,
+  "db_id": "station_weather",
+  "question_en": "Find the number and time of the train that goes from Chennai to Guruvayur.",
+  "sql": "SELECT train_number ,  TIME FROM train WHERE origin  =  'Chennai' AND destination  =  'Guruvayur'"
+ },
+ {
+  "i": 720,
+  "db_id": "ship_mission",
+  "question_en": "What are the names of ships that were involved in a mission launched after 1928?",
+  "sql": "SELECT T2.Name FROM mission AS T1 JOIN ship AS T2 ON T1.Ship_ID  =  T2.Ship_ID WHERE T1.Launched_Year  >  1928"
+ },
+ {
+  "i": 741,
+  "db_id": "scientist_1",
+  "question_en": "Find the name of scientists who are not assigned to any project.",
+  "sql": "SELECT Name FROM scientists WHERE ssn NOT IN (SELECT scientist FROM AssignedTo)"
+ },
+ {
+  "i": 743,
+  "db_id": "college_2",
+  "question_en": "Find the title, credit, and department name of courses that have more than one prerequisites?",
+  "sql": "SELECT T1.title ,  T1.credits , T1.dept_name FROM course AS T1 JOIN prereq AS T2 ON T1.course_id  =  T2.course_id GROUP BY T2.course_id HAVING count(*)  >  1"
+ },
+ {
+  "i": 764,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "How many budget types do we have?",
+  "sql": "SELECT count(*) FROM Ref_budget_codes"
+ },
+ {
+  "i": 779,
+  "db_id": "dorm_1",
+  "question_en": "Find the number of students who is older than 20 in each dorm.",
+  "sql": "SELECT count(*) ,  T3.dorm_name FROM student AS T1 JOIN lives_in AS T2 ON T1.stuid  =  T2.stuid JOIN dorm AS T3 ON T3.dormid  =  T2.dormid WHERE T1.age  >  20 GROUP BY T3.dorm_name"
+ },
+ {
+  "i": 800,
+  "db_id": "gas_company",
+  "question_en": "Show all locations and the number of gas stations in each location ordered by the count.",
+  "sql": "SELECT LOCATION ,  count(*) FROM gas_station GROUP BY LOCATION ORDER BY count(*)"
+ },
+ {
+  "i": 801,
+  "db_id": "music_4",
+  "question_en": "Please show the date of ceremony of the volumes that last more than 2 weeks on top.",
+  "sql": "SELECT T1.Date_of_ceremony FROM music_festival AS T1 JOIN volume AS T2 ON T1.Volume  =  T2.Volume_ID WHERE T2.Weeks_on_Top  >  2"
+ },
+ {
+  "i": 828,
+  "db_id": "wine_1",
+  "question_en": "What are the grapes, appelations, and wines with scores above 93, sorted by Name?",
+  "sql": "SELECT Grape ,  Appelation ,  Name FROM WINE WHERE Score  >  93 ORDER BY Name"
+ },
+ {
+  "i": 833,
+  "db_id": "shop_membership",
+  "question_en": "What are the minimum and maximum membership amounts for all branches that either opened in 2011 or are located in London?",
+  "sql": "SELECT min(membership_amount) ,  max(membership_amount) FROM branch WHERE open_year  =  2011 OR city  =  'London'"
+ },
+ {
+  "i": 855,
+  "db_id": "climbing",
+  "question_en": "What is the maximum point for climbers whose country is United Kingdom?",
+  "sql": "SELECT max(Points) FROM climber WHERE Country  =  \"United Kingdom\""
+ },
+ {
+  "i": 861,
+  "db_id": "body_builder",
+  "question_en": "List the snatch score and clean jerk score of body builders in ascending order of snatch score.",
+  "sql": "SELECT Snatch ,  Clean_Jerk FROM body_builder ORDER BY Snatch ASC"
+ },
+ {
+  "i": 862,
+  "db_id": "customers_and_invoices",
+  "question_en": "How many order items correspond to each order id?",
+  "sql": "SELECT order_id ,  count(*) FROM Order_items GROUP BY order_id"
+ },
+ {
+  "i": 867,
+  "db_id": "insurance_and_eClaims",
+  "question_en": "Find the names of all the customers and staff members.",
+  "sql": "SELECT customer_details FROM customers UNION SELECT staff_details FROM staff"
+ },
+ {
+  "i": 868,
+  "db_id": "shop_membership",
+  "question_en": "What are the cities that do not have any branches with more than 100 members?",
+  "sql": "SELECT city FROM branch EXCEPT SELECT city FROM branch WHERE membership_amount  >  100"
+ },
+ {
+  "i": 874,
+  "db_id": "entrepreneur",
+  "question_en": "Which company was started by the entrepreneur with the greatest height?",
+  "sql": "SELECT T1.Company FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Height DESC LIMIT 1"
+ },
+ {
+  "i": 886,
+  "db_id": "customers_card_transactions",
+  "question_en": "Show all card type codes.",
+  "sql": "SELECT DISTINCT card_type_code FROM Customers_Cards"
+ },
+ {
+  "i": 895,
+  "db_id": "flight_4",
+  "question_en": "Return the cities with more than 3 airports in the United States.",
+  "sql": "SELECT city FROM airports WHERE country  =  'United States' GROUP BY city HAVING count(*)  >  3"
+ },
+ {
+  "i": 902,
+  "db_id": "solvency_ii",
+  "question_en": "Show the names of products that are in at least two events in ascending alphabetical order of product name.",
+  "sql": "SELECT T1.Product_Name FROM Products AS T1 JOIN Products_in_Events AS T2 ON T1.Product_ID  =  T2.Product_ID GROUP BY T1.Product_Name HAVING COUNT(*)  >=  2 ORDER BY T1.Product_Name"
+ },
+ {
+  "i": 906,
+  "db_id": "city_record",
+  "question_en": "What are the GDP and population of the city that already served as a host more than once?",
+  "sql": "SELECT t1.gdp ,  t1.Regional_Population FROM city AS T1 JOIN hosting_city AS T2 ON T1.city_id  =  T2.host_city GROUP BY t2.Host_City HAVING count(*)  >  1"
+ },
+ {
+  "i": 930,
+  "db_id": "club_1",
+  "question_en": "Count the number of different positions in the club \"Bootup Baltimore\".",
+  "sql": "SELECT count(DISTINCT t2.position) FROM club AS t1 JOIN member_of_club AS t2 ON t1.clubid  =  t2.clubid WHERE t1.clubname  =  \"Bootup Baltimore\""
+ },
+ {
+  "i": 937,
+  "db_id": "network_2",
+  "question_en": "What is the age of the friend of Zach with longest year relationship?",
+  "sql": "SELECT T1.age FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.friend WHERE T2.name =  'Zach' AND T2.year  =  (SELECT max(YEAR) FROM PersonFriend WHERE name =  'Zach')"
+ },
+ {
+  "i": 953,
+  "db_id": "icfp_1",
+  "question_en": "Which papers have \"Stephanie Weirich\" as an author?",
+  "sql": "SELECT t3.title FROM authors AS t1 JOIN authorship AS t2 ON t1.authid  =  t2.authid JOIN papers AS t3 ON t2.paperid  =  t3.paperid WHERE t1.fname  =  \"Stephanie\" AND t1.lname  =  \"Weirich\""
+ },
+ {
+  "i": 958,
+  "db_id": "document_management",
+  "question_en": "Return the type code of the document named \"David CV\".",
+  "sql": "SELECT document_type_code FROM documents WHERE document_name  =  \"David CV\""
+ },
+ {
+  "i": 962,
+  "db_id": "products_gen_characteristics",
+  "question_en": "What are the names of products with category \"Spices\"?",
+  "sql": "SELECT product_name FROM products WHERE product_category_code  =  \"Spices\""
+ },
+ {
+  "i": 1003,
+  "db_id": "wrestler",
+  "question_en": "How many wrestlers are there?",
+  "sql": "SELECT count(*) FROM wrestler"
+ },
+ {
+  "i": 1007,
+  "db_id": "customers_card_transactions",
+  "question_en": "Show ids, first names, last names, and phones for all customers.",
+  "sql": "SELECT customer_id ,  customer_first_name ,  customer_last_name ,  customer_phone FROM Customers"
+ },
+ {
+  "i": 1008,
+  "db_id": "storm_record",
+  "question_en": "How many regions were affected by each storm?",
+  "sql": "SELECT T1.name ,  count(*) FROM storm AS T1 JOIN affected_region AS T2 ON T1.storm_id  =  T2.storm_id GROUP BY T1.storm_id"
+ },
+ {
+  "i": 1013,
+  "db_id": "tracking_share_transactions",
+  "question_en": "What are the sale details and dates of transactions with amount smaller than 3000?",
+  "sql": "SELECT T1.sales_details ,  T2.date_of_transaction FROM SALES AS T1 JOIN TRANSACTIONS AS T2 ON T1.sales_transaction_id  =  T2.transaction_id WHERE T2.amount_of_transaction  <  3000"
+ },
+ {
+  "i": 1021,
+  "db_id": "apartment_rentals",
+  "question_en": "What are the facility codes of the apartments with more than four bedrooms?",
+  "sql": "SELECT T1.facility_code FROM Apartment_Facilities AS T1 JOIN Apartments AS T2 ON T1.apt_id  =  T2.apt_id WHERE T2.bedroom_count  >  4"
+ },
+ {
+  "i": 1066,
+  "db_id": "college_2",
+  "question_en": "Find the name of students who have taken the prerequisite course of the course with title International Finance.",
+  "sql": "SELECT T1.name FROM student AS T1 JOIN takes AS T2 ON T1.id  =  T2.id WHERE T2.course_id IN (SELECT T4.prereq_id FROM course AS T3 JOIN prereq AS T4 ON T3.course_id  =  T4.course_id WHERE T3.title  =  'International Finance')"
+ },
+ {
+  "i": 1086,
+  "db_id": "music_2",
+  "question_en": "Who performed the song named \"Badlands\"? Show the first name and the last name.",
+  "sql": "SELECT T2.firstname ,  T2.lastname FROM Performance AS T1 JOIN Band AS T2 ON T1.bandmate  =  T2.id JOIN Songs AS T3 ON T3.SongId  =  T1.SongId WHERE T3.Title  =  \"Badlands\""
+ },
+ {
+  "i": 1089,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "What is \"the date in location from\" and \"the date in location to\" for the document with name \"Robin CV\"?",
+  "sql": "SELECT T1.date_in_location_from ,  T1.date_in_locaton_to FROM Document_locations AS T1 JOIN All_documents AS T2 ON T1.document_id  =  T2.document_id WHERE T2.document_name  =  \"Robin CV\""
+ },
+ {
+  "i": 1105,
+  "db_id": "shop_membership",
+  "question_en": "Find the name of branches where have some members whose hometown is in Louisville, Kentucky and some in Hiram, Georgia.",
+  "sql": "SELECT T2.name FROM membership_register_branch AS T1 JOIN branch AS T2 ON T1.branch_id  =  T2.branch_id JOIN member AS T3 ON T1.member_id  =  T3.member_id WHERE T3.Hometown  =  'Louisville ,  Kentucky' INTERSECT SELECT T2.name FROM membership_register_branch AS T1 JOIN branch AS T2 ON T1.branch_id  =  T2.branch_id JOIN member AS T3 ON T1.member_id  =  T3.member_id WHERE T3.Hometown  =  'Hiram ,  Georgia'"
+ },
+ {
+  "i": 1130,
+  "db_id": "bike_1",
+  "question_en": "What are the date, mean temperature and mean humidity for the top 3 days with the largest max gust speeds?",
+  "sql": "SELECT date ,  mean_temperature_f ,  mean_humidity FROM weather ORDER BY max_gust_speed_mph DESC LIMIT 3"
+ },
+ {
+  "i": 1137,
+  "db_id": "election",
+  "question_en": "What are the distinct districts for elections?",
+  "sql": "SELECT DISTINCT District FROM election"
+ },
+ {
+  "i": 1138,
+  "db_id": "flight_4",
+  "question_en": "What is the number of routes whose destinations are Italian airports?",
+  "sql": "SELECT count(*) FROM routes AS T1 JOIN airports AS T2 ON T1.dst_apid  =  T2.apid WHERE T2.country  =  'Italy'"
+ },
+ {
+  "i": 1140,
+  "db_id": "product_catalog",
+  "question_en": "Find the total number of catalog contents.",
+  "sql": "SELECT count(*) FROM catalog_contents"
+ },
+ {
+  "i": 1155,
+  "db_id": "formula_1",
+  "question_en": "What are the drivers' last names and id who had 11 pit stops and participated in more than 5 race results?",
+  "sql": "SELECT T1.surname ,  T1.driverid FROM drivers AS T1 JOIN pitstops AS T2 ON T1.driverid  =  T2.driverid GROUP BY T1.driverid HAVING count(*)  =  11 INTERSECT SELECT T1.surname ,  T1.driverid FROM drivers AS T1 JOIN results AS T2 ON T1.driverid  =  T2.driverid GROUP BY T1.driverid HAVING count(*)  >  5"
+ },
+ {
+  "i": 1158,
+  "db_id": "voter_2",
+  "question_en": "What are the distinct last names of the students who have president votes and have 8741 as the advisor?",
+  "sql": "SELECT DISTINCT T1.LName FROM STUDENT AS T1 JOIN VOTING_RECORD AS T2 ON T1.StuID  =  PRESIDENT_Vote INTERSECT SELECT DISTINCT LName FROM STUDENT WHERE Advisor  =  \"8741\""
+ },
+ {
+  "i": 1162,
+  "db_id": "pilot_record",
+  "question_en": "What are the different nationalities of pilots? Show each nationality and the number of pilots of each nationality.",
+  "sql": "SELECT Nationality ,  COUNT(*) FROM pilot GROUP BY Nationality"
+ },
+ {
+  "i": 1194,
+  "db_id": "soccer_2",
+  "question_en": "What are the names of all tryout participants who are from the largest college?",
+  "sql": "SELECT T2.pName FROM  tryout AS T1 JOIN player AS T2 ON T1.pID  =  T2.pID WHERE T1.cName  =  (SELECT cName FROM college ORDER BY enr DESC LIMIT 1)"
+ },
+ {
+  "i": 1201,
+  "db_id": "assets_maintenance",
+  "question_en": "How many assets does each maintenance contract contain? List the number and the contract id.",
+  "sql": "SELECT count(*) ,  T1.maintenance_contract_id FROM Maintenance_Contracts AS T1 JOIN Assets AS T2 ON T1.maintenance_contract_id  =  T2.maintenance_contract_id GROUP BY T1.maintenance_contract_id"
+ },
+ {
+  "i": 1204,
+  "db_id": "storm_record",
+  "question_en": "What are the names of regions that were not affected?",
+  "sql": "SELECT region_name FROM region WHERE region_id NOT IN (SELECT region_id FROM affected_region)"
+ },
+ {
+  "i": 1211,
+  "db_id": "customers_and_addresses",
+  "question_en": "How many orders have detail \"Second time\"?",
+  "sql": "SELECT count(*) FROM customer_orders WHERE order_details  =  \"Second time\""
+ },
+ {
+  "i": 1214,
+  "db_id": "music_1",
+  "question_en": "Find the id of the song that lasts the longest.",
+  "sql": "SELECT f_id FROM files ORDER BY duration DESC LIMIT 1"
+ },
+ {
+  "i": 1226,
+  "db_id": "small_bank_1",
+  "question_en": "How many accounts have a savings balance above the average savings balance?",
+  "sql": "SELECT count(*) FROM savings WHERE balance  >  (SELECT avg(balance) FROM savings)"
+ },
+ {
+  "i": 1237,
+  "db_id": "body_builder",
+  "question_en": "What are the birth date and birth place of the body builder with the highest total points?",
+  "sql": "SELECT T2.Birth_Date ,  T2.Birth_Place FROM body_builder AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Total DESC LIMIT 1"
+ },
+ {
+  "i": 1260,
+  "db_id": "coffee_shop",
+  "question_en": "What are the id and address of the shops which have a happy hour in May?",
+  "sql": "SELECT t1.address ,  t1.shop_id FROM shop AS t1 JOIN happy_hour AS t2 ON t1.shop_id  =  t2.shop_id WHERE MONTH  =  'May'"
+ },
+ {
+  "i": 1270,
+  "db_id": "hospital_1",
+  "question_en": "What are the names of procedures physician John Wen was trained in?",
+  "sql": "SELECT T3.name FROM physician AS T1 JOIN trained_in AS T2 ON T1.employeeid  =  T2.physician JOIN procedures AS T3 ON T3.code  =  T2.treatment WHERE T1.name  =  \"John Wen\""
+ },
+ {
+  "i": 1283,
+  "db_id": "insurance_policies",
+  "question_en": "With which kind of payment method were the least number of payments processed?",
+  "sql": "SELECT Payment_Method_Code FROM Payments GROUP BY Payment_Method_Code ORDER BY count(*) ASC LIMIT 1"
+ },
+ {
+  "i": 1289,
+  "db_id": "tracking_orders",
+  "question_en": "Find the id of the order whose shipment tracking number is \"3452\".",
+  "sql": "SELECT order_id FROM shipments WHERE shipment_tracking_number = \"3452\""
+ },
+ {
+  "i": 1293,
+  "db_id": "customers_and_invoices",
+  "question_en": "What are the ids, date opened, name, and other details for all accounts?",
+  "sql": "SELECT account_id ,  date_account_opened ,  account_name ,  other_account_details FROM Accounts"
+ },
+ {
+  "i": 1296,
+  "db_id": "tracking_share_transactions",
+  "question_en": "Show the average amount of transactions for different lots.",
+  "sql": "SELECT T2.lot_id ,  avg(amount_of_transaction) FROM TRANSACTIONS AS T1 JOIN Transactions_Lots AS T2 ON T1.transaction_id  =  T2.transaction_id GROUP BY T2.lot_id"
+ },
+ {
+  "i": 1302,
+  "db_id": "company_employee",
+  "question_en": "list the names of the companies with more than 200 sales in the descending order of sales and profits.",
+  "sql": "SELECT name FROM company WHERE Sales_in_Billion  >  200 ORDER BY Sales_in_Billion ,  Profits_in_Billion DESC"
+ },
+ {
+  "i": 1313,
+  "db_id": "music_2",
+  "question_en": "How many musicians play in the song \"Flash\"?",
+  "sql": "SELECT count(*) FROM performance AS T1 JOIN band AS T2 ON T1.bandmate  =  T2.id JOIN songs AS T3 ON T3.songid  =  T1.songid WHERE T3.Title  =  \"Flash\""
+ },
+ {
+  "i": 1318,
+  "db_id": "sakila_1",
+  "question_en": "Count the number of customers who are active.",
+  "sql": "SELECT count(*) FROM customer WHERE active = '1'"
+ },
+ {
+  "i": 1321,
+  "db_id": "college_2",
+  "question_en": "How many different instructors have taught some course?",
+  "sql": "SELECT COUNT (DISTINCT id) FROM teaches"
+ },
+ {
+  "i": 1324,
+  "db_id": "music_1",
+  "question_en": "What are the song names for every song whose rating is less than the minimum rating for English songs?",
+  "sql": "SELECT song_name FROM song WHERE rating  <   (SELECT min(rating) FROM song WHERE languages  =  'english')"
+ },
+ {
+  "i": 1325,
+  "db_id": "university_basketball",
+  "question_en": "What are the average enrollment size of the universities that are founded before 1850?",
+  "sql": "SELECT avg(enrollment) FROM university WHERE founded  <  1850"
+ },
+ {
+  "i": 1332,
+  "db_id": "club_1",
+  "question_en": "List the clubs having \"Davis Steven\" as a member.",
+  "sql": "SELECT DISTINCT t1.clubname FROM club AS t1 JOIN member_of_club AS t2 ON t1.clubid  =  t2.clubid JOIN student AS t3 ON t2.stuid  =  t3.stuid WHERE t3.fname  =  \"Davis\" AND t3.lname  =  \"Steven\""
+ },
+ {
+  "i": 1334,
+  "db_id": "cre_Doc_Control_Systems",
+  "question_en": "List document id of documents status is done and document type is Paper and the document is shipped by shipping agent named USPS.",
+  "sql": "SELECT document_id FROM Documents WHERE document_status_code  =  \"done\" AND document_type_code = \"Paper\" INTERSECT SELECT document_id FROM Documents JOIN Ref_Shipping_Agents ON Documents.shipping_agent_code = Ref_Shipping_Agents.shipping_agent_code WHERE Ref_Shipping_Agents.shipping_agent_name = \"USPS\";"
+ },
+ {
+  "i": 1350,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "How many documents have expenses?",
+  "sql": "SELECT count(*) FROM Documents_with_expenses"
+ },
+ {
+  "i": 1355,
+  "db_id": "sports_competition",
+  "question_en": "List all club names in ascending order of start year.",
+  "sql": "SELECT name FROM club ORDER BY Start_year ASC"
+ },
+ {
+  "i": 1368,
+  "db_id": "aircraft",
+  "question_en": "what is the name of every pilot who is at least 25 years old?",
+  "sql": "SELECT Name FROM pilot WHERE Age  >=  25"
+ },
+ {
+  "i": 1377,
+  "db_id": "movie_1",
+  "question_en": "What are the names of all the different reviewers who rates Gone with the Wind?",
+  "sql": "SELECT DISTINCT T3.name FROM Rating AS T1 JOIN Movie AS T2 ON T1.mID  =  T2.mID JOIN Reviewer AS T3 ON T1.rID  =  T3.rID WHERE T2.title  =  'Gone with the Wind'"
+ },
+ {
+  "i": 1384,
+  "db_id": "twitter_1",
+  "question_en": "Find the id of users who are followed by Mary or Susan.",
+  "sql": "SELECT T2.f1 FROM user_profiles AS T1 JOIN follows AS T2 ON T1.uid  =  T2.f2 WHERE T1.name  =  \"Mary\" OR T1.name  =  \"Susan\""
+ },
+ {
+  "i": 1395,
+  "db_id": "dorm_1",
+  "question_en": "What is the first and last name of all students who are younger than average?",
+  "sql": "SELECT fname ,  lname FROM student WHERE age  <  (SELECT avg(age) FROM student)"
+ },
+ {
+  "i": 1398,
+  "db_id": "theme_gallery",
+  "question_en": "What is the name of the artist who joined latest?",
+  "sql": "SELECT name FROM artist ORDER BY year_join DESC LIMIT 1"
+ },
+ {
+  "i": 1404,
+  "db_id": "dorm_1",
+  "question_en": "Find the number of students in each major.",
+  "sql": "SELECT count(*) ,  major FROM student GROUP BY major"
+ },
+ {
+  "i": 1406,
+  "db_id": "soccer_2",
+  "question_en": "Find the name of players whose card is yes in the descending order of training hours.",
+  "sql": "SELECT pName FROM Player WHERE yCard  =  'yes' ORDER BY HS DESC"
+ },
+ {
+  "i": 1419,
+  "db_id": "network_2",
+  "question_en": "Who is the friend of Zach with longest year relationship?",
+  "sql": "SELECT friend FROM PersonFriend WHERE name =  'Zach' AND YEAR  =  (SELECT max(YEAR) FROM PersonFriend WHERE name =  'Zach')"
+ },
+ {
+  "i": 1427,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "Count the number of documents.",
+  "sql": "SELECT count(*) FROM Documents"
+ },
+ {
+  "i": 1438,
+  "db_id": "college_1",
+  "question_en": "What are the first names and office of the professors who are in the history department and have a Ph.D?",
+  "sql": "SELECT T1.emp_fname ,  T2.prof_office FROM employee AS T1 JOIN professor AS T2 ON T1.emp_num  =  T2.emp_num JOIN department AS T3 ON T3.dept_code  =  T2.dept_code WHERE T3.dept_name  =  'History' AND T2.prof_high_degree  =  'Ph.D.'"
+ },
+ {
+  "i": 1439,
+  "db_id": "sakila_1",
+  "question_en": "Count the number of cities in Australia.",
+  "sql": "SELECT count(*) FROM city AS T1 JOIN country AS T2 ON T1.country_id  =  T2.country_id WHERE T2.country  =  'Australia'"
+ },
+ {
+  "i": 1442,
+  "db_id": "music_4",
+  "question_en": "What are the famous titles of the artist \"Triumfall\"?",
+  "sql": "SELECT Famous_Title FROM artist WHERE Artist  =  \"Triumfall\""
+ },
+ {
+  "i": 1453,
+  "db_id": "voter_2",
+  "question_en": "Find the distinct first names of the students who have class senator votes.",
+  "sql": "SELECT DISTINCT T1.Fname FROM STUDENT AS T1 JOIN VOTING_RECORD AS T2 ON T1.StuID  =  T2.CLASS_Senator_VOTE"
+ },
+ {
+  "i": 1477,
+  "db_id": "flight_1",
+  "question_en": "Show the name of aircraft which fewest people have its certificate.",
+  "sql": "SELECT T2.name FROM Certificate AS T1 JOIN Aircraft AS T2 ON T2.aid  =  T1.aid GROUP BY T1.aid ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 1489,
+  "db_id": "film_rank",
+  "question_en": "What is the average number of cities of markets with low film market estimate bigger than 10000?",
+  "sql": "SELECT avg(T2.Number_cities) FROM film_market_estimation AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID WHERE T1.Low_Estimate  >  10000"
+ },
+ {
+  "i": 1509,
+  "db_id": "flight_4",
+  "question_en": "Find the name and city of the airport which is the source for the most number of flight routes.",
+  "sql": "SELECT T1.name ,  T1.city ,  T2.src_apid FROM airports AS T1 JOIN routes AS T2 ON T1.apid  =  T2.src_apid GROUP BY T2.src_apid ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 1550,
+  "db_id": "match_season",
+  "question_en": "How many distinct teams are involved in match seasons?",
+  "sql": "SELECT count(DISTINCT Team) FROM match_season"
+ },
+ {
+  "i": 1551,
+  "db_id": "wine_1",
+  "question_en": "Give the maximum price and score for wines produced in the appelation St. Helena.",
+  "sql": "SELECT max(Price) ,  max(Score) FROM WINE WHERE Appelation  =  \"St. Helena\""
+ },
+ {
+  "i": 1566,
+  "db_id": "apartment_rentals",
+  "question_en": "Show the most common apartment type code.",
+  "sql": "SELECT apt_type_code FROM Apartments GROUP BY apt_type_code ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 1578,
+  "db_id": "formula_1",
+  "question_en": "What is the first and last name of all the German drivers?",
+  "sql": "SELECT forename ,  surname FROM drivers WHERE nationality = \"German\""
+ },
+ {
+  "i": 1599,
+  "db_id": "student_1",
+  "question_en": "Find the number of students taught by the teacher KAWA GORDON.",
+  "sql": "SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  \"KAWA\" AND T2.lastname  =  \"GORDON\""
+ },
+ {
+  "i": 1603,
+  "db_id": "manufactory_1",
+  "question_en": "What is the total revenue of companies with revenue greater than the lowest revenue of any manufacturer in Austin?",
+  "sql": "SELECT sum(revenue) FROM manufacturers WHERE revenue  >  (SELECT min(revenue) FROM manufacturers WHERE headquarter  =  'Austin')"
+ },
+ {
+  "i": 1607,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "What are the type codes and descriptions of each budget type?",
+  "sql": "SELECT budget_type_code ,  budget_type_description FROM Ref_budget_codes"
+ },
+ {
+  "i": 1616,
+  "db_id": "insurance_fnol",
+  "question_en": "How many policies are listed for the customer named \"Dayana Robel\"?",
+  "sql": "SELECT count(*) FROM customers AS t1 JOIN customers_policies AS t2 ON t1.customer_id  =  t2.customer_id WHERE t1.customer_name  =  \"Dayana Robel\""
+ },
+ {
+  "i": 1635,
+  "db_id": "e_government",
+  "question_en": "List all the name of organizations in order of the date formed.",
+  "sql": "SELECT organization_name FROM organizations ORDER BY date_formed ASC"
+ },
+ {
+  "i": 1641,
+  "db_id": "club_1",
+  "question_en": "How many clubs does \"Linda Smith\" belong to?",
+  "sql": "SELECT count(*) FROM club AS t1 JOIN member_of_club AS t2 ON t1.clubid  =  t2.clubid JOIN student AS t3 ON t2.stuid  =  t3.stuid WHERE t3.fname  =  \"Linda\" AND t3.lname  =  \"Smith\""
+ },
+ {
+  "i": 1663,
+  "db_id": "department_store",
+  "question_en": "What is the id of the department with the least number of staff?",
+  "sql": "SELECT department_id FROM staff_department_assignments GROUP BY department_id ORDER BY count(*) LIMIT 1"
+ },
+ {
+  "i": 1664,
+  "db_id": "customers_and_invoices",
+  "question_en": "What are the invoice dates, order ids, and order details for all invoices?",
+  "sql": "SELECT T1.invoice_date ,  T1.order_id ,  T2.order_details FROM Invoices AS T1 JOIN Orders AS T2 ON T1.order_id  =  T2.order_id"
+ },
+ {
+  "i": 1667,
+  "db_id": "sakila_1",
+  "question_en": "What are all the movies rated as R? List the titles.",
+  "sql": "SELECT title FROM film WHERE rating  =  'R'"
+ },
+ {
+  "i": 1671,
+  "db_id": "entrepreneur",
+  "question_en": "Show the investors shared by entrepreneurs that requested more than 140000 and entrepreneurs that requested less than 120000.",
+  "sql": "SELECT Investor FROM entrepreneur WHERE Money_Requested  >  140000 INTERSECT SELECT Investor FROM entrepreneur WHERE Money_Requested  <  120000"
+ },
+ {
+  "i": 1672,
+  "db_id": "department_store",
+  "question_en": "Count the number of distinct product types.",
+  "sql": "SELECT count(DISTINCT product_type_code) FROM products"
+ },
+ {
+  "i": 1685,
+  "db_id": "college_1",
+  "question_en": "Find the number of students for each department.",
+  "sql": "SELECT count(*) ,  dept_code FROM student GROUP BY dept_code"
+ },
+ {
+  "i": 1686,
+  "db_id": "driving_school",
+  "question_en": "What is the total amount of moeny paid by the customer Carole Bernhard?",
+  "sql": "SELECT sum(T1.amount_payment) FROM Customer_Payments AS T1 JOIN Customers AS T2 ON T1.customer_id = T2.customer_id WHERE T2.first_name = \"Carole\" AND T2.last_name = \"Bernhard\""
+ },
+ {
+  "i": 1688,
+  "db_id": "csu_1",
+  "question_en": "In the year 2000, what is the campus fee for San Francisco State University?",
+  "sql": "SELECT t1.campusfee FROM csu_fees AS t1 JOIN campuses AS t2 ON t1.campus  =  t2.id WHERE t2.campus  =  \"San Francisco State University\" AND t1.year  =  2000"
+ },
+ {
+  "i": 1690,
+  "db_id": "customers_and_addresses",
+  "question_en": "Tell me the number of orders with \"Second time\" as order detail.",
+  "sql": "SELECT count(*) FROM customer_orders WHERE order_details  =  \"Second time\""
+ },
+ {
+  "i": 1729,
+  "db_id": "insurance_and_eClaims",
+  "question_en": "Find all the policy type codes associated with the customer \"Dayana Robel\"",
+  "sql": "SELECT policy_type_code FROM policies AS t1 JOIN customers AS t2 ON t1.customer_id  =  t2.customer_id WHERE t2.customer_details  =  \"Dayana Robel\""
+ },
+ {
+  "i": 1733,
+  "db_id": "party_people",
+  "question_en": "Count the number of regions.",
+  "sql": "SELECT count(*) FROM region"
+ },
+ {
+  "i": 1741,
+  "db_id": "cre_Theme_park",
+  "question_en": "Find the total number of available hotels.",
+  "sql": "SELECT count(*) FROM HOTELS"
+ },
+ {
+  "i": 1744,
+  "db_id": "swimming",
+  "question_en": "Find the names of stadiums which have never had any event.",
+  "sql": "SELECT name FROM stadium WHERE id NOT IN (SELECT stadium_id FROM event)"
+ },
+ {
+  "i": 1752,
+  "db_id": "tracking_orders",
+  "question_en": "What are ids of the all distinct orders, sorted by placement date?",
+  "sql": "SELECT DISTINCT order_id FROM orders ORDER BY date_order_placed"
+ },
+ {
+  "i": 1761,
+  "db_id": "music_2",
+  "question_en": "return all columns of the albums created in the year of 2012.",
+  "sql": "SELECT * FROM Albums WHERE YEAR  =  2012"
+ },
+ {
+  "i": 1768,
+  "db_id": "theme_gallery",
+  "question_en": "What is the name and country for the artist with most number of exhibitions?",
+  "sql": "SELECT T2.name , T2.country FROM exhibition AS T1 JOIN artist AS T2 ON T1.artist_id  =  T2.artist_id GROUP BY T1.artist_id ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 1775,
+  "db_id": "school_finance",
+  "question_en": "Show all school names in alphabetical order.",
+  "sql": "SELECT school_name FROM school ORDER BY school_name"
+ },
+ {
+  "i": 1791,
+  "db_id": "student_1",
+  "question_en": "How many students are taught by teacher TARRING LEIA?",
+  "sql": "SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  \"TARRING\" AND T2.lastname  =  \"LEIA\""
+ },
+ {
+  "i": 1806,
+  "db_id": "student_assessment",
+  "question_en": "List the names of courses in alphabetical order?",
+  "sql": "SELECT course_name FROM courses ORDER BY course_name"
+ },
+ {
+  "i": 1811,
+  "db_id": "student_1",
+  "question_en": "Show me the classrooms grade 5 is using.",
+  "sql": "SELECT DISTINCT classroom FROM list WHERE grade  =  5"
+ },
+ {
+  "i": 1842,
+  "db_id": "wedding",
+  "question_en": "Show the minimum, maximum, and average age for all people.",
+  "sql": "SELECT min(age) ,  max(age) ,  avg(age) FROM people"
+ },
+ {
+  "i": 1845,
+  "db_id": "epinions_1",
+  "question_en": "Find the names of goods that receive a rating of 10.",
+  "sql": "SELECT T1.title FROM item AS T1 JOIN review AS T2 ON T1.i_id  =  T2.i_id WHERE T2.rating  =  10"
+ },
+ {
+  "i": 1849,
+  "db_id": "store_product",
+  "question_en": "What is the most common maximum page size?",
+  "sql": "SELECT max_page_size FROM product GROUP BY max_page_size ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 1852,
+  "db_id": "mountain_photos",
+  "question_en": "What are the names of the cameras that have taken picture of the most mountains?",
+  "sql": "SELECT T2.name FROM photos AS T1 JOIN camera_lens AS T2 ON T1.camera_lens_id  =  T2.id GROUP BY T2.id ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 1876,
+  "db_id": "tracking_orders",
+  "question_en": "Find all the order items whose product id is 11. What are the order item ids?",
+  "sql": "SELECT order_item_id FROM order_items WHERE product_id = 11"
+ },
+ {
+  "i": 1877,
+  "db_id": "browser_web",
+  "question_en": "When did the web accelerator 'CACHEbox' and browser 'Internet Explorer' become compatible?",
+  "sql": "SELECT T1.compatible_since_year FROM accelerator_compatible_browser AS T1 JOIN browser AS T2 ON T1.browser_id  =  T2.id JOIN web_client_accelerator AS T3 ON T1.accelerator_id  =  T3.id WHERE T3.name  =  'CACHEbox' AND T2.name  =  'Internet Explorer'"
+ },
+ {
+  "i": 1878,
+  "db_id": "formula_1",
+  "question_en": "Find the id and location of circuits that belong to France or Belgium?",
+  "sql": "SELECT circuitid ,  LOCATION FROM circuits WHERE country = \"France\" OR country = \"Belgium\""
+ },
+ {
+  "i": 1882,
+  "db_id": "school_player",
+  "question_en": "What is the denomination of the school the most players belong to?",
+  "sql": "SELECT T2.Denomination FROM player AS T1 JOIN school AS T2 ON T1.School_ID  =  T2.School_ID GROUP BY T1.School_ID ORDER BY COUNT(*) DESC LIMIT 1"
+ },
+ {
+  "i": 1891,
+  "db_id": "tracking_grants_for_research",
+  "question_en": "What are the details of the project with no outcomes?",
+  "sql": "SELECT project_details FROM Projects WHERE project_id NOT IN ( SELECT project_id FROM Project_outcomes )"
+ },
+ {
+  "i": 1897,
+  "db_id": "store_1",
+  "question_en": "What is the unit price of the tune \"Fast As a Shark\"?",
+  "sql": "SELECT unit_price FROM tracks WHERE name = \"Fast As a Shark\";"
+ },
+ {
+  "i": 1909,
+  "db_id": "inn_1",
+  "question_en": "What are the name of rooms that cost more than the average.",
+  "sql": "SELECT roomName FROM Rooms WHERE basePrice  >  ( SELECT avg(basePrice) FROM Rooms );"
+ },
+ {
+  "i": 1910,
+  "db_id": "game_injury",
+  "question_en": "How many distinct kinds of injuries happened after season 2010?",
+  "sql": "SELECT count(DISTINCT T1.injury) FROM injury_accident AS T1 JOIN game AS T2 ON T1.game_id  =  T2.id WHERE T2.season  >  2010"
+ },
+ {
+  "i": 1915,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "Give me all the distinct location codes for documents.",
+  "sql": "SELECT DISTINCT location_code FROM Document_locations"
+ },
+ {
+  "i": 1931,
+  "db_id": "activity_1",
+  "question_en": "Which faculty members advise two ore more students? Give me their faculty ids.",
+  "sql": "SELECT T1.FacID FROM Faculty AS T1 JOIN Student AS T2 ON T1.FacID  =  T2.advisor GROUP BY T1.FacID HAVING count(*)  >=  2"
+ },
+ {
+  "i": 1933,
+  "db_id": "riding_club",
+  "question_en": "Show the residences that have at least two players.",
+  "sql": "SELECT Residence FROM player GROUP BY Residence HAVING COUNT(*)  >=  2"
+ },
+ {
+  "i": 1936,
+  "db_id": "sakila_1",
+  "question_en": "What are the city name, id, and number of addresses corresponding to the city with the most addressed?",
+  "sql": "SELECT T2.city ,  count(*) ,  T1.city_id FROM address AS T1 JOIN city AS T2 ON T1.city_id  =  T2.city_id GROUP BY T1.city_id ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 1967,
+  "db_id": "medicine_enzyme_interaction",
+  "question_en": "What are the names and trade names of the medcines that are FDA approved?",
+  "sql": "SELECT name ,  trade_name FROM medicine WHERE FDA_approved  =  'Yes'"
+ },
+ {
+  "i": 1991,
+  "db_id": "loan_1",
+  "question_en": "What are the different names and credit scores of customers who have taken a loan?",
+  "sql": "SELECT DISTINCT T1.cust_name ,  T1.credit_score FROM customer AS T1 JOIN loan AS T2 ON T1.cust_id  =  T2.cust_id"
+ },
+ {
+  "i": 2009,
+  "db_id": "inn_1",
+  "question_en": "Find the number of rooms with price higher than 120 for different decor.",
+  "sql": "SELECT decor , count(*) FROM Rooms WHERE basePrice  >  120 GROUP BY decor;"
+ },
+ {
+  "i": 2011,
+  "db_id": "candidate_poll",
+  "question_en": "what are the names of people who did not participate in the candidate election.",
+  "sql": "SELECT name FROM people WHERE people_id NOT IN (SELECT people_id FROM candidate)"
+ },
+ {
+  "i": 2020,
+  "db_id": "game_1",
+  "question_en": "Which game type has most number of games?",
+  "sql": "SELECT gtype FROM Video_games GROUP BY gtype ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 2023,
+  "db_id": "tracking_software_problems",
+  "question_en": "Which product has the most problems? Give me the number of problems and the product name.",
+  "sql": "SELECT count(*) ,  T1.product_name FROM product AS T1 JOIN problems AS T2 ON T1.product_id = T2.product_id GROUP BY T1.product_name ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 2035,
+  "db_id": "tracking_orders",
+  "question_en": "List the name of all the distinct customers who have orders with status \"Packing\".",
+  "sql": "SELECT DISTINCT T1.customer_name FROM customers AS T1 JOIN orders AS T2 ON T1.customer_id = T2.customer_id WHERE T2.order_status = \"Packing\""
+ },
+ {
+  "i": 2041,
+  "db_id": "gas_company",
+  "question_en": "Show all main industry and total market value in each industry.",
+  "sql": "SELECT main_industry ,  sum(market_value) FROM company GROUP BY main_industry"
+ },
+ {
+  "i": 2091,
+  "db_id": "customers_card_transactions",
+  "question_en": "What are the codes of card types that have 5 or more cards?",
+  "sql": "SELECT card_type_code FROM Customers_cards GROUP BY card_type_code HAVING count(*)  >=  5"
+ },
+ {
+  "i": 2093,
+  "db_id": "customers_and_addresses",
+  "question_en": "Find the name and active date of the customer that use email as the contact channel.",
+  "sql": "SELECT t1.customer_name ,  t2.active_from_date FROM customers AS t1 JOIN customer_contact_channels AS t2 ON t1.customer_id  =  t2.customer_id WHERE t2.channel_code  =  'Email'"
+ },
+ {
+  "i": 2113,
+  "db_id": "twitter_1",
+  "question_en": "Find the name and email of the user followed by the least number of people.",
+  "sql": "SELECT name ,  email FROM user_profiles ORDER BY followers LIMIT 1"
+ },
+ {
+  "i": 2122,
+  "db_id": "riding_club",
+  "question_en": "List the name and residence for players whose occupation is not \"Researcher\".",
+  "sql": "SELECT Player_name ,  residence FROM player WHERE Occupation != \"Researcher\""
+ },
+ {
+  "i": 2123,
+  "db_id": "apartment_rentals",
+  "question_en": "What are the top three apartment types in terms of the average room count? Give me the",
+  "sql": "SELECT apt_type_code FROM Apartments GROUP BY apt_type_code ORDER BY avg(room_count) DESC LIMIT 3"
+ },
+ {
+  "i": 2144,
+  "db_id": "customer_complaints",
+  "question_en": "Return the names of products that have had complaints filed by the customer who has filed the fewest complaints.",
+  "sql": "SELECT DISTINCT t1.product_name FROM products AS t1 JOIN complaints AS t2 ON t1.product_id  =  t2.product_id JOIN customers AS t3 GROUP BY t3.customer_id ORDER BY count(*) LIMIT 1"
+ },
+ {
+  "i": 2151,
+  "db_id": "music_4",
+  "question_en": "Please list all songs in volumes in ascending alphabetical order.",
+  "sql": "SELECT Song FROM volume ORDER BY Song"
+ },
+ {
+  "i": 2153,
+  "db_id": "college_1",
+  "question_en": "Where is the history department?",
+  "sql": "SELECT dept_address FROM department WHERE dept_name  =  'History'"
+ },
+ {
+  "i": 2160,
+  "db_id": "student_1",
+  "question_en": "What are the grade number and classroom number of each class in the list?",
+  "sql": "SELECT DISTINCT classroom ,  grade FROM list"
+ },
+ {
+  "i": 2176,
+  "db_id": "customers_and_addresses",
+  "question_en": "What are all the payment methods?",
+  "sql": "SELECT DISTINCT payment_method FROM customers"
+ },
+ {
+  "i": 2179,
+  "db_id": "products_gen_characteristics",
+  "question_en": "What are the names, details and data types of the characteristics which are never used by any product?",
+  "sql": "SELECT characteristic_name ,  other_characteristic_details ,  characteristic_data_type FROM CHARACTERISTICS EXCEPT SELECT t1.characteristic_name ,  t1.other_characteristic_details ,  t1.characteristic_data_type FROM CHARACTERISTICS AS t1 JOIN product_characteristics AS t2 ON t1.characteristic_id  =  t2.characteristic_id"
+ },
+ {
+  "i": 2186,
+  "db_id": "products_gen_characteristics",
+  "question_en": "Return the characteristic names of the 'sesame' product.",
+  "sql": "SELECT t3.characteristic_name FROM products AS t1 JOIN product_characteristics AS t2 ON t1.product_id  =  t2.product_id JOIN CHARACTERISTICS AS t3 ON t2.characteristic_id  =  t3.characteristic_id WHERE t1.product_name  =  \"sesame\""
+ },
+ {
+  "i": 2197,
+  "db_id": "cinema",
+  "question_en": "Show each location and the number of cinemas there.",
+  "sql": "SELECT LOCATION ,  count(*) FROM cinema GROUP BY LOCATION"
+ },
+ {
+  "i": 2202,
+  "db_id": "match_season",
+  "question_en": "Show the name of colleges that have at least two players in descending alphabetical order.",
+  "sql": "SELECT College FROM match_season GROUP BY College HAVING count(*)  >=  2 ORDER BY College DESC"
+ },
+ {
+  "i": 2218,
+  "db_id": "customers_and_addresses",
+  "question_en": "Find the list of cities that no customer is living in.",
+  "sql": "SELECT city FROM addresses WHERE city NOT IN ( SELECT DISTINCT t3.city FROM customers AS t1 JOIN customer_addresses AS t2 ON t1.customer_id  =  t2.customer_id JOIN addresses AS t3 ON t2.address_id  =  t3.address_id)"
+ },
+ {
+  "i": 2230,
+  "db_id": "school_finance",
+  "question_en": "Count the number of budgets in year 2001 or before whose budgeted amount is greater than 3000",
+  "sql": "SELECT count(*) FROM budget WHERE budgeted  >  3000 AND YEAR  <=  2001"
+ },
+ {
+  "i": 2233,
+  "db_id": "chinook_1",
+  "question_en": "What are the distinct billing countries of the invoices?",
+  "sql": "SELECT distinct(BillingCountry) FROM INVOICE"
+ },
+ {
+  "i": 2251,
+  "db_id": "cre_Theme_park",
+  "question_en": "Which tourist attractions does the visitor with detail 'Vincent' visit?",
+  "sql": "SELECT T1.Name FROM Tourist_Attractions AS T1 JOIN VISITS AS T2 ON T1.Tourist_Attraction_ID  =  T2.Tourist_Attraction_ID JOIN VISITORS AS T3 ON T2.Tourist_ID  =  T3.Tourist_ID WHERE T3.Tourist_Details  =  \"Vincent\""
+ },
+ {
+  "i": 2257,
+  "db_id": "workshop_paper",
+  "question_en": "Show the authors of submissions and the acceptance results of their submissions.",
+  "sql": "SELECT T2.Author ,  T1.Result FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID"
+ },
+ {
+  "i": 2259,
+  "db_id": "tracking_grants_for_research",
+  "question_en": "Which role is most common for the staff?",
+  "sql": "SELECT role_code FROM Project_Staff GROUP BY role_code ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 2266,
+  "db_id": "driving_school",
+  "question_en": "List the first name and last name of customers have the amount of outstanding between 1000 and 3000.",
+  "sql": "SELECT first_name ,  last_name FROM Customers WHERE amount_outstanding BETWEEN 1000 AND 3000;"
+ },
+ {
+  "i": 2271,
+  "db_id": "music_2",
+  "question_en": "What are the song titles on the album \"A Kiss Before You Go: Live in Hamburg\"?",
+  "sql": "SELECT T3.title FROM albums AS T1 JOIN tracklists AS T2 ON T1.aid  =  T2.albumid JOIN songs AS T3 ON T2.songid  =  T3.songid WHERE T1.title  =  \"A Kiss Before You Go: Live in Hamburg\""
+ },
+ {
+  "i": 2285,
+  "db_id": "store_1",
+  "question_en": "find the full name of employees who report to Nancy Edwards?",
+  "sql": "SELECT T2.first_name , T2.last_name FROM employees AS T1 JOIN employees AS T2 ON T1.id = T2.reports_to WHERE T1.first_name = \"Nancy\" AND T1.last_name = \"Edwards\";"
+ },
+ {
+  "i": 2312,
+  "db_id": "flight_4",
+  "question_en": "What is the highest elevation of an airport in the country of Iceland?",
+  "sql": "SELECT max(elevation) FROM airports WHERE country  =  'Iceland'"
+ },
+ {
+  "i": 2341,
+  "db_id": "activity_1",
+  "question_en": "How many faculty members participate in an activity?",
+  "sql": "SELECT count(DISTINCT FacID) FROM Faculty_participates_in"
+ },
+ {
+  "i": 2353,
+  "db_id": "cinema",
+  "question_en": "Which locations have 2 or more cinemas with capacity over 300?",
+  "sql": "SELECT LOCATION FROM cinema WHERE capacity  >  300 GROUP BY LOCATION HAVING count(*)  >=  2"
+ },
+ {
+  "i": 2357,
+  "db_id": "customers_and_invoices",
+  "question_en": "Show ids for all transactions whose amounts are greater than the average.",
+  "sql": "SELECT transaction_id FROM Financial_transactions WHERE transaction_amount  >  (SELECT avg(transaction_amount) FROM Financial_transactions)"
+ },
+ {
+  "i": 2369,
+  "db_id": "perpetrator",
+  "question_en": "What is the name of the perpetrator with the biggest weight.",
+  "sql": "SELECT T1.Name FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Weight DESC LIMIT 1"
+ },
+ {
+  "i": 2395,
+  "db_id": "shop_membership",
+  "question_en": "Show minimum and maximum amount of memberships for all branches opened in 2011 or located at city London.",
+  "sql": "SELECT min(membership_amount) ,  max(membership_amount) FROM branch WHERE open_year  =  2011 OR city  =  'London'"
+ },
+ {
+  "i": 2400,
+  "db_id": "products_for_hire",
+  "question_en": "What are the names of products whose availability equals to 1?",
+  "sql": "SELECT T2.product_name FROM view_product_availability AS T1 JOIN products_for_hire AS T2 ON T1.product_id  =  T2.product_id WHERE T1.available_yn  =  1"
+ },
+ {
+  "i": 2432,
+  "db_id": "train_station",
+  "question_en": "Show the name and service for all trains in order by time.",
+  "sql": "SELECT name ,  service FROM train ORDER BY TIME"
+ },
+ {
+  "i": 2433,
+  "db_id": "hr_1",
+  "question_en": "What are the employee ids for those who had two or more jobs.",
+  "sql": "SELECT employee_id FROM job_history GROUP BY employee_id HAVING COUNT(*)  >= 2"
+ },
+ {
+  "i": 2438,
+  "db_id": "ship_mission",
+  "question_en": "Show the distinct fate of missions that involve ships with nationality \"United States\"",
+  "sql": "SELECT DISTINCT T1.Fate FROM mission AS T1 JOIN ship AS T2 ON T1.Ship_ID  =  T2.Ship_ID WHERE T2.Nationality  =  \"United States\""
+ },
+ {
+  "i": 2444,
+  "db_id": "college_2",
+  "question_en": "Find the minimum salary for the departments whose average salary is above the average payment of all instructors.",
+  "sql": "SELECT min(salary) ,  dept_name FROM instructor GROUP BY dept_name HAVING avg(salary)  >  (SELECT avg(salary) FROM instructor)"
+ },
+ {
+  "i": 2462,
+  "db_id": "customers_and_invoices",
+  "question_en": "Show the id, the date of account opened, the account name, and other account detail for all accounts.",
+  "sql": "SELECT account_id ,  date_account_opened ,  account_name ,  other_account_details FROM Accounts"
+ },
+ {
+  "i": 2472,
+  "db_id": "department_store",
+  "question_en": "Find the name and address of the customers who have both New and Pending orders.",
+  "sql": "SELECT T1.customer_name ,  T1.customer_address FROM customers AS T1 JOIN customer_orders AS T2 ON T1.customer_id  =  T2.customer_id WHERE T2.order_status_code  =  \"New\" INTERSECT SELECT T1.customer_name ,  T1.customer_address FROM customers AS T1 JOIN customer_orders AS T2 ON T1.customer_id  =  T2.customer_id WHERE T2.order_status_code  =  \"Pending\""
+ },
+ {
+  "i": 2480,
+  "db_id": "college_2",
+  "question_en": "Given the titles of all courses, in order of titles and credits.",
+  "sql": "SELECT title FROM course ORDER BY title ,  credits"
+ },
+ {
+  "i": 2484,
+  "db_id": "soccer_2",
+  "question_en": "What are the names of schools with the top 3 largest size?",
+  "sql": "SELECT cName FROM college ORDER BY enr DESC LIMIT 3"
+ },
+ {
+  "i": 2505,
+  "db_id": "soccer_2",
+  "question_en": "Find the state of the college which player Charles is attending.",
+  "sql": "SELECT T1.state FROM college AS T1 JOIN tryout AS T2 ON T1.cName  =  T2.cName JOIN player AS T3 ON T2.pID  =  T3.pID WHERE T3.pName  =  'Charles'"
+ },
+ {
+  "i": 2524,
+  "db_id": "performance_attendance",
+  "question_en": "List the names of members who did not attend any performance.",
+  "sql": "SELECT Name FROM member WHERE Member_ID NOT IN (SELECT Member_ID FROM member_attendance)"
+ },
+ {
+  "i": 2533,
+  "db_id": "debate",
+  "question_en": "What are the date and venue of each debate?",
+  "sql": "SELECT Date ,  Venue FROM debate"
+ },
+ {
+  "i": 2543,
+  "db_id": "film_rank",
+  "question_en": "Return the low and high estimates for all film markets.",
+  "sql": "SELECT Low_Estimate ,  High_Estimate FROM film_market_estimation"
+ },
+ {
+  "i": 2544,
+  "db_id": "college_1",
+  "question_en": "What are the first names and offices of history professors who don't have Ph.D.s?",
+  "sql": "SELECT T2.emp_fname ,  T1.prof_office FROM professor AS T1 JOIN employee AS T2 ON T1.emp_num  =  T2.emp_num JOIN department AS T3 ON T1.dept_code  =  T3.dept_code WHERE T3.dept_name  =  'History' AND T1.prof_high_degree != 'Ph.D.'"
+ },
+ {
+  "i": 2564,
+  "db_id": "e_learning",
+  "question_en": "List all the login names and family names of course author and tutors.",
+  "sql": "SELECT login_name ,  family_name FROM Course_Authors_and_Tutors"
+ },
+ {
+  "i": 2594,
+  "db_id": "musical",
+  "question_en": "Return the characters and durations for each actor.",
+  "sql": "SELECT Character ,  Duration FROM actor"
+ },
+ {
+  "i": 2635,
+  "db_id": "music_2",
+  "question_en": "Find all the albums in 2012.",
+  "sql": "SELECT * FROM Albums WHERE YEAR  =  2012"
+ },
+ {
+  "i": 2646,
+  "db_id": "election",
+  "question_en": "What are the names of parties that have both delegates on \"Appropriations\" committee and",
+  "sql": "SELECT T2.Party FROM election AS T1 JOIN party AS T2 ON T1.Party  =  T2.Party_ID WHERE T1.Committee  =  \"Appropriations\" INTERSECT SELECT T2.Party FROM election AS T1 JOIN party AS T2 ON T1.Party  =  T2.Party_ID WHERE T1.Committee  =  \"Economic Matters\""
+ },
+ {
+  "i": 2685,
+  "db_id": "flight_1",
+  "question_en": "Show origins of all flights with destination Honolulu.",
+  "sql": "SELECT origin FROM Flight WHERE destination  =  \"Honolulu\""
+ },
+ {
+  "i": 2709,
+  "db_id": "dorm_1",
+  "question_en": "Find the name of amenity that is most common in all dorms.",
+  "sql": "SELECT T1.amenity_name FROM dorm_amenity AS T1 JOIN has_amenity AS T2 ON T1.amenid  =  T2.amenid GROUP BY T2.amenid ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 2733,
+  "db_id": "network_2",
+  "question_en": "Who has friends that are older than the average age? Print their friends and their ages as well",
+  "sql": "SELECT DISTINCT T2.name ,  T2.friend ,  T1.age FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.friend WHERE T1.age  >  (SELECT avg(age) FROM person)"
+ },
+ {
+  "i": 2738,
+  "db_id": "department_store",
+  "question_en": "Find the product type whose average price is higher than the average price of all products.",
+  "sql": "SELECT product_type_code FROM products GROUP BY product_type_code HAVING avg(product_price)  >  (SELECT avg(product_price) FROM products)"
+ },
+ {
+  "i": 2748,
+  "db_id": "aircraft",
+  "question_en": "List the name of the aircraft that has been named winning aircraft the most number of times.",
+  "sql": "SELECT T1.Aircraft FROM aircraft AS T1 JOIN MATCH AS T2 ON T1.Aircraft_ID  =  T2.Winning_Aircraft GROUP BY T2.Winning_Aircraft ORDER BY COUNT(*) DESC LIMIT 1"
+ },
+ {
+  "i": 2753,
+  "db_id": "flight_4",
+  "question_en": "Find the number of different airports which are the destinations of the American Airlines.",
+  "sql": "SELECT count(DISTINCT dst_apid) FROM airlines AS T1 JOIN routes AS T2 ON T1.alid  =  T2.alid WHERE T1.name  =  'American Airlines'"
+ },
+ {
+  "i": 2785,
+  "db_id": "wine_1",
+  "question_en": "Find the distinct names of wines produced before the year of 2000 or after the year of 2010.",
+  "sql": "SELECT DISTINCT Name FROM WINE WHERE YEAR  <  2000 OR YEAR  >  2010"
+ },
+ {
+  "i": 2788,
+  "db_id": "student_assessment",
+  "question_en": "List the first names of people in alphabetical order?",
+  "sql": "SELECT first_name FROM people ORDER BY first_name"
+ },
+ {
+  "i": 2814,
+  "db_id": "twitter_1",
+  "question_en": "Find the names of users whose emails contain ‘superstar’ or ‘edu’.",
+  "sql": "SELECT name FROM user_profiles WHERE email LIKE '%superstar%' OR email LIKE '%edu%'"
+ },
+ {
+  "i": 2817,
+  "db_id": "cre_Doc_Control_Systems",
+  "question_en": "How many documents have the status code done?",
+  "sql": "SELECT count(*) FROM Documents WHERE document_status_code = \"done\";"
+ },
+ {
+  "i": 2836,
+  "db_id": "behavior_monitoring",
+  "question_en": "List all cities of addresses in alphabetical order.",
+  "sql": "SELECT city FROM Addresses ORDER BY city"
+ },
+ {
+  "i": 2838,
+  "db_id": "entrepreneur",
+  "question_en": "Count the number of entrepreneurs.",
+  "sql": "SELECT count(*) FROM entrepreneur"
+ },
+ {
+  "i": 2842,
+  "db_id": "customers_and_invoices",
+  "question_en": "Return the id and full name of the customer with the most accounts.",
+  "sql": "SELECT T1.customer_id ,  T2.customer_first_name ,  T2.customer_last_name FROM Accounts AS T1 JOIN Customers AS T2 ON T1.customer_id  =  T2.customer_id GROUP BY T1.customer_id ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 2859,
+  "db_id": "tracking_software_problems",
+  "question_en": "What are the ids of the problems which are reported after 1978-06-26?",
+  "sql": "SELECT problem_id FROM problems WHERE date_problem_reported > \"1978-06-26\""
+ },
+ {
+  "i": 2874,
+  "db_id": "musical",
+  "question_en": "How many musicals has each nominee been nominated for?",
+  "sql": "SELECT Nominee ,  COUNT(*) FROM musical GROUP BY Nominee"
+ },
+ {
+  "i": 2897,
+  "db_id": "icfp_1",
+  "question_en": "Which author has written the most papers? Find his or her last name.",
+  "sql": "SELECT t1.lname FROM authors AS t1 JOIN authorship AS t2 ON t1.authid  =  t2.authid JOIN papers AS t3 ON t2.paperid  =  t3.paperid GROUP BY t1.fname ,  t1.lname ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 2899,
+  "db_id": "allergy_1",
+  "question_en": "Show all majors and corresponding number of students.",
+  "sql": "SELECT major ,  count(*) FROM Student GROUP BY major"
+ },
+ {
+  "i": 2907,
+  "db_id": "products_gen_characteristics",
+  "question_en": "List all the characteristic names and data types of product \"cumin\".",
+  "sql": "SELECT t3.characteristic_name ,  t3.characteristic_data_type FROM products AS t1 JOIN product_characteristics AS t2 ON t1.product_id  =  t2.product_id JOIN CHARACTERISTICS AS t3 ON t2.characteristic_id  =  t3.characteristic_id WHERE t1.product_name  =  \"cumin\""
+ },
+ {
+  "i": 2923,
+  "db_id": "game_1",
+  "question_en": "What are the last names for all scholarship students?",
+  "sql": "SELECT T2.Lname FROM Sportsinfo AS T1 JOIN Student AS T2 ON T1.StuID  =  T2.StuID WHERE T1.onscholarship  =  'Y'"
+ },
+ {
+  "i": 2924,
+  "db_id": "inn_1",
+  "question_en": "What is the total number of people who could stay in the modern rooms in this inn?",
+  "sql": "SELECT sum(maxOccupancy) FROM Rooms WHERE decor  =  'modern';"
+ },
+ {
+  "i": 2930,
+  "db_id": "chinook_1",
+  "question_en": "Find the maximum and minimum durations of tracks in milliseconds.",
+  "sql": "SELECT max(Milliseconds) ,  min(Milliseconds) FROM TRACK"
+ },
+ {
+  "i": 2933,
+  "db_id": "voter_2",
+  "question_en": "Who are the advisors for students that live in a city with city code \"BAL\"?",
+  "sql": "SELECT Advisor FROM STUDENT WHERE city_code  =  \"BAL\""
+ },
+ {
+  "i": 2938,
+  "db_id": "music_1",
+  "question_en": "What are the names of the different artists from Bangladesh who never received a rating higher than a 7?",
+  "sql": "SELECT DISTINCT artist_name FROM artist WHERE country  =  \"Bangladesh\" EXCEPT SELECT DISTINCT artist_name FROM song WHERE rating  >  7"
+ },
+ {
+  "i": 2941,
+  "db_id": "cre_Theme_park",
+  "question_en": "What are the distinct visit dates?",
+  "sql": "SELECT DISTINCT Visit_Date FROM VISITS"
+ },
+ {
+  "i": 2944,
+  "db_id": "riding_club",
+  "question_en": "How many coaches does each club has? List the club id, name and the number of coaches.",
+  "sql": "SELECT T1.club_id ,  T1.club_name, count(*) FROM club AS T1 JOIN coach AS T2 ON T1.club_id  =  T2.club_id GROUP BY T1.club_id"
+ },
+ {
+  "i": 2949,
+  "db_id": "inn_1",
+  "question_en": "Find all the rooms that have a price higher than 160 and can accommodate more than 2 people. Report room names and ids.",
+  "sql": "SELECT roomName ,  RoomId FROM Rooms WHERE basePrice  >  160 AND maxOccupancy  >  2;"
+ },
+ {
+  "i": 2950,
+  "db_id": "tracking_grants_for_research",
+  "question_en": "For each staff id, what is the description of the role that is involved with the most number of projects?",
+  "sql": "SELECT T1.role_description ,  T2.staff_id FROM Staff_Roles AS T1 JOIN Project_Staff AS T2 ON T1.role_code  =  T2.role_code JOIN Project_outcomes AS T3 ON T2.project_id  =  T3.project_id GROUP BY T2.staff_id ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 2969,
+  "db_id": "riding_club",
+  "question_en": "Show the names of sponsors of players whose residence is either \"Brandon\" or \"Birtle\".",
+  "sql": "SELECT Sponsor_name FROM player WHERE Residence  =  \"Brandon\" OR Residence  =  \"Birtle\""
+ },
+ {
+  "i": 3002,
+  "db_id": "movie_1",
+  "question_en": "For directors who had more than one movie, return the titles and produced years of all movies directed by them.",
+  "sql": "SELECT T1.title ,  T1.year FROM Movie AS T1 JOIN Movie AS T2 ON T1.director  =  T2.director WHERE T1.title != T2.title"
+ },
+ {
+  "i": 3004,
+  "db_id": "department_store",
+  "question_en": "What are id and name of the products whose price is lower than 600 or higher than 900?",
+  "sql": "SELECT product_id ,  product_name FROM products WHERE product_price  <  600 OR product_price  >  900"
+ },
+ {
+  "i": 3039,
+  "db_id": "farm",
+  "question_en": "Show the years and the official names of the host cities of competitions.",
+  "sql": "SELECT T2.Year ,  T1.Official_Name FROM city AS T1 JOIN farm_competition AS T2 ON T1.City_ID  =  T2.Host_city_ID"
+ },
+ {
+  "i": 3061,
+  "db_id": "dorm_1",
+  "question_en": "Find the name of amenities of the dorm where the student with last name Smith is living in.",
+  "sql": "SELECT T3.amenity_name FROM dorm AS T1 JOIN has_amenity AS T2 ON T1.dormid  =  T2.dormid JOIN dorm_amenity AS T3 ON T2.amenid  =  T3.amenid JOIN lives_in AS T4 ON T4.dormid  =  T1.dormid JOIN student AS T5 ON T5.stuid  =  T4.stuid WHERE T5.lname  =  'Smith'"
+ },
+ {
+  "i": 3090,
+  "db_id": "county_public_safety",
+  "question_en": "What is the location shared by most counties?",
+  "sql": "SELECT LOCATION FROM county_public_safety GROUP BY LOCATION ORDER BY COUNT(*) DESC LIMIT 1"
+ },
+ {
+  "i": 3104,
+  "db_id": "music_2",
+  "question_en": "What is the type of vocals that the band member with the last name \"Heilo\" played the most?",
+  "sql": "SELECT TYPE FROM vocals AS T1 JOIN band AS T2 ON T1.bandmate  =  T2.id WHERE lastname  =  \"Heilo\" GROUP BY TYPE ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 3111,
+  "db_id": "wrestler",
+  "question_en": "What are the reigns and days held of all wrestlers?",
+  "sql": "SELECT Reign ,  Days_held FROM wrestler"
+ },
+ {
+  "i": 3113,
+  "db_id": "customer_complaints",
+  "question_en": "Find the last name of the staff whose email address contains \"wrau\".",
+  "sql": "SELECT last_name FROM staff WHERE email_address LIKE \"%wrau%\""
+ },
+ {
+  "i": 3155,
+  "db_id": "gas_company",
+  "question_en": "Show all company names and headquarters in the descending order of market value.",
+  "sql": "SELECT company ,  headquarters FROM company ORDER BY market_value DESC"
+ },
+ {
+  "i": 3186,
+  "db_id": "e_learning",
+  "question_en": "Find the number of students who have the word \"son\" in their personal names.",
+  "sql": "SELECT COUNT(*) FROM Students WHERE personal_name LIKE \"%son%\""
+ },
+ {
+  "i": 3197,
+  "db_id": "election",
+  "question_en": "Show the name of the county with the biggest population.",
+  "sql": "SELECT County_name FROM county ORDER BY Population DESC LIMIT 1"
+ },
+ {
+  "i": 3203,
+  "db_id": "music_2",
+  "question_en": "How many instrument does the musician with last name \"Heilo\" use?",
+  "sql": "SELECT count(DISTINCT instrument) FROM instruments AS T1 JOIN Band AS T2 ON T1.bandmateid  =  T2.id WHERE T2.lastname  =  \"Heilo\""
+ },
+ {
+  "i": 3215,
+  "db_id": "college_1",
+  "question_en": "What are the first names of student who only took one course?",
+  "sql": "SELECT T1.stu_fname FROM student AS T1 JOIN enroll AS T2 ON T1.stu_num  =  T2.stu_num GROUP BY T2.stu_num HAVING count(*)  =  1"
+ },
+ {
+  "i": 3221,
+  "db_id": "gymnast",
+  "question_en": "What are the names of the five oldest people?",
+  "sql": "SELECT Name FROM People ORDER BY Age DESC LIMIT 5"
+ },
+ {
+  "i": 3248,
+  "db_id": "entertainment_awards",
+  "question_en": "Show the number of audience in year 2008 or 2010.",
+  "sql": "SELECT Num_of_Audience FROM festival_detail WHERE YEAR  =  2008 OR YEAR  =  2010"
+ },
+ {
+  "i": 3253,
+  "db_id": "sakila_1",
+  "question_en": "Find all the payment dates for the payments with an amount larger than 10 and the payments handled by a staff person with the first name Elsa.",
+  "sql": "SELECT payment_date FROM payment WHERE amount  >  10 UNION SELECT T1.payment_date FROM payment AS T1 JOIN staff AS T2 ON T1.staff_id  =  T2.staff_id WHERE T2.first_name  =  'Elsa'"
+ },
+ {
+  "i": 3267,
+  "db_id": "music_1",
+  "question_en": "What are the names of all songs in English?",
+  "sql": "SELECT song_name FROM song WHERE languages  =  \"english\""
+ },
+ {
+  "i": 3286,
+  "db_id": "bike_1",
+  "question_en": "How many different bike ids are there?",
+  "sql": "SELECT count(DISTINCT bike_id) FROM trip"
+ },
+ {
+  "i": 3303,
+  "db_id": "film_rank",
+  "question_en": "List all countries of markets in ascending alphabetical order.",
+  "sql": "SELECT Country FROM market ORDER BY Country ASC"
+ },
+ {
+  "i": 3309,
+  "db_id": "company_office",
+  "question_en": "What is the stories of highest building?",
+  "sql": "SELECT Stories FROM buildings ORDER BY Height DESC LIMIT 1"
+ },
+ {
+  "i": 3318,
+  "db_id": "customers_card_transactions",
+  "question_en": "Show the number of all customers without an account.",
+  "sql": "SELECT count(*) FROM Customers WHERE customer_id NOT IN (SELECT customer_id FROM Accounts)"
+ },
+ {
+  "i": 3325,
+  "db_id": "music_2",
+  "question_en": "Who is performing in the back stage position for the song \"Der Kapitan\"? Show the first name and last name.",
+  "sql": "SELECT T2.firstname ,  T2.lastname FROM Performance AS T1 JOIN Band AS T2 ON T1.bandmate  =  T2.id JOIN Songs AS T3 ON T3.SongId  =  T1.SongId WHERE T3.Title  =  \"Der Kapitan\" AND T1.StagePosition  =  \"back\""
+ },
+ {
+  "i": 3368,
+  "db_id": "formula_1",
+  "question_en": "List the forename and surname of all distinct drivers who once had laptime less than 93000 milliseconds?",
+  "sql": "SELECT DISTINCT T1.forename ,  T1.surname FROM drivers AS T1 JOIN laptimes AS T2 ON T1.driverid = T2.driverid WHERE T2.milliseconds < 93000"
+ },
+ {
+  "i": 3373,
+  "db_id": "student_1",
+  "question_en": "Find the last names of the students in third grade that are not taught by COVIN JEROME.",
+  "sql": "SELECT DISTINCT T1.lastname FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T1.grade  =  3 AND T2.firstname != \"COVIN\" AND T2.lastname != \"JEROME\""
+ },
+ {
+  "i": 3377,
+  "db_id": "debate",
+  "question_en": "Show different parties of people along with the number of people in each party.",
+  "sql": "SELECT Party ,  COUNT(*) FROM people GROUP BY Party"
+ },
+ {
+  "i": 3381,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "Return the budget type codes, budget type descriptions and document ids for documents with expenses.",
+  "sql": "SELECT T2.budget_type_code ,  T2.budget_type_description ,  T1.document_id FROM Documents_with_expenses AS T1 JOIN Ref_budget_codes AS T2 ON T1.budget_type_code  =  T2.budget_type_code"
+ },
+ {
+  "i": 3387,
+  "db_id": "game_1",
+  "question_en": "What is the first and last name of all students who play Football or Lacrosse?",
+  "sql": "SELECT T2.lname ,  T2.fname FROM SportsInfo AS T1 JOIN Student AS T2 ON T1.StuID  =  T2.StuID WHERE T1.SportName  =  \"Football\" OR T1.SportName  =  \"Lacrosse\""
+ },
+ {
+  "i": 3403,
+  "db_id": "gymnast",
+  "question_en": "Show the hometowns shared by people older than 23 and younger than 20.",
+  "sql": "SELECT Hometown FROM people WHERE Age  >  23 INTERSECT SELECT Hometown FROM people WHERE Age  <  20"
+ },
+ {
+  "i": 3414,
+  "db_id": "entrepreneur",
+  "question_en": "List the names of entrepreneurs and their companies in descending order of money requested?",
+  "sql": "SELECT T2.Name ,  T1.Company FROM entrepreneur AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Money_Requested"
+ },
+ {
+  "i": 3425,
+  "db_id": "e_learning",
+  "question_en": "How many tests have result \"Fail\"?",
+  "sql": "SELECT count(*) FROM Student_Tests_Taken WHERE test_result  =  \"Fail\""
+ },
+ {
+  "i": 3426,
+  "db_id": "local_govt_mdm",
+  "question_en": "List all information about customer master index, and sort them by details in descending order.",
+  "sql": "SELECT * FROM customer_master_index ORDER BY cmi_details DESC"
+ },
+ {
+  "i": 3431,
+  "db_id": "icfp_1",
+  "question_en": "Which authors have written a paper with title containing the word \"Monadic\"? Return their last names.",
+  "sql": "SELECT t1.lname FROM authors AS t1 JOIN authorship AS t2 ON t1.authid  =  t2.authid JOIN papers AS t3 ON t2.paperid  =  t3.paperid WHERE t3.title LIKE \"%Monadic%\""
+ },
+ {
+  "i": 3458,
+  "db_id": "company_office",
+  "question_en": "Count the number of distinct company industries.",
+  "sql": "SELECT count(DISTINCT Industry) FROM Companies"
+ },
+ {
+  "i": 3474,
+  "db_id": "document_management",
+  "question_en": "What are the codes of types of documents of which there are for or more?",
+  "sql": "SELECT document_type_code FROM documents GROUP BY document_type_code HAVING count(*)  >  4"
+ },
+ {
+  "i": 3486,
+  "db_id": "insurance_policies",
+  "question_en": "What is the most popular payment method?",
+  "sql": "SELECT Payment_Method_Code FROM Payments GROUP BY Payment_Method_Code ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 3488,
+  "db_id": "swimming",
+  "question_en": "What is the name of the event that happened in the most recent year?",
+  "sql": "SELECT name FROM event ORDER BY YEAR DESC LIMIT 1"
+ },
+ {
+  "i": 3491,
+  "db_id": "local_govt_mdm",
+  "question_en": "What is the tax source system code related to the benefits and overpayments? List the code and the benifit id, order by benifit id.",
+  "sql": "SELECT T1.source_system_code ,  T2.council_tax_id FROM CMI_Cross_References AS T1 JOIN Benefits_Overpayments AS T2 ON T1.cmi_cross_ref_id  =  T2.cmi_cross_ref_id ORDER BY T2.council_tax_id"
+ },
+ {
+  "i": 3495,
+  "db_id": "bike_1",
+  "question_en": "Find the zip code in which the average mean visibility is lower than 10.",
+  "sql": "SELECT zip_code FROM weather GROUP BY zip_code HAVING avg(mean_visibility_miles)  <  10"
+ },
+ {
+  "i": 3499,
+  "db_id": "college_2",
+  "question_en": "Find the total number of students and total number of instructors for each department.",
+  "sql": "SELECT count(DISTINCT T2.id) ,  count(DISTINCT T3.id) ,  T3.dept_name FROM department AS T1 JOIN student AS T2 ON T1.dept_name  =  T2.dept_name JOIN instructor AS T3 ON T1.dept_name  =  T3.dept_name GROUP BY T3.dept_name"
+ },
+ {
+  "i": 3511,
+  "db_id": "icfp_1",
+  "question_en": "What is the name of the institution the author \"Katsuhiro Ueno\" belongs to?",
+  "sql": "SELECT DISTINCT t3.name FROM authors AS t1 JOIN authorship AS t2 ON t1.authid  =  t2.authid JOIN inst AS t3 ON t2.instid  =  t3.instid WHERE t1.fname  =  \"Katsuhiro\" AND t1.lname  =  \"Ueno\""
+ },
+ {
+  "i": 3531,
+  "db_id": "city_record",
+  "question_en": "Please give me a list of cities whose regional population is over 10000000.",
+  "sql": "SELECT city FROM city WHERE regional_population  >  10000000"
+ },
+ {
+  "i": 3534,
+  "db_id": "music_4",
+  "question_en": "Count the number of artists.",
+  "sql": "SELECT count(*) FROM artist"
+ },
+ {
+  "i": 3537,
+  "db_id": "dorm_1",
+  "question_en": "What are the different dorm amenity names in alphabetical order?",
+  "sql": "SELECT amenity_name FROM dorm_amenity ORDER BY amenity_name"
+ },
+ {
+  "i": 3547,
+  "db_id": "products_gen_characteristics",
+  "question_en": "How many products have the color description 'red' and the characteristic name 'slow'?",
+  "sql": "SELECT count(*) FROM products AS t1 JOIN product_characteristics AS t2 ON t1.product_id  =  t2.product_id JOIN CHARACTERISTICS AS t3 ON t2.characteristic_id  =  t3.characteristic_id JOIN ref_colors AS t4 ON t1.color_code  =  t4.color_code WHERE t4.color_description  =  \"red\" AND t3.characteristic_name  =  \"slow\""
+ },
+ {
+  "i": 3558,
+  "db_id": "manufactory_1",
+  "question_en": "What are the names and average prices of products for manufacturers whose products cost on average 150 or more?",
+  "sql": "SELECT avg(T1.Price) ,  T2.name FROM products AS T1 JOIN Manufacturers AS T2 ON T1.manufacturer  =  T2.code GROUP BY T2.name HAVING avg(T1.price) >= 150"
+ },
+ {
+  "i": 3563,
+  "db_id": "college_3",
+  "question_en": "What are the full names and gradepoints for all enrollments?",
+  "sql": "SELECT T3.Fname ,  T3.LName ,  T2.gradepoint FROM ENROLLED_IN AS T1 JOIN GRADECONVERSION AS T2 JOIN STUDENT AS T3 ON T1.Grade  =  T2.lettergrade AND T1.StuID  =  T3.StuID"
+ },
+ {
+  "i": 3571,
+  "db_id": "college_2",
+  "question_en": "How many rooms does the Lamberton building have?",
+  "sql": "SELECT count(*) FROM classroom WHERE building  =  'Lamberton'"
+ },
+ {
+  "i": 3583,
+  "db_id": "cre_Theme_park",
+  "question_en": "Show the names and ids of tourist attractions that are visited at most once.",
+  "sql": "SELECT T1.Name ,  T1.Tourist_Attraction_ID FROM Tourist_Attractions AS T1 JOIN VISITS AS T2 ON T1.Tourist_Attraction_ID  =  T2.Tourist_Attraction_ID GROUP BY T2.Tourist_Attraction_ID HAVING count(*)  <=  1"
+ },
+ {
+  "i": 3584,
+  "db_id": "products_for_hire",
+  "question_en": "What is the maximum total amount paid by a customer? List the customer id and amount.",
+  "sql": "SELECT customer_id ,  sum(amount_paid) FROM Payments GROUP BY customer_id ORDER BY sum(amount_paid) DESC LIMIT 1"
+ },
+ {
+  "i": 3585,
+  "db_id": "dorm_1",
+  "question_en": "What are the total number of students who are living in a male dorm?",
+  "sql": "SELECT count(*) FROM student AS T1 JOIN lives_in AS T2 ON T1.stuid  =  T2.stuid JOIN dorm AS T3 ON T3.dormid  =  T2.dormid WHERE T3.gender  =  'M'"
+ },
+ {
+  "i": 3595,
+  "db_id": "sports_competition",
+  "question_en": "What are the different regions of clubs in ascending alphabetical order?",
+  "sql": "SELECT DISTINCT Region FROM club ORDER BY Region ASC"
+ },
+ {
+  "i": 3597,
+  "db_id": "college_2",
+  "question_en": "What are the names of the 3 departments with the most courses?",
+  "sql": "SELECT dept_name FROM course GROUP BY dept_name ORDER BY count(*) DESC LIMIT 3"
+ },
+ {
+  "i": 3598,
+  "db_id": "small_bank_1",
+  "question_en": "What are the names and balances of checking accounts belonging to the customer with the lowest savings balance?",
+  "sql": "SELECT T1.name ,  T2.balance FROM accounts AS T1 JOIN checking AS T2 ON T1.custid  =  T2.custid JOIN savings AS T3 ON T1.custid  =  T3.custid ORDER BY T3.balance LIMIT 1"
+ },
+ {
+  "i": 3609,
+  "db_id": "store_product",
+  "question_en": "Find all the stores in the district with the most population.",
+  "sql": "SELECT t1.store_name FROM store AS t1 JOIN store_district AS t2 ON t1.store_id  =  t2.store_id WHERE district_id  =  (SELECT district_id FROM district ORDER BY city_population DESC LIMIT 1)"
+ },
+ {
+  "i": 3629,
+  "db_id": "music_2",
+  "question_en": "Find the first name of the band mate that has performed in most songs.",
+  "sql": "SELECT t2.firstname FROM Performance AS t1 JOIN Band AS t2 ON t1.bandmate  =  t2.id JOIN Songs AS T3 ON T3.SongId  =  T1.SongId GROUP BY firstname ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 3632,
+  "db_id": "network_2",
+  "question_en": "What are the names of the people who are older 40 but no friends under age 30?",
+  "sql": "SELECT T1.name FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.name WHERE T2.friend IN (SELECT name FROM Person WHERE age  >  40) EXCEPT SELECT T1.name FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.name WHERE T2.friend IN (SELECT name FROM Person WHERE age  <  30)"
+ },
+ {
+  "i": 3650,
+  "db_id": "ship_1",
+  "question_en": "What are the names of ships that have more than one captain?",
+  "sql": "SELECT t1.name FROM ship AS t1 JOIN captain AS t2 ON t1.ship_id  =  t2.ship_id GROUP BY t2.ship_id HAVING count(*)  >  1"
+ },
+ {
+  "i": 3653,
+  "db_id": "wine_1",
+  "question_en": "Give the names and scores of wines made from white grapes.",
+  "sql": "SELECT T2.Name ,   T2.Score FROM GRAPES AS T1 JOIN WINE AS T2 ON T1.Grape  =  T2.Grape WHERE T1.Color  =  \"White\""
+ },
+ {
+  "i": 3671,
+  "db_id": "culture_company",
+  "question_en": "Which publishers did not publish a book in 1989?",
+  "sql": "SELECT publisher FROM book_club EXCEPT SELECT publisher FROM book_club WHERE YEAR  =  1989"
+ },
+ {
+  "i": 3708,
+  "db_id": "race_track",
+  "question_en": "Give the different locations of tracks.",
+  "sql": "SELECT DISTINCT LOCATION FROM track"
+ },
+ {
+  "i": 3709,
+  "db_id": "gymnast",
+  "question_en": "List the distinct hometowns that are not associated with any gymnast.",
+  "sql": "SELECT DISTINCT Hometown FROM people EXCEPT SELECT DISTINCT T2.Hometown FROM gymnast AS T1 JOIN people AS T2 ON T1.Gymnast_ID  =  T2.People_ID"
+ },
+ {
+  "i": 3724,
+  "db_id": "movie_1",
+  "question_en": "How many movies were made before 2000?",
+  "sql": "SELECT count(*) FROM Movie WHERE YEAR  <  2000"
+ },
+ {
+  "i": 3732,
+  "db_id": "medicine_enzyme_interaction",
+  "question_en": "For every medicine id, what are the names of the medicines that can interact with more than one enzyme?",
+  "sql": "SELECT T1.id ,  T1.Name FROM medicine AS T1 JOIN medicine_enzyme_interaction AS T2 ON T2.medicine_id  =  T1.id GROUP BY T1.id HAVING count(*)  >=  2"
+ },
+ {
+  "i": 3738,
+  "db_id": "cre_Theme_park",
+  "question_en": "Show the price ranges of hotels with 5 star ratings.",
+  "sql": "SELECT price_range FROM HOTELS WHERE star_rating_code  =  \"5\""
+ },
+ {
+  "i": 3756,
+  "db_id": "perpetrator",
+  "question_en": "What are the names of perpetrators?",
+  "sql": "SELECT T1.Name FROM people AS T1 JOIN perpetrator AS T2 ON T1.People_ID  =  T2.People_ID"
+ },
+ {
+  "i": 3757,
+  "db_id": "music_2",
+  "question_en": "How many songs have vocals of type lead?",
+  "sql": "SELECT count(DISTINCT title) FROM vocals AS T1 JOIN songs AS T2 ON T1.songid  =  T2.songid WHERE TYPE  =  \"lead\""
+ },
+ {
+  "i": 3766,
+  "db_id": "workshop_paper",
+  "question_en": "Which submission received the highest score in acceptance result. Show me the result.",
+  "sql": "SELECT T1.Result FROM acceptance AS T1 JOIN submission AS T2 ON T1.Submission_ID  =  T2.Submission_ID ORDER BY T2.Scores DESC LIMIT 1"
+ },
+ {
+  "i": 3776,
+  "db_id": "storm_record",
+  "question_en": "What are the names of the regions in alphabetical order?",
+  "sql": "SELECT region_name FROM region ORDER BY region_name"
+ },
+ {
+  "i": 3791,
+  "db_id": "dorm_1",
+  "question_en": "What is the code of the city with the most students?",
+  "sql": "SELECT city_code FROM student GROUP BY city_code ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 3803,
+  "db_id": "soccer_2",
+  "question_en": "Find the names of schools that have some students playing in goalie and mid positions.",
+  "sql": "SELECT cName FROM  tryout WHERE pPos  =  'goalie' INTERSECT SELECT cName FROM  tryout WHERE pPos  =  'mid'"
+ },
+ {
+  "i": 3819,
+  "db_id": "theme_gallery",
+  "question_en": "Return the average and minimum ages across artists from the United States.",
+  "sql": "SELECT avg(age) ,  min(age) FROM artist WHERE country  =  'United States'"
+ },
+ {
+  "i": 3823,
+  "db_id": "party_host",
+  "question_en": "Count the number of parties.",
+  "sql": "SELECT count(*) FROM party"
+ },
+ {
+  "i": 3826,
+  "db_id": "product_catalog",
+  "question_en": "What are the names of catalog entries with level number 8?",
+  "sql": "SELECT t1.catalog_entry_name FROM Catalog_Contents AS t1 JOIN Catalog_Contents_Additional_Attributes AS t2 ON t1.catalog_entry_id  =  t2.catalog_entry_id WHERE t2.catalog_level_number  =  \"8\""
+ },
+ {
+  "i": 3838,
+  "db_id": "cre_Theme_park",
+  "question_en": "What are the distinct location names?",
+  "sql": "SELECT DISTINCT Location_Name FROM LOCATIONS"
+ },
+ {
+  "i": 3860,
+  "db_id": "election",
+  "question_en": "Which delegates are from counties with population smaller than 100000?",
+  "sql": "SELECT T2.Delegate FROM county AS T1 JOIN election AS T2 ON T1.County_id  =  T2.District WHERE T1.Population  <  100000"
+ },
+ {
+  "i": 3867,
+  "db_id": "formula_1",
+  "question_en": "What are the names of all races held after 2000 in Spain?",
+  "sql": "SELECT DISTINCT T1.name FROM races AS T1 JOIN circuits AS T2 ON T1.circuitid = T2.circuitid WHERE T2.country = \"Spain\" AND T1.year > 2000"
+ },
+ {
+  "i": 3874,
+  "db_id": "machine_repair",
+  "question_en": "List the names of technicians who have not been assigned to repair machines.",
+  "sql": "SELECT Name FROM technician WHERE technician_id NOT IN (SELECT technician_id FROM repair_assignment)"
+ },
+ {
+  "i": 3894,
+  "db_id": "tracking_software_problems",
+  "question_en": "Find the first and last name of the staff members who reported problems from the product \"rem\" but not \"aut\"?",
+  "sql": "SELECT T3.staff_first_name ,  T3.staff_last_name FROM problems AS T1 JOIN product AS T2 JOIN staff AS T3 ON T1.product_id = T2.product_id AND T1.reported_by_staff_id = T3.staff_id WHERE T2.product_name = \"rem\" EXCEPT SELECT T3.staff_first_name ,  T3.staff_last_name FROM problems AS T1 JOIN product AS T2 JOIN staff AS T3 ON T1.product_id = T2.product_id AND T1.reported_by_staff_id = T3.staff_id WHERE T2.product_name = \"aut\""
+ },
+ {
+  "i": 3895,
+  "db_id": "train_station",
+  "question_en": "What are the names of the stations which serve both \"Ananthapuri Express\" and \"Guruvayur Express\" trains?",
+  "sql": "SELECT T2.name FROM train_station AS T1 JOIN station AS T2 ON T1.station_id  =  T2.station_id JOIN train AS T3 ON T3.train_id  =  T1.train_id WHERE T3.Name  =  \"Ananthapuri Express\" INTERSECT SELECT T2.name FROM train_station AS T1 JOIN station AS T2 ON T1.station_id  =  T2.station_id JOIN train AS T3 ON T3.train_id  =  T1.train_id WHERE T3.Name  =  \"Guruvayur Express\""
+ },
+ {
+  "i": 3904,
+  "db_id": "insurance_and_eClaims",
+  "question_en": "List the names of all the customers in alphabetical order.",
+  "sql": "SELECT customer_details FROM customers ORDER BY customer_details"
+ },
+ {
+  "i": 3922,
+  "db_id": "train_station",
+  "question_en": "How many train stations are there?",
+  "sql": "SELECT count(*) FROM station"
+ },
+ {
+  "i": 3938,
+  "db_id": "sakila_1",
+  "question_en": "How many customers have an active value of 1?",
+  "sql": "SELECT count(*) FROM customer WHERE active = '1'"
+ },
+ {
+  "i": 3943,
+  "db_id": "behavior_monitoring",
+  "question_en": "What are the monthly rentals of student addresses in Texas state?",
+  "sql": "SELECT T2.monthly_rental FROM Addresses AS T1 JOIN Student_Addresses AS T2 ON T1.address_id  =  T2.address_id WHERE T1.state_province_county  =  \"Texas\""
+ },
+ {
+  "i": 3944,
+  "db_id": "culture_company",
+  "question_en": "Return the publisher that has published the most books.",
+  "sql": "SELECT publisher FROM book_club GROUP BY publisher ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 3947,
+  "db_id": "music_4",
+  "question_en": "What are the maximum and minimum week on top of all volumes?",
+  "sql": "SELECT max(Weeks_on_Top) ,  min(Weeks_on_Top) FROM volume"
+ },
+ {
+  "i": 3951,
+  "db_id": "network_2",
+  "question_en": "How many friends does Dan have?",
+  "sql": "SELECT count(T2.friend) FROM Person AS T1 JOIN PersonFriend AS T2 ON T1.name  =  T2.name WHERE T1.name  =  'Dan'"
+ },
+ {
+  "i": 3966,
+  "db_id": "customers_and_invoices",
+  "question_en": "Count the number of customers who do not have an account.",
+  "sql": "SELECT count(*) FROM Customers WHERE customer_id NOT IN (SELECT customer_id FROM Accounts)"
+ },
+ {
+  "i": 3970,
+  "db_id": "wine_1",
+  "question_en": "What is the maximum price of wines from the appelation in the Central Coast area, which was produced before 2005?",
+  "sql": "SELECT max(T2.Price) FROM APPELLATIONS AS T1 JOIN WINE AS T2 ON T1.Appelation  =  T2.Appelation WHERE T1.Area  =  \"Central Coast\" AND T2.year  <  2005"
+ },
+ {
+  "i": 3975,
+  "db_id": "college_1",
+  "question_en": "How many classes are professor whose last name is Graztevski has?",
+  "sql": "SELECT count(*) FROM employee AS T1 JOIN CLASS AS T2 ON T1.EMP_NUM  =  T2.PROF_NUM WHERE T1.EMP_LNAME  =  'Graztevski'"
+ },
+ {
+  "i": 3980,
+  "db_id": "insurance_policies",
+  "question_en": "Find the the customer details and id for the customers who had more than one policy.",
+  "sql": "SELECT T1.customer_details ,  T1.customer_id FROM Customers AS T1 JOIN Customer_Policies AS T2 ON T1.Customer_id  =  T2.Customer_id GROUP BY T1.customer_id HAVING count(*)  >  1"
+ },
+ {
+  "i": 3996,
+  "db_id": "film_rank",
+  "question_en": "List the name of film studio that have the most number of films.",
+  "sql": "SELECT Studio FROM film GROUP BY Studio ORDER BY COUNT(*) DESC LIMIT 1"
+ },
+ {
+  "i": 4002,
+  "db_id": "sports_competition",
+  "question_en": "Find the countries that have never participated in any competition with Friendly type.",
+  "sql": "SELECT country FROM competition EXCEPT SELECT country FROM competition WHERE competition_type  =  'Friendly'"
+ },
+ {
+  "i": 4003,
+  "db_id": "small_bank_1",
+  "question_en": "Find the saving balance of the account with the highest checking balance.",
+  "sql": "SELECT T3.balance FROM accounts AS T1 JOIN checking AS T2 ON T1.custid  =  T2.custid JOIN savings AS T3 ON T1.custid  =  T3.custid ORDER BY T2.balance DESC LIMIT 1"
+ },
+ {
+  "i": 4009,
+  "db_id": "protein_institute",
+  "question_en": "Show the institution type with the largest number of institutions.",
+  "sql": "SELECT TYPE FROM institution GROUP BY TYPE ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 4012,
+  "db_id": "climbing",
+  "question_en": "Which range contains the most mountains?",
+  "sql": "SELECT Range FROM mountain GROUP BY Range ORDER BY COUNT(*) DESC LIMIT 1"
+ },
+ {
+  "i": 4031,
+  "db_id": "insurance_and_eClaims",
+  "question_en": "Count the number of distinct claim outcome codes.",
+  "sql": "SELECT count(DISTINCT claim_outcome_code) FROM claims_processing"
+ },
+ {
+  "i": 4039,
+  "db_id": "hr_1",
+  "question_en": "What are the full names and department ids for the lowest paid employees across all departments.",
+  "sql": "SELECT first_name ,  last_name ,  department_id FROM employees WHERE salary IN (SELECT MIN(salary) FROM employees GROUP BY department_id)"
+ },
+ {
+  "i": 4046,
+  "db_id": "company_office",
+  "question_en": "How many companies are in either \"Banking\" industry or \"Conglomerate\" industry?",
+  "sql": "SELECT count(*) FROM Companies WHERE Industry  =  \"Banking\" OR Industry  =  \"Conglomerate\""
+ },
+ {
+  "i": 4063,
+  "db_id": "hospital_1",
+  "question_en": "Which patient is undergoing the most recent treatment?",
+  "sql": "SELECT patient FROM undergoes ORDER BY dateundergoes LIMIT 1"
+ },
+ {
+  "i": 4066,
+  "db_id": "allergy_1",
+  "question_en": "What are the allergies the girl named Lisa has? And what are the types of them? Order the result by allergy names.",
+  "sql": "SELECT T1.Allergy ,  T1.AllergyType FROM Allergy_type AS T1 JOIN Has_allergy AS T2 ON T1.Allergy  =  T2.Allergy JOIN Student AS T3 ON T3.StuID  =  T2.StuID WHERE T3.Fname  =  \"Lisa\" ORDER BY T1.Allergy"
+ },
+ {
+  "i": 4088,
+  "db_id": "student_1",
+  "question_en": "Report the number of students in each classroom.",
+  "sql": "SELECT classroom ,  count(*) FROM list GROUP BY classroom"
+ },
+ {
+  "i": 4092,
+  "db_id": "tracking_grants_for_research",
+  "question_en": "How many kinds of roles are there for the staff?",
+  "sql": "SELECT count(DISTINCT role_code) FROM Project_Staff"
+ },
+ {
+  "i": 4111,
+  "db_id": "ship_mission",
+  "question_en": "What is the number of ships?",
+  "sql": "SELECT count(*) FROM ship"
+ },
+ {
+  "i": 4119,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "Show the name, role code, and date of birth for the employee with name 'Armani'.",
+  "sql": "SELECT employee_name ,  role_code ,  date_of_birth FROM Employees WHERE employee_Name  =  'Armani'"
+ },
+ {
+  "i": 4121,
+  "db_id": "game_1",
+  "question_en": "What type of game is Call of Destiny?",
+  "sql": "SELECT gtype FROM Video_games WHERE gname  =  \"Call of Destiny\""
+ },
+ {
+  "i": 4123,
+  "db_id": "insurance_policies",
+  "question_en": "List the date the claim was made, the date it was settled and the amount settled for all the claims which had exactly one settlement.",
+  "sql": "SELECT T1.claim_id ,  T1.date_claim_made ,  T1.Date_Claim_Settled FROM Claims AS T1 JOIN Settlements AS T2 ON T1.Claim_id  =  T2.Claim_id GROUP BY T1.claim_id HAVING count(*)  =  1"
+ },
+ {
+  "i": 4125,
+  "db_id": "allergy_1",
+  "question_en": "Which students are unaffected by allergies?",
+  "sql": "SELECT StuID FROM Student EXCEPT SELECT StuID FROM Has_allergy"
+ },
+ {
+  "i": 4145,
+  "db_id": "customers_card_transactions",
+  "question_en": "Count the number of credit cards that the customer with first name Blanche and last name Huels has.",
+  "sql": "SELECT count(*) FROM Customers_cards AS T1 JOIN Customers AS T2 ON T1.customer_id  =  T2.customer_id WHERE T2.customer_first_name  =  \"Blanche\" AND T2.customer_last_name  =  \"Huels\" AND T1.card_type_code  =  \"Credit\""
+ },
+ {
+  "i": 4161,
+  "db_id": "customers_and_invoices",
+  "question_en": "How many transaction does each account have? Show the number and account id.",
+  "sql": "SELECT count(*) ,  account_id FROM Financial_transactions"
+ },
+ {
+  "i": 4173,
+  "db_id": "student_assessment",
+  "question_en": "Find id of the candidate who most recently accessed the course?",
+  "sql": "SELECT candidate_id FROM candidate_assessments ORDER BY assessment_date DESC LIMIT 1"
+ },
+ {
+  "i": 4174,
+  "db_id": "product_catalog",
+  "question_en": "Find the attribute data type for the attribute named \"Green\".",
+  "sql": "SELECT attribute_data_type FROM Attribute_Definitions WHERE attribute_name  =  \"Green\""
+ },
+ {
+  "i": 4183,
+  "db_id": "product_catalog",
+  "question_en": "What is the attribute data type of the attribute with name \"Green\"?",
+  "sql": "SELECT attribute_data_type FROM Attribute_Definitions WHERE attribute_name  =  \"Green\""
+ },
+ {
+  "i": 4187,
+  "db_id": "allergy_1",
+  "question_en": "What is the minimum, mean, and maximum age across all students?",
+  "sql": "SELECT min(age) ,  avg(age) ,  max(age) FROM Student"
+ },
+ {
+  "i": 4189,
+  "db_id": "local_govt_and_lot",
+  "question_en": "How many services has each resident requested? List the resident id, details, and the count in descending order of the count.",
+  "sql": "SELECT T1.resident_id ,  T1.other_details ,  count(*) FROM Residents AS T1 JOIN Residents_Services AS T2 ON T1.resident_id  =  T2.resident_id GROUP BY T1.resident_id ORDER BY count(*) DESC"
+ },
+ {
+  "i": 4196,
+  "db_id": "farm",
+  "question_en": "Please show the different statuses of cities and the average population of cities with each status.",
+  "sql": "SELECT Status ,  avg(Population) FROM city GROUP BY Status"
+ },
+ {
+  "i": 4213,
+  "db_id": "formula_1",
+  "question_en": "What is the maximum fastest lap speed in race named 'Monaco Grand Prix' in 2008 ?",
+  "sql": "SELECT max(T2.fastestlapspeed) FROM races AS T1 JOIN results AS T2 ON T1.raceid = T2.raceid WHERE T1.year = 2008 AND T1.name = \"Monaco Grand Prix\""
+ },
+ {
+  "i": 4218,
+  "db_id": "cre_Doc_Control_Systems",
+  "question_en": "What document type codes do we have?",
+  "sql": "SELECT document_type_code FROM Ref_Document_Types;"
+ },
+ {
+  "i": 4261,
+  "db_id": "swimming",
+  "question_en": "Find the country that has the most stadiums.",
+  "sql": "SELECT country FROM stadium GROUP BY country ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 4276,
+  "db_id": "tracking_grants_for_research",
+  "question_en": "How many project staff worked as leaders or started working before '1989-04-24 23:51:54'?",
+  "sql": "SELECT count(*) FROM Project_Staff WHERE role_code  =  'leader' OR date_from  <  '1989-04-24 23:51:54'"
+ },
+ {
+  "i": 4280,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "How many documents do not have any expense?",
+  "sql": "SELECT count(*) FROM Documents WHERE document_id NOT IN ( SELECT document_id FROM Documents_with_expenses )"
+ },
+ {
+  "i": 4298,
+  "db_id": "college_1",
+  "question_en": "Find the total number of hours have done for all students in each department.",
+  "sql": "SELECT sum(stu_hrs) ,  dept_code FROM student GROUP BY dept_code"
+ },
+ {
+  "i": 4325,
+  "db_id": "products_gen_characteristics",
+  "question_en": "What is the name of the product with the color description 'yellow'?",
+  "sql": "SELECT T1.product_name FROM products AS T1 JOIN ref_colors AS T2 ON T1.color_code  =  T2.color_code WHERE T2.color_description  =  'yellow'"
+ },
+ {
+  "i": 4339,
+  "db_id": "college_1",
+  "question_en": "Find the name and address of the department that has the highest number of students.",
+  "sql": "SELECT T2.dept_name ,  T2.dept_address FROM student AS T1 JOIN department AS T2 ON T1.dept_code  =  T2.dept_code GROUP BY T1.dept_code ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 4362,
+  "db_id": "movie_1",
+  "question_en": "What are the names of all movies made before 1980 or had James Cameron as the director?",
+  "sql": "SELECT title FROM Movie WHERE director  =  \"James Cameron\" OR YEAR   <  1980"
+ },
+ {
+  "i": 4363,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "What are all the document type codes and document type names?",
+  "sql": "SELECT document_type_code ,  document_type_name FROM Ref_document_types"
+ },
+ {
+  "i": 4373,
+  "db_id": "hr_1",
+  "question_en": "What are the full name (first and last name) and salary for all employees who does not have any value for commission?",
+  "sql": "SELECT first_name ,  last_name ,  salary FROM  employees WHERE commission_pct  =  \"null\""
+ },
+ {
+  "i": 4377,
+  "db_id": "coffee_shop",
+  "question_en": "Find the purchase time, age and address of each member, and show the results in the order of purchase time.",
+  "sql": "SELECT Time_of_purchase ,  age ,  address FROM member ORDER BY Time_of_purchase"
+ },
+ {
+  "i": 4378,
+  "db_id": "body_builder",
+  "question_en": "What are the clean and jerk score of the body builder with the highest total score?",
+  "sql": "SELECT Clean_Jerk FROM body_builder ORDER BY Total DESC LIMIT 1"
+ },
+ {
+  "i": 4461,
+  "db_id": "store_1",
+  "question_en": "How many employees who are IT staff are from each city?",
+  "sql": "SELECT count(*) ,  city FROM employees WHERE title  =  'IT Staff' GROUP BY city"
+ },
+ {
+  "i": 4470,
+  "db_id": "match_season",
+  "question_en": "What are the different positions of players from UCLA or Duke colleges?",
+  "sql": "SELECT DISTINCT POSITION FROM match_season WHERE College  =  \"UCLA\" OR College  =  \"Duke\""
+ },
+ {
+  "i": 4476,
+  "db_id": "products_gen_characteristics",
+  "question_en": "What are the names of the products that have a color description of 'red' and the 'fast' characteristic?",
+  "sql": "SELECT product_name FROM products AS t1 JOIN product_characteristics AS t2 ON t1.product_id  =  t2.product_id JOIN CHARACTERISTICS AS t3 ON t2.characteristic_id  =  t3.characteristic_id JOIN ref_colors AS t4 ON t1.color_code  =  t4.color_code WHERE t4.color_description  =  \"red\" AND t3.characteristic_name  =  \"fast\""
+ },
+ {
+  "i": 4478,
+  "db_id": "scientist_1",
+  "question_en": "Find the total hours of the projects that scientists named Michael Rogers or Carol Smith are assigned to.",
+  "sql": "SELECT sum(T2.hours) FROM assignedto AS T1 JOIN projects AS T2 ON T1.project  =  T2.code JOIN scientists AS T3 ON T1.scientist  =  T3.SSN WHERE T3.name  =  'Michael Rogers' OR T3.name  =  'Carol Smith'"
+ },
+ {
+  "i": 4484,
+  "db_id": "sakila_1",
+  "question_en": "What is the full name and id of the customer who has the lowest total amount of payment?",
+  "sql": "SELECT T1.first_name ,  T1.last_name ,  T1.customer_id FROM customer AS T1 JOIN payment AS T2 ON T1.customer_id  =  T2.customer_id GROUP BY T1.customer_id ORDER BY sum(amount) ASC LIMIT 1"
+ },
+ {
+  "i": 4492,
+  "db_id": "customer_deliveries",
+  "question_en": "Show the details of all trucks in the order of their license number.",
+  "sql": "SELECT truck_details FROM trucks ORDER BY truck_licence_number"
+ },
+ {
+  "i": 4522,
+  "db_id": "flight_4",
+  "question_en": "Find the names of the top 10 airlines that operate the most number of routes.",
+  "sql": "SELECT T1.name ,  T2.alid FROM airlines AS T1 JOIN routes AS T2 ON T1.alid  =  T2.alid GROUP BY T2.alid ORDER BY count(*) DESC LIMIT 10"
+ },
+ {
+  "i": 4524,
+  "db_id": "store_1",
+  "question_en": "List the name of tracks belongs to genre Rock and whose media type is MPEG audio file.",
+  "sql": "SELECT T2.name FROM genres AS T1 JOIN tracks AS T2 ON T1.id = T2.genre_id JOIN media_types AS T3 ON T3.id = T2.media_type_id WHERE T1.name = \"Rock\" AND T3.name = \"MPEG audio file\";"
+ },
+ {
+  "i": 4527,
+  "db_id": "loan_1",
+  "question_en": "Find the name of customers who do not have an saving account.",
+  "sql": "SELECT cust_name FROM customer EXCEPT SELECT cust_name FROM customer WHERE acc_type  =  'saving'"
+ },
+ {
+  "i": 4535,
+  "db_id": "cinema",
+  "question_en": "Count the number of cinemas.",
+  "sql": "SELECT count(*) FROM cinema"
+ },
+ {
+  "i": 4548,
+  "db_id": "city_record",
+  "question_en": "Which city has the highest temperature in February?",
+  "sql": "SELECT T1.city FROM city AS T1 JOIN temperature AS T2 ON T1.city_id  =  T2.city_id ORDER BY T2.Feb DESC LIMIT 1"
+ },
+ {
+  "i": 4583,
+  "db_id": "university_basketball",
+  "question_en": "List all information regarding the basketball match.",
+  "sql": "SELECT * FROM basketball_match"
+ },
+ {
+  "i": 4584,
+  "db_id": "tracking_share_transactions",
+  "question_en": "Show the number of transactions for different investors.",
+  "sql": "SELECT investor_id ,  COUNT(*) FROM TRANSACTIONS GROUP BY investor_id"
+ },
+ {
+  "i": 4589,
+  "db_id": "customers_and_addresses",
+  "question_en": "What are the names of customers who live in Colorado state?",
+  "sql": "SELECT t1.customer_name FROM customers AS t1 JOIN customer_addresses AS t2 ON t1.customer_id  =  t2.customer_id JOIN addresses AS t3 ON t2.address_id  =  t3.address_id WHERE t3.state_province_county  =  \"Colorado\""
+ },
+ {
+  "i": 4606,
+  "db_id": "match_season",
+  "question_en": "What are the names of teams that do no have match season record?",
+  "sql": "SELECT Name FROM team WHERE Team_id NOT IN (SELECT Team FROM match_season)"
+ },
+ {
+  "i": 4616,
+  "db_id": "customer_complaints",
+  "question_en": "Return the city with the customer type code \"Good Credit Rating\" that had the fewest customers.",
+  "sql": "SELECT town_city FROM customers WHERE customer_type_code  =  \"Good Credit Rating\" GROUP BY town_city ORDER BY count(*) LIMIT 1"
+ },
+ {
+  "i": 4630,
+  "db_id": "scientist_1",
+  "question_en": "Find the average hours of all projects.",
+  "sql": "SELECT avg(hours) FROM projects"
+ },
+ {
+  "i": 4641,
+  "db_id": "hr_1",
+  "question_en": "What are all the employees without a department number?",
+  "sql": "SELECT * FROM employees WHERE department_id  =  \"null\""
+ },
+ {
+  "i": 4642,
+  "db_id": "department_store",
+  "question_en": "Return the id of the staff whose Staff Department Assignment was earlier than that of any Clerical Staff.",
+  "sql": "SELECT staff_id FROM Staff_Department_Assignments WHERE date_assigned_to  <  (SELECT max(date_assigned_to) FROM Staff_Department_Assignments WHERE job_title_code  =  'Clerical Staff')"
+ },
+ {
+  "i": 4649,
+  "db_id": "phone_market",
+  "question_en": "List the distinct carriers of phones with memories bigger than 32.",
+  "sql": "SELECT DISTINCT Carrier FROM phone WHERE Memory_in_G  >  32"
+ },
+ {
+  "i": 4670,
+  "db_id": "gymnast",
+  "question_en": "List the names of gymnasts in ascending order by their heights.",
+  "sql": "SELECT T2.Name FROM gymnast AS T1 JOIN people AS T2 ON T1.Gymnast_ID  =  T2.People_ID ORDER BY T2.Height ASC"
+ },
+ {
+  "i": 4680,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "Count the number of budget codes.",
+  "sql": "SELECT count(*) FROM Ref_budget_codes"
+ },
+ {
+  "i": 4683,
+  "db_id": "election",
+  "question_en": "Show the delegate from district 1 in election.",
+  "sql": "SELECT Delegate FROM election WHERE District  =  1"
+ },
+ {
+  "i": 4704,
+  "db_id": "club_1",
+  "question_en": "Where is the club \"Pen and Paper Gaming\" located?",
+  "sql": "SELECT clublocation FROM club WHERE clubname  =  \"Pen and Paper Gaming\""
+ },
+ {
+  "i": 4707,
+  "db_id": "performance_attendance",
+  "question_en": "Show different locations and the number of performances at each location.",
+  "sql": "SELECT LOCATION ,  COUNT(*) FROM performance GROUP BY LOCATION"
+ },
+ {
+  "i": 4711,
+  "db_id": "club_1",
+  "question_en": "How many clubs does the student named \"Eric Tai\" belong to?",
+  "sql": "SELECT count(DISTINCT t1.clubname) FROM club AS t1 JOIN member_of_club AS t2 ON t1.clubid  =  t2.clubid JOIN student AS t3 ON t2.stuid  =  t3.stuid WHERE t3.fname  =  \"Eric\" AND t3.lname  =  \"Tai\""
+ },
+ {
+  "i": 4712,
+  "db_id": "game_1",
+  "question_en": "What is the total number of games played?",
+  "sql": "SELECT sum(gamesplayed) FROM Sportsinfo"
+ },
+ {
+  "i": 4715,
+  "db_id": "ship_mission",
+  "question_en": "Show codes and fates of missions, and names of ships involved.",
+  "sql": "SELECT T1.Code ,  T1.Fate ,  T2.Name FROM mission AS T1 JOIN ship AS T2 ON T1.Ship_ID  =  T2.Ship_ID"
+ },
+ {
+  "i": 4720,
+  "db_id": "college_2",
+  "question_en": "Give the name and building of the departments with greater than average budget.",
+  "sql": "SELECT dept_name ,  building FROM department WHERE budget  >  (SELECT avg(budget) FROM department)"
+ },
+ {
+  "i": 4729,
+  "db_id": "loan_1",
+  "question_en": "What is the average number of customers across banks in the state of Utah?",
+  "sql": "SELECT avg(no_of_customers) FROM bank WHERE state  =  'Utah'"
+ },
+ {
+  "i": 4730,
+  "db_id": "customers_and_invoices",
+  "question_en": "Show the account name, id and the number of transactions for each account.",
+  "sql": "SELECT T2.account_name ,  T1.account_id ,  count(*) FROM Financial_transactions AS T1 JOIN Accounts AS T2 ON T1.account_id  =  T2.account_id GROUP BY T1.account_id"
+ },
+ {
+  "i": 4733,
+  "db_id": "city_record",
+  "question_en": "In February, which city marks the highest temperature?",
+  "sql": "SELECT T1.city FROM city AS T1 JOIN temperature AS T2 ON T1.city_id  =  T2.city_id ORDER BY T2.Feb DESC LIMIT 1"
+ },
+ {
+  "i": 4743,
+  "db_id": "music_1",
+  "question_en": "What is the language used most often in the songs?",
+  "sql": "SELECT languages FROM song GROUP BY languages ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 4755,
+  "db_id": "activity_1",
+  "question_en": "Which students participate in both Canoeing and Kayaking as their activities? Tell me their student ids.",
+  "sql": "SELECT T1.stuid FROM participates_in AS T1 JOIN activity AS T2 ON T2.actid  =  T2.actid WHERE T2.activity_name  =  'Canoeing' INTERSECT SELECT T1.stuid FROM participates_in AS T1 JOIN activity AS T2 ON T2.actid  =  T2.actid WHERE T2.activity_name  =  'Kayaking'"
+ },
+ {
+  "i": 4761,
+  "db_id": "wrestler",
+  "question_en": "Return the elimination movies of wrestlers on Team Orton.",
+  "sql": "SELECT Elimination_Move FROM Elimination WHERE Team  =  \"Team Orton\""
+ },
+ {
+  "i": 4780,
+  "db_id": "school_bus",
+  "question_en": "Show the school name and type for schools without a school bus.",
+  "sql": "SELECT school ,  TYPE FROM school WHERE school_id NOT IN (SELECT school_id FROM school_bus)"
+ },
+ {
+  "i": 4782,
+  "db_id": "match_season",
+  "question_en": "Show all official native languages that contain the word \"English\".",
+  "sql": "SELECT Official_native_language FROM country WHERE Official_native_language LIKE \"%English%\""
+ },
+ {
+  "i": 4792,
+  "db_id": "party_people",
+  "question_en": "What are the names of parties that have no members?",
+  "sql": "SELECT party_name FROM party WHERE party_id NOT IN (SELECT party_id FROM Member)"
+ },
+ {
+  "i": 4793,
+  "db_id": "csu_1",
+  "question_en": "What campuses are located in Chico?",
+  "sql": "SELECT campus FROM campuses WHERE LOCATION  =  \"Chico\""
+ },
+ {
+  "i": 4809,
+  "db_id": "device",
+  "question_en": "What are the different software platforms for devices, and how many devices have each?",
+  "sql": "SELECT Software_Platform ,  COUNT(*) FROM device GROUP BY Software_Platform"
+ },
+ {
+  "i": 4816,
+  "db_id": "college_2",
+  "question_en": "Which semeseter and year had the fewest students?",
+  "sql": "SELECT semester ,  YEAR FROM takes GROUP BY semester ,  YEAR ORDER BY count(*) LIMIT 1"
+ },
+ {
+  "i": 4826,
+  "db_id": "soccer_2",
+  "question_en": "Find the states where have the colleges whose enrollments are less than the largest size.",
+  "sql": "SELECT DISTINCT state FROM college WHERE enr  <  (SELECT max(enr) FROM college)"
+ },
+ {
+  "i": 4829,
+  "db_id": "department_store",
+  "question_en": "What are the phone numbers of all customers and suppliers.",
+  "sql": "SELECT customer_phone FROM customers UNION SELECT supplier_phone FROM suppliers"
+ },
+ {
+  "i": 4839,
+  "db_id": "products_gen_characteristics",
+  "question_en": "Give the color description that is least common across products.",
+  "sql": "SELECT t2.color_description FROM products AS t1 JOIN ref_colors AS t2 ON t1.color_code  =  t2.color_code GROUP BY t2.color_description ORDER BY count(*) ASC LIMIT 1"
+ },
+ {
+  "i": 4845,
+  "db_id": "customer_complaints",
+  "question_en": "Of complaints with the type code \"Product Failure\", how many had each different status code?",
+  "sql": "SELECT complaint_status_code ,  count(*) FROM complaints WHERE complaint_type_code  =  \"Product Failure\" GROUP BY complaint_status_code"
+ },
+ {
+  "i": 4852,
+  "db_id": "store_product",
+  "question_en": "What is the average pages per minute color?",
+  "sql": "SELECT avg(pages_per_minute_color) FROM product"
+ },
+ {
+  "i": 4854,
+  "db_id": "movie_1",
+  "question_en": "For any rating where the name of reviewer is the same as the director of the movie, return the reviewer name, movie title, and number of stars.",
+  "sql": "SELECT DISTINCT T3.name ,  T2.title ,  T1.stars FROM Rating AS T1 JOIN Movie AS T2 ON T1.mID  =  T2.mID JOIN Reviewer AS T3 ON T1.rID  =  T3.rID WHERE T2.director  =  T3.name"
+ },
+ {
+  "i": 4859,
+  "db_id": "apartment_rentals",
+  "question_en": "Show the first names and last names of all the guests that have apartment bookings with status code \"Confirmed\".",
+  "sql": "SELECT T2.guest_first_name ,  T2.guest_last_name FROM Apartment_Bookings AS T1 JOIN Guests AS T2 ON T1.guest_id  =  T2.guest_id WHERE T1.booking_status_code  =  \"Confirmed\""
+ },
+ {
+  "i": 4868,
+  "db_id": "college_2",
+  "question_en": "Give the title and credits for the course that is taught in the classroom with the greatest capacity.",
+  "sql": "SELECT T3.title ,  T3.credits FROM classroom AS T1 JOIN SECTION AS T2 ON T1.building  =  T2.building AND T1.room_number  =  T2.room_number JOIN course AS T3 ON T2.course_id  =  T3.course_id WHERE T1.capacity  =  (SELECT max(capacity) FROM classroom)"
+ },
+ {
+  "i": 4870,
+  "db_id": "activity_1",
+  "question_en": "Find the first names of the faculty members who participate in Canoeing and Kayaking.",
+  "sql": "SELECT T1.lname FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID  =  T2.facID JOIN activity AS T3 ON T2.actid  =  T2.actid WHERE T3.activity_name  =  'Canoeing' INTERSECT SELECT T1.lname FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID  =  T2.facID JOIN activity AS T3 ON T2.actid  =  T2.actid WHERE T3.activity_name  =  'Kayaking'"
+ },
+ {
+  "i": 4873,
+  "db_id": "customers_and_invoices",
+  "question_en": "What are the different product names, and what is the sum of quantity ordered for each product?",
+  "sql": "SELECT T2.product_name ,  sum(T1.product_quantity) FROM Order_items AS T1 JOIN Products AS T2 ON T1.product_id  =  T2.product_id GROUP BY T2.product_name"
+ },
+ {
+  "i": 4892,
+  "db_id": "railway",
+  "question_en": "Show the locations that have more than one railways.",
+  "sql": "SELECT LOCATION FROM railway GROUP BY LOCATION HAVING COUNT(*)  >  1"
+ },
+ {
+  "i": 4899,
+  "db_id": "chinook_1",
+  "question_en": "What is the average duration in milliseconds of tracks that belong to Latin or Pop genre?",
+  "sql": "SELECT AVG(Milliseconds) FROM GENRE AS T1 JOIN TRACK AS T2 ON T1.GenreId  =  T2.GenreId WHERE T1.Name  =  \"Latin\" OR T1.Name  =  \"Pop\""
+ },
+ {
+  "i": 4918,
+  "db_id": "customers_and_addresses",
+  "question_en": "Find the total amount of products ordered before 2018-03-17 07:13:53.",
+  "sql": "SELECT sum(t2.order_quantity) FROM customer_orders AS t1 JOIN order_items AS t2 ON t1.order_id  =  t2.order_id WHERE t1.order_date  <  \"2018-03-17 07:13:53\""
+ },
+ {
+  "i": 4924,
+  "db_id": "icfp_1",
+  "question_en": "Find the country that the most papers are affiliated with.",
+  "sql": "SELECT t1.country FROM inst AS t1 JOIN authorship AS t2 ON t1.instid  =  t2.instid JOIN papers AS t3 ON t2.paperid  =  t3.paperid GROUP BY t1.country ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 4975,
+  "db_id": "soccer_2",
+  "question_en": "Find the max, average and min training hours of all players.",
+  "sql": "SELECT avg(HS) ,  max(HS) ,  min(HS) FROM Player"
+ },
+ {
+  "i": 4984,
+  "db_id": "loan_1",
+  "question_en": "What is the total amount of money loaned by banks in New York state?",
+  "sql": "SELECT sum(T2.amount) FROM bank AS T1 JOIN loan AS T2 ON T1.branch_id  =  T2.branch_id WHERE T1.state  =  'New York'"
+ },
+ {
+  "i": 4990,
+  "db_id": "body_builder",
+  "question_en": "What are the names of body builders in descending order of total scores?",
+  "sql": "SELECT T2.Name FROM body_builder AS T1 JOIN people AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T1.Total DESC"
+ },
+ {
+  "i": 4991,
+  "db_id": "store_1",
+  "question_en": "What are the titles of all the Aerosmith albums?",
+  "sql": "SELECT T1.title FROM albums AS T1 JOIN artists AS T2 ON  T1.artist_id = T2.id WHERE T2.name = \"Aerosmith\";"
+ },
+ {
+  "i": 5004,
+  "db_id": "activity_1",
+  "question_en": "Find the ids of the students who participate in Canoeing and Kayaking.",
+  "sql": "SELECT T1.stuid FROM participates_in AS T1 JOIN activity AS T2 ON T2.actid  =  T2.actid WHERE T2.activity_name  =  'Canoeing' INTERSECT SELECT T1.stuid FROM participates_in AS T1 JOIN activity AS T2 ON T2.actid  =  T2.actid WHERE T2.activity_name  =  'Kayaking'"
+ },
+ {
+  "i": 5035,
+  "db_id": "storm_record",
+  "question_en": "List name, dates active, and number of deaths for all storms with at least 1 death.",
+  "sql": "SELECT name ,  dates_active ,  number_deaths FROM storm WHERE number_deaths  >=  1"
+ },
+ {
+  "i": 5056,
+  "db_id": "race_track",
+  "question_en": "What are the years of opening for tracks with seating between 4000 and 5000?",
+  "sql": "SELECT year_opened FROM track WHERE seating BETWEEN 4000 AND 5000"
+ },
+ {
+  "i": 5057,
+  "db_id": "hr_1",
+  "question_en": "List the full name (first and last name), and salary for those employees who earn below 6000.",
+  "sql": "SELECT first_name ,  last_name ,  salary FROM employees WHERE salary  <  6000"
+ },
+ {
+  "i": 5058,
+  "db_id": "college_1",
+  "question_en": "What is the first and last name of the youngest student with a GPA above 3, and what is their GPA?",
+  "sql": "SELECT stu_fname ,  stu_lname ,  stu_gpa FROM student WHERE stu_gpa  >  3 ORDER BY stu_dob DESC LIMIT 1"
+ },
+ {
+  "i": 5087,
+  "db_id": "inn_1",
+  "question_en": "Return the name and number of reservations made for each of the rooms.",
+  "sql": "SELECT T2.roomName ,  count(*) ,  T1.Room FROM Reservations AS T1 JOIN Rooms AS T2 ON T1.Room  =  T2.RoomId GROUP BY T1.Room"
+ },
+ {
+  "i": 5095,
+  "db_id": "ship_mission",
+  "question_en": "What are the names of the ships that are not from the United States?",
+  "sql": "SELECT Name FROM ship WHERE Nationality != \"United States\""
+ },
+ {
+  "i": 5100,
+  "db_id": "music_4",
+  "question_en": "What is the average age of all artists?",
+  "sql": "SELECT avg(Age) FROM artist"
+ },
+ {
+  "i": 5117,
+  "db_id": "phone_1",
+  "question_en": "List the hardware model name for the phones that have screen mode type \"Text\" or RAM size greater than 32.",
+  "sql": "SELECT T2.Hardware_Model_name FROM chip_model AS T1 JOIN phone AS T2 ON T1.Model_name  =  T2.chip_model JOIN screen_mode AS T3 ON T2.screen_mode = T3.Graphics_mode WHERE T3.Type = \"Text\" OR T1.RAM_MiB  >  32;"
+ },
+ {
+  "i": 5132,
+  "db_id": "products_gen_characteristics",
+  "question_en": "List all the product names with the color description \"white\".",
+  "sql": "SELECT t1.product_name FROM products AS t1 JOIN ref_colors AS t2 ON t1.color_code  =  t2.color_code WHERE t2.color_description  =  \"white\""
+ },
+ {
+  "i": 5145,
+  "db_id": "driving_school",
+  "question_en": "How many employees have a first name of Ludie?",
+  "sql": "SELECT count(*) FROM Staff WHERE first_name = \"Ludie\";"
+ },
+ {
+  "i": 5196,
+  "db_id": "movie_1",
+  "question_en": "What are the names of all directors who have made one movie except for the director named NULL?",
+  "sql": "SELECT director FROM Movie WHERE director != \"null\" GROUP BY director HAVING count(*)  =  1"
+ },
+ {
+  "i": 5205,
+  "db_id": "tracking_software_problems",
+  "question_en": "Which problems are reported by the staff with first name \"Christop\"? Show the descriptions of the problems.",
+  "sql": "SELECT T1.problem_description FROM problems AS T1 JOIN staff AS T2 ON T1.reported_by_staff_id = T2.staff_id WHERE T2.staff_first_name = \"Christop\""
+ },
+ {
+  "i": 5215,
+  "db_id": "protein_institute",
+  "question_en": "List the names of buildings with at least 200 feet of height and with at least 20 floors.",
+  "sql": "SELECT name FROM building WHERE height_feet  >=  200 AND floors  >=  20"
+ },
+ {
+  "i": 5223,
+  "db_id": "tracking_share_transactions",
+  "question_en": "Show the minimum amount of transactions whose type code is \"PUR\" and whose share count is bigger than 50.",
+  "sql": "SELECT min(amount_of_transaction) FROM TRANSACTIONS WHERE transaction_type_code  =  \"PUR\" AND share_count  >  50"
+ },
+ {
+  "i": 5247,
+  "db_id": "music_4",
+  "question_en": "Return the issue date of the volume that has spent the fewest weeks on top.",
+  "sql": "SELECT Issue_Date FROM volume ORDER BY Weeks_on_Top ASC LIMIT 1"
+ },
+ {
+  "i": 5252,
+  "db_id": "party_host",
+  "question_en": "Show the nations that have both hosts older than 45 and hosts younger than 35.",
+  "sql": "SELECT Nationality FROM HOST WHERE Age  >  45 INTERSECT SELECT Nationality FROM HOST WHERE Age  <  35"
+ },
+ {
+  "i": 5262,
+  "db_id": "voter_2",
+  "question_en": "What is the average age of female (sex is F) students?",
+  "sql": "SELECT avg(Age) FROM STUDENT WHERE Sex  =  \"F\""
+ },
+ {
+  "i": 5263,
+  "db_id": "flight_4",
+  "question_en": "What are the countries with the most airlines whose active status is Y?",
+  "sql": "SELECT country FROM airlines WHERE active  =  'Y' GROUP BY country ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 5283,
+  "db_id": "wine_1",
+  "question_en": "What are the appelations for wines produced after 2008 but not in the Central Coast area?",
+  "sql": "SELECT Appelation FROM WINE WHERE YEAR  >  2008 EXCEPT SELECT Appelation FROM APPELLATIONS WHERE Area  =  \"Central Coast\""
+ },
+ {
+  "i": 5288,
+  "db_id": "department_store",
+  "question_en": "What are the names and genders of staff who have held the title Sales Person, but never Clerical Staff?",
+  "sql": "SELECT T1.staff_name ,  T1.staff_gender FROM staff AS T1 JOIN Staff_Department_Assignments AS T2 ON T1.staff_id  =  T2.staff_id WHERE T2.job_title_code  =  \"Sales Person\" EXCEPT SELECT T1.staff_name ,  T1.staff_gender FROM staff AS T1 JOIN Staff_Department_Assignments AS T2 ON T1.staff_id  =  T2.staff_id WHERE T2.job_title_code  =  \"Clerical Staff\""
+ },
+ {
+  "i": 5293,
+  "db_id": "e_government",
+  "question_en": "Find the last name of the first ever contact person of the organization with the highest UK Vat number.",
+  "sql": "SELECT t3.individual_last_name FROM organizations AS t1 JOIN organization_contact_individuals AS t2 ON t1.organization_id  =  t2.organization_id JOIN individuals AS t3 ON t2.individual_id  =  t3.individual_id WHERE t1.uk_vat_number  =  (SELECT max(uk_vat_number) FROM organizations) ORDER BY t2.date_contact_to ASC LIMIT 1"
+ },
+ {
+  "i": 5294,
+  "db_id": "student_1",
+  "question_en": "Find the grade studying in room 105.",
+  "sql": "SELECT DISTINCT grade FROM list WHERE classroom  =  105"
+ },
+ {
+  "i": 5295,
+  "db_id": "assets_maintenance",
+  "question_en": "Which part has the least chargeable amount? List the part id and amount.",
+  "sql": "SELECT part_id ,  chargeable_amount FROM Parts ORDER BY chargeable_amount ASC LIMIT 1"
+ },
+ {
+  "i": 5297,
+  "db_id": "movie_1",
+  "question_en": "Find the names of all reviewers who have contributed three or more ratings.",
+  "sql": "SELECT T2.name FROM Rating AS T1 JOIN Reviewer AS T2 ON T1.rID  =  T2.rID GROUP BY T1.rID HAVING COUNT(*)  >=  3"
+ },
+ {
+  "i": 5299,
+  "db_id": "party_people",
+  "question_en": "Who are the ministers who took office after 1961 or before 1959?",
+  "sql": "SELECT minister FROM party WHERE took_office  >  1961 OR took_office  <  1959"
+ },
+ {
+  "i": 5303,
+  "db_id": "school_player",
+  "question_en": "What are the denominations used by both schools founded before 1890 and schools founded  after 1900?",
+  "sql": "SELECT Denomination FROM school WHERE Founded  <  1890 INTERSECT SELECT Denomination FROM school WHERE Founded  >  1900"
+ },
+ {
+  "i": 5312,
+  "db_id": "swimming",
+  "question_en": "Find the names of the swimmers who have no record.",
+  "sql": "SELECT name FROM swimmer WHERE id NOT IN (SELECT swimmer_id FROM record)"
+ },
+ {
+  "i": 5326,
+  "db_id": "store_1",
+  "question_en": "What are the names of all the tracks that are in both the Movies and music playlists?",
+  "sql": "SELECT T1.name FROM tracks AS T1 JOIN playlist_tracks AS T2 ON T1.id  =  T2.track_id JOIN playlists AS T3 ON T2.playlist_id  =  T3.id WHERE T3.name  =  'Movies' INTERSECT SELECT T1.name FROM tracks AS T1 JOIN playlist_tracks AS T2 ON T1.id  =  T2.track_id JOIN playlists AS T3 ON T2.playlist_id  =  T3.id WHERE T3.name  =  'Music'"
+ },
+ {
+  "i": 5332,
+  "db_id": "e_government",
+  "question_en": "What are the first, middle, and last names of all individuals, ordered by last name?",
+  "sql": "SELECT individual_first_name ,  individual_middle_name ,  individual_last_name FROM individuals ORDER BY individual_last_name"
+ },
+ {
+  "i": 5337,
+  "db_id": "sakila_1",
+  "question_en": "How many addresses are in the district of California?",
+  "sql": "SELECT count(*) FROM address WHERE district  =  'California'"
+ },
+ {
+  "i": 5349,
+  "db_id": "music_1",
+  "question_en": "Find the id of songs that are available in mp4 format and have resolution lower than 1000.",
+  "sql": "SELECT f_id FROM files WHERE formats  =  \"mp4\" INTERSECT SELECT f_id FROM song WHERE resolution  <  1000"
+ },
+ {
+  "i": 5365,
+  "db_id": "storm_record",
+  "question_en": "Count the number of regions.",
+  "sql": "SELECT count(*) FROM region"
+ },
+ {
+  "i": 5389,
+  "db_id": "film_rank",
+  "question_en": "What are the years of film market estimation for the market of Japan, ordered by year descending?",
+  "sql": "SELECT T1.Year FROM film_market_estimation AS T1 JOIN market AS T2 ON T1.Market_ID  =  T2.Market_ID WHERE T2.Country  =  \"Japan\" ORDER BY T1.Year DESC"
+ },
+ {
+  "i": 5395,
+  "db_id": "driving_school",
+  "question_en": "What are the last names that are used by customers and staff?",
+  "sql": "SELECT last_name FROM Customers INTERSECT SELECT last_name FROM Staff"
+ },
+ {
+  "i": 5401,
+  "db_id": "department_store",
+  "question_en": "Return the phone numbers for all customers and suppliers.",
+  "sql": "SELECT customer_phone FROM customers UNION SELECT supplier_phone FROM suppliers"
+ },
+ {
+  "i": 5405,
+  "db_id": "e_government",
+  "question_en": "Which is the email of the party that has used the services the most number of times?",
+  "sql": "SELECT t1.party_email FROM parties AS t1 JOIN party_services AS t2 ON t1.party_id  =  t2.customer_id GROUP BY t1.party_email ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 5417,
+  "db_id": "aircraft",
+  "question_en": "What are the names of all aicrafts that have never won any match?",
+  "sql": "SELECT Aircraft FROM aircraft WHERE Aircraft_ID NOT IN (SELECT Winning_Aircraft FROM MATCH)"
+ },
+ {
+  "i": 5427,
+  "db_id": "store_1",
+  "question_en": "How many albums does Billy Cobham has?",
+  "sql": "SELECT count(*) FROM albums AS T1 JOIN artists AS T2 ON  T1.artist_id = T2.id WHERE T2.name = \"Billy Cobham\";"
+ },
+ {
+  "i": 5429,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "What are the ids of all the employees who have destroyed documents?",
+  "sql": "SELECT DISTINCT Destroyed_by_Employee_ID FROM Documents_to_be_destroyed"
+ },
+ {
+  "i": 5442,
+  "db_id": "csu_1",
+  "question_en": "Find the campus fee of \"San Jose State University\" in year 2000.",
+  "sql": "SELECT t1.campusfee FROM csu_fees AS t1 JOIN campuses AS t2 ON t1.campus  =  t2.id WHERE t2.campus  =  \"San Jose State University\" AND t1.year  =  2000"
+ },
+ {
+  "i": 5458,
+  "db_id": "device",
+  "question_en": "What are the names of device shops, and what are the carriers that they carry devices in stock for?",
+  "sql": "SELECT T3.Shop_Name ,  T2.Carrier FROM stock AS T1 JOIN device AS T2 ON T1.Device_ID  =  T2.Device_ID JOIN shop AS T3 ON T1.Shop_ID  =  T3.Shop_ID"
+ },
+ {
+  "i": 5459,
+  "db_id": "manufactory_1",
+  "question_en": "What are the names and prices of all products in the store?",
+  "sql": "SELECT name ,  price FROM products"
+ },
+ {
+  "i": 5469,
+  "db_id": "flight_1",
+  "question_en": "What are the ids of all employees that don't have certificates?",
+  "sql": "SELECT eid FROM Employee EXCEPT SELECT eid FROM Certificate"
+ },
+ {
+  "i": 5472,
+  "db_id": "cre_Doc_Tracking_DB",
+  "question_en": "How many document types are there?",
+  "sql": "SELECT count(*) FROM Ref_document_types"
+ },
+ {
+  "i": 5478,
+  "db_id": "sports_competition",
+  "question_en": "which countries did participated in both Friendly and Tournament type competitions.",
+  "sql": "SELECT country FROM competition WHERE competition_type  =  'Friendly' INTERSECT SELECT country FROM competition WHERE competition_type  =  'Tournament'"
+ },
+ {
+  "i": 5483,
+  "db_id": "club_1",
+  "question_en": "Find the first name and last name for the \"CTO\" of the club \"Hopkins Student Enterprises\"?",
+  "sql": "SELECT t3.fname ,  t3.lname FROM club AS t1 JOIN member_of_club AS t2 ON t1.clubid  =  t2.clubid JOIN student AS t3 ON t2.stuid  =  t3.stuid WHERE t1.clubname  =  \"Hopkins Student Enterprises\" AND t2.position  =  \"CTO\""
+ },
+ {
+  "i": 5486,
+  "db_id": "local_govt_mdm",
+  "question_en": "How many business rates are related to each cmi cross reference? List cross reference id, master customer id and the n",
+  "sql": "SELECT T2.cmi_cross_ref_id ,  T2.master_customer_id ,  count(*) FROM Business_Rates AS T1 JOIN CMI_Cross_References AS T2 ON T1.cmi_cross_ref_id  =  T2.cmi_cross_ref_id GROUP BY T2.cmi_cross_ref_id"
+ },
+ {
+  "i": 5495,
+  "db_id": "csu_1",
+  "question_en": "What are the names of the campus that have more faculties in 2002 than the maximum number in Orange county?",
+  "sql": "SELECT T1.campus FROM campuses AS T1 JOIN faculty AS T2 ON T1.id  =  T2.campus WHERE T2.year  =  2002 AND faculty  >  (SELECT max(faculty) FROM campuses AS T1 JOIN faculty AS T2 ON T1.id  =  T2.campus WHERE T2.year  =  2002 AND T1.county  =  \"Orange\")"
+ },
+ {
+  "i": 5502,
+  "db_id": "customers_and_products_contacts",
+  "question_en": "How many addresses are there in country USA?",
+  "sql": "SELECT count(*) FROM addresses WHERE country  =  'USA'"
+ },
+ {
+  "i": 5509,
+  "db_id": "game_1",
+  "question_en": "Show first name for all students with major 600.",
+  "sql": "SELECT Fname FROM Student WHERE Major  =  600"
+ },
+ {
+  "i": 5536,
+  "db_id": "soccer_2",
+  "question_en": "What are the name of the players who received a card in descending order of the hours of training?",
+  "sql": "SELECT pName FROM Player WHERE yCard  =  'yes' ORDER BY HS DESC"
+ },
+ {
+  "i": 5537,
+  "db_id": "journal_committee",
+  "question_en": "Show the names of editors and the theme of journals for which they serve on committees.",
+  "sql": "SELECT T2.Name ,  T3.Theme FROM journal_committee AS T1 JOIN editor AS T2 ON T1.Editor_ID  =  T2.Editor_ID JOIN journal AS T3 ON T1.Journal_ID  =  T3.Journal_ID"
+ },
+ {
+  "i": 5542,
+  "db_id": "formula_1",
+  "question_en": "For each id of a driver who participated in at most 30 races, how many races did they participate in?",
+  "sql": "SELECT T1.driverid ,  count(*) FROM drivers AS T1 JOIN results AS T2 ON T1.driverid = T2.driverid JOIN races AS T3 ON T2.raceid = T3.raceid GROUP BY T1.driverid HAVING count(*)  <=  30"
+ },
+ {
+  "i": 5572,
+  "db_id": "store_1",
+  "question_en": "List the name of albums that are released by aritist whose name has 'Led'",
+  "sql": "SELECT T2.title FROM artists AS T1 JOIN albums AS T2 ON T1.id  =  T2.artist_id WHERE T1.name LIKE '%Led%'"
+ },
+ {
+  "i": 5584,
+  "db_id": "sports_competition",
+  "question_en": "What are the different years for all competitions that are not of type equal to tournament?",
+  "sql": "SELECT DISTINCT YEAR FROM competition WHERE Competition_type != \"Tournament\""
+ },
+ {
+  "i": 5635,
+  "db_id": "flight_1",
+  "question_en": "What is the count of distinct employees with certificates?",
+  "sql": "SELECT count(DISTINCT eid) FROM Certificate"
+ },
+ {
+  "i": 5653,
+  "db_id": "machine_repair",
+  "question_en": "Please show the team that has the most number of technicians.",
+  "sql": "SELECT Team FROM technician GROUP BY Team ORDER BY COUNT(*) DESC LIMIT 1"
+ },
+ {
+  "i": 5658,
+  "db_id": "movie_1",
+  "question_en": "Find the names of all reviewers who rated Gone with the Wind.",
+  "sql": "SELECT DISTINCT T3.name FROM Rating AS T1 JOIN Movie AS T2 ON T1.mID  =  T2.mID JOIN Reviewer AS T3 ON T1.rID  =  T3.rID WHERE T2.title  =  'Gone with the Wind'"
+ },
+ {
+  "i": 5699,
+  "db_id": "workshop_paper",
+  "question_en": "Which colleges have both authors with submission score above 90 and authors with submission score below 80?",
+  "sql": "SELECT College FROM submission WHERE Scores  >  90 INTERSECT SELECT College FROM submission WHERE Scores  <  80"
+ },
+ {
+  "i": 5701,
+  "db_id": "small_bank_1",
+  "question_en": "What is the name and checking balance of the account which has the lowest savings balance?",
+  "sql": "SELECT T2.balance ,  T1.name FROM accounts AS T1 JOIN checking AS T2 ON T1.custid  =  T2.custid JOIN savings AS T3 ON T1.custid  =  T3.custid ORDER BY T3.balance LIMIT 1"
+ },
+ {
+  "i": 5702,
+  "db_id": "candidate_poll",
+  "question_en": "find the names of people who are taller than 200 or lower than 190.",
+  "sql": "SELECT name FROM people WHERE height  >  200 OR height  <  190"
+ },
+ {
+  "i": 5715,
+  "db_id": "customers_and_addresses",
+  "question_en": "Which customers use \"Cash\" for payment method? Return the customer names.",
+  "sql": "SELECT customer_name FROM customers WHERE payment_method  =  \"Cash\""
+ },
+ {
+  "i": 5733,
+  "db_id": "e_government",
+  "question_en": "How many cities are there in state \"Colorado\"?",
+  "sql": "SELECT count(*) FROM addresses WHERE state_province_county  =  \"Colorado\""
+ },
+ {
+  "i": 5752,
+  "db_id": "decoration_competition",
+  "question_en": "Which countries have more than two members?",
+  "sql": "SELECT Country FROM member GROUP BY Country HAVING COUNT(*)  >  2"
+ },
+ {
+  "i": 5760,
+  "db_id": "cre_Theme_park",
+  "question_en": "Find the names of the tourist attractions that is either accessible by walk or at address 660 Shea Crescent.",
+  "sql": "SELECT T2.Name FROM Locations AS T1 JOIN Tourist_Attractions AS T2 ON T1.Location_ID  =  T2.Location_ID WHERE T1.Address  =  \"660 Shea Crescent\" OR T2.How_to_Get_There  =  \"walk\""
+ },
+ {
+  "i": 5763,
+  "db_id": "sakila_1",
+  "question_en": "What is the title and id of the film that has the greatest number of copies in inventory?",
+  "sql": "SELECT T1.title ,  T1.film_id FROM film AS T1 JOIN inventory AS T2 ON T1.film_id  =  T2.film_id GROUP BY T1.film_id ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 5795,
+  "db_id": "cre_Docs_and_Epenses",
+  "question_en": "What are the ids and details of all accounts?",
+  "sql": "SELECT account_id ,  account_details FROM Accounts"
+ },
+ {
+  "i": 5808,
+  "db_id": "loan_1",
+  "question_en": "What are the names of all customers, ordered by account balance?",
+  "sql": "SELECT cust_name FROM customer ORDER BY acc_bal"
+ },
+ {
+  "i": 5822,
+  "db_id": "wedding",
+  "question_en": "Show the organizer and name for churches that opened between 1830 and 1840.",
+  "sql": "SELECT organized_by ,  name FROM church WHERE open_date BETWEEN 1830 AND 1840"
+ },
+ {
+  "i": 5847,
+  "db_id": "school_bus",
+  "question_en": "Show the home city with the most number of drivers.",
+  "sql": "SELECT home_city FROM driver GROUP BY home_city ORDER BY count(*) DESC LIMIT 1"
+ },
+ {
+  "i": 5856,
+  "db_id": "college_3",
+  "question_en": "Find the names of departments that are either in division AS or in division EN and in Building NEB.",
+  "sql": "SELECT DName FROM DEPARTMENT WHERE Division  =  \"AS\" UNION SELECT DName FROM DEPARTMENT WHERE Division  =  \"EN\" AND Building  =  \"NEB\""
+ },
+ {
+  "i": 5857,
+  "db_id": "store_product",
+  "question_en": "Find products with max page size as \"A4\" and pages per minute color smaller than 5.",
+  "sql": "SELECT product FROM product WHERE max_page_size  =  \"A4\" AND pages_per_minute_color  <  5"
+ },
+ {
+  "i": 5862,
+  "db_id": "phone_1",
+  "question_en": "Find the details for all chip models.",
+  "sql": "SELECT * FROM chip_model"
+ },
+ {
+  "i": 5869,
+  "db_id": "election",
+  "question_en": "Who are the lieutenant governor and comptroller from the democratic party?",
+  "sql": "SELECT Lieutenant_Governor ,  Comptroller FROM party WHERE Party  =  \"Democratic\""
+ },
+ {
+  "i": 5877,
+  "db_id": "small_bank_1",
+  "question_en": "Find the total saving balance for each account name.",
+  "sql": "SELECT sum(T2.balance) ,  T1.name FROM accounts AS T1 JOIN savings AS T2 ON T1.custid  =  T2.custid GROUP BY T1.name"
+ },
+ {
+  "i": 5894,
+  "db_id": "hr_1",
+  "question_en": "display the job title of jobs which minimum salary is greater than 9000.",
+  "sql": "SELECT job_title FROM jobs WHERE min_salary  >  9000"
+ },
+ {
+  "i": 5897,
+  "db_id": "hr_1",
+  "question_en": "What are the first name and department name of all employees?",
+  "sql": "SELECT T1.first_name ,  T2.department_name FROM employees AS T1 JOIN departments AS T2 ON T1.department_id  =  T2.department_id"
+ },
+ {
+  "i": 5904,
+  "db_id": "gymnast",
+  "question_en": "List the names of the top 5 oldest people.",
+  "sql": "SELECT Name FROM People ORDER BY Age DESC LIMIT 5"
+ },
+ {
+  "i": 5919,
+  "db_id": "game_1",
+  "question_en": "How many games are played for all football games by students on scholarship?",
+  "sql": "SELECT sum(gamesplayed) FROM Sportsinfo WHERE sportname  =  \"Football\" AND onscholarship  =  'Y'"
+ },
+ {
+  "i": 5928,
+  "db_id": "tracking_software_problems",
+  "question_en": "For which product was there a problem reported by Christop Berge, with closure authorised by Ashley Medhurst? Return the product ids.",
+  "sql": "SELECT product_id FROM problems AS T1 JOIN staff AS T2 ON T1.reported_by_staff_id = T2.staff_id WHERE T2.staff_first_name = \"Christop\" AND T2.staff_last_name = \"Berge\" INTERSECT SELECT product_id FROM problems AS T1 JOIN staff AS T2 ON T1.closure_authorised_by_staff_id = T2.staff_id WHERE T2.staff_first_name = \"Ashley\" AND T2.staff_last_name = \"Medhurst\""
+ },
+ {
+  "i": 5943,
+  "db_id": "soccer_2",
+  "question_en": "How many different colleges were represented at tryouts?",
+  "sql": "SELECT count(DISTINCT cName) FROM tryout"
+ },
+ {
+  "i": 5951,
+  "db_id": "party_people",
+  "question_en": "Show all distinct region names ordered by their labels.",
+  "sql": "SELECT DISTINCT region_name FROM region ORDER BY Label"
+ },
+ {
+  "i": 5961,
+  "db_id": "flight_4",
+  "question_en": "In how many cities are there airports in the country of Greenland?",
+  "sql": "SELECT count(DISTINCT city) FROM airports WHERE country  =  'Greenland'"
+ },
+ {
+  "i": 5979,
+  "db_id": "hospital_1",
+  "question_en": "Find the physician who was trained in the most expensive procedure?",
+  "sql": "SELECT T1.name FROM physician AS T1 JOIN trained_in AS T2 ON T1.employeeid  =  T2.physician JOIN procedures AS T3 ON T3.code  =  T2.treatment ORDER BY T3.cost DESC LIMIT 1"
+ },
+ {
+  "i": 5999,
+  "db_id": "college_2",
+  "question_en": "Find the name of the students who have more than one advisor?",
+  "sql": "SELECT T1.name FROM student AS T1 JOIN advisor AS T2 ON T1.id  =  T2.s_id GROUP BY T2.s_id HAVING count(*)  >  1"
+ },
+ {
+  "i": 6018,
+  "db_id": "college_1",
+  "question_en": "What is the last name of the student who received an A in the class with the code 10018?",
+  "sql": "SELECT T1.stu_lname FROM student AS T1 JOIN enroll AS T2 ON T1.stu_num  =  T2.stu_num WHERE T2.enroll_grade  =  'A' AND T2.class_code  =  10018"
+ },
+ {
+  "i": 6039,
+  "db_id": "movie_1",
+  "question_en": "Find the names of all reviewers who have ratings with a NULL value for the date.",
+  "sql": "SELECT DISTINCT name FROM Reviewer AS T1 JOIN Rating AS T2 ON T1.rID  =  T2.rID WHERE ratingDate  =  \"null\""
+ },
+ {
+  "i": 6041,
+  "db_id": "university_basketball",
+  "question_en": "What is all the information about the basketball match?",
+  "sql": "SELECT * FROM basketball_match"
+ },
+ {
+  "i": 6042,
+  "db_id": "wine_1",
+  "question_en": "Find the distinct names of all wines that have prices higher than some wines from John Anthony winery.",
+  "sql": "SELECT DISTINCT Name FROM WINE WHERE Price  >  (SELECT min(Price) FROM wine WHERE Winery  =  \"John Anthony\")"
+ },
+ {
+  "i": 6065,
+  "db_id": "assets_maintenance",
+  "question_en": "How many engineers did each staff contact? List both the contact staff name and number of engineers contacted.",
+  "sql": "SELECT T1.staff_name ,  count(*) FROM Staff AS T1 JOIN Engineer_Visits AS T2 ON T1.staff_id  =  T2.contact_staff_id GROUP BY T1.staff_name"
+ },
+ {
+  "i": 6089,
+  "db_id": "icfp_1",
+  "question_en": "Which authors belong to the institution \"Google\"? Show the first names and last names.",
+  "sql": "SELECT DISTINCT t1.fname ,  t1.lname FROM authors AS t1 JOIN authorship AS t2 ON t1.authid  =  t2.authid JOIN inst AS t3 ON t2.instid  =  t3.instid WHERE t3.name  =  \"Google\""
+ },
+ {
+  "i": 6113,
+  "db_id": "music_4",
+  "question_en": "Please show the categories of the music festivals with count more than 1.",
+  "sql": "SELECT Category FROM music_festival GROUP BY Category HAVING COUNT(*)  >  1"
+ },
+ {
+  "i": 6114,
+  "db_id": "railway",
+  "question_en": "Show the working years of managers in descending order of their level.",
+  "sql": "SELECT Working_year_starts FROM manager ORDER BY LEVEL DESC"
+ },
+ {
+  "i": 6121,
+  "db_id": "college_2",
+  "question_en": "What is the title and credits of the course that is taught in the largest classroom (with the highest capacity)?",
+  "sql": "SELECT T3.title ,  T3.credits FROM classroom AS T1 JOIN SECTION AS T2 ON T1.building  =  T2.building AND T1.room_number  =  T2.room_number JOIN course AS T3 ON T2.course_id  =  T3.course_id WHERE T1.capacity  =  (SELECT max(capacity) FROM classroom)"
+ },
+ {
+  "i": 6133,
+  "db_id": "dorm_1",
+  "question_en": "What are the names of the amenities that Smith Hall has?",
+  "sql": "SELECT T3.amenity_name FROM dorm AS T1 JOIN has_amenity AS T2 ON T1.dormid  =  T2.dormid JOIN dorm_amenity AS T3 ON T2.amenid  =  T3.amenid WHERE T1.dorm_name  =  'Smith Hall'"
+ },
+ {
+  "i": 6167,
+  "db_id": "entrepreneur",
+  "question_en": "What are the companies of entrepreneurs, ordered descending by amount of money requested?",
+  "sql": "SELECT Company FROM entrepreneur ORDER BY Money_Requested DESC"
+ },
+ {
+  "i": 6182,
+  "db_id": "soccer_2",
+  "question_en": "How many states that have some college students playing in the mid position but not in the goalie position.",
+  "sql": "SELECT COUNT(*) FROM (SELECT T1.state FROM college AS T1 JOIN tryout AS T2 ON T1.cName  =  T2.cName WHERE T2.pPos  =  'mid' EXCEPT SELECT T1.state FROM college AS T1 JOIN tryout AS T2 ON T1.cName  =  T2.cName WHERE T2.pPos  =  'goalie')"
+ },
+ {
+  "i": 6188,
+  "db_id": "chinook_1",
+  "question_en": "What are the names and ids of artists with 3 or more albums, listed in alphabetical order?",
+  "sql": "SELECT T2.Name ,  T1.ArtistId FROM ALBUM AS T1 JOIN ARTIST AS T2 ON T1.ArtistId  =  T2.ArtistID GROUP BY T1.ArtistId HAVING COUNT(*)  >=  3 ORDER BY T2.Name"
+ },
+ {
+  "i": 6205,
+  "db_id": "game_injury",
+  "question_en": "For each injury accident, find the date of the game and the name of the injured player in the game, and sort the results in descending order of game season.",
+  "sql": "SELECT T1.date ,  T2.player FROM game AS T1 JOIN injury_accident AS T2 ON T1.id  =  T2.game_id ORDER BY T1.season DESC"
+ },
+ {
+  "i": 6221,
+  "db_id": "student_assessment",
+  "question_en": "What is the id of the candidate who most recently accessed the course?",
+  "sql": "SELECT candidate_id FROM candidate_assessments ORDER BY assessment_date DESC LIMIT 1"
+ },
+ {
+  "i": 6223,
+  "db_id": "e_government",
+  "question_en": "What is the last name of the contact individual from the Labour party organization who was contacted most recently?",
+  "sql": "SELECT t3.individual_last_name FROM organizations AS t1 JOIN organization_contact_individuals AS t2 ON t1.organization_id  =  t2.organization_id JOIN individuals AS t3 ON t2.individual_id  =  t3.individual_id WHERE t1.organization_name  =  \"Labour Party\" ORDER BY t2.date_contact_to DESC LIMIT 1"
+ },
+ {
+  "i": 6230,
+  "db_id": "college_1",
+  "question_en": "What are the total number of students enrolled in ACCT-211?",
+  "sql": "SELECT count(*) FROM CLASS AS T1 JOIN enroll AS T2 ON T1.class_code  =  T2.class_code WHERE T1.crs_code  =  'ACCT-211'"
+ },
+ {
+  "i": 6236,
+  "db_id": "theme_gallery",
+  "question_en": "What is the theme and artist name for the exhibition with a ticket price higher than the average?",
+  "sql": "SELECT T1.theme ,  T2.name FROM exhibition AS T1 JOIN artist AS T2 ON T1.artist_id  =  T2.artist_id WHERE T1.ticket_price  >  (SELECT avg(ticket_price) FROM exhibition)"
+ },
+ {
+  "i": 6247,
+  "db_id": "soccer_2",
+  "question_en": "How many colleges has more than 15000 students?",
+  "sql": "SELECT count(*) FROM College WHERE enr  >  15000"
+ },
+ {
+  "i": 6252,
+  "db_id": "college_1",
+  "question_en": "Find the first name and office of the professor who is in the history department and has a Ph.D. degree.",
+  "sql": "SELECT T1.emp_fname ,  T2.prof_office FROM employee AS T1 JOIN professor AS T2 ON T1.emp_num  =  T2.emp_num JOIN department AS T3 ON T3.dept_code  =  T2.dept_code WHERE T3.dept_name  =  'History' AND T2.prof_high_degree  =  'Ph.D.'"
+ },
+ {
+  "i": 6255,
+  "db_id": "store_1",
+  "question_en": "What are the titles of all albums that start with A in alphabetical order?",
+  "sql": "SELECT title FROM albums WHERE title LIKE 'A%' ORDER BY title;"
+ },
+ {
+  "i": 6272,
+  "db_id": "document_management",
+  "question_en": "Find the average access counts of documents with functional area \"Acknowledgement\".",
+  "sql": "SELECT avg(t1.access_count) FROM documents AS t1 JOIN document_functional_areas AS t2 ON t1.document_code  =  t2.document_code JOIN functional_areas AS t3 ON t2.functional_area_code  =  t3.functional_area_code WHERE t3.functional_area_description  =  \"Acknowledgement\""
+ },
+ {
+  "i": 6280,
+  "db_id": "student_1",
+  "question_en": "How many students does KAWA GORDON teaches?",
+  "sql": "SELECT count(*) FROM list AS T1 JOIN teachers AS T2 ON T1.classroom  =  T2.classroom WHERE T2.firstname  =  \"KAWA\" AND T2.lastname  =  \"GORDON\""
+ },
+ {
+  "i": 6283,
+  "db_id": "customers_campaigns_ecommerce",
+  "question_en": "Show the names of customers having an order with shipping method FedEx and order status Paid.",
+  "sql": "SELECT T1.customer_name FROM customers AS T1 JOIN customer_orders AS T2 ON T1.customer_id  =  T2.customer_id WHERE shipping_method_code  =  'FedEx' AND order_status_code  =  'Paid'"
+ },
+ {
+  "i": 6284,
+  "db_id": "wine_1",
+  "question_en": "Find the country of all appelations who have at most three wines.",
+  "sql": "SELECT T1.County FROM APPELLATIONS AS T1 JOIN WINE AS T2 ON T1.Appelation  =  T2.Appelation GROUP BY T2.Appelation HAVING count(*)  <=  3"
+ },
+ {
+  "i": 6296,
+  "db_id": "college_2",
+  "question_en": "Find the name of the courses that do not have any prerequisite?",
+  "sql": "SELECT title FROM course WHERE course_id NOT IN (SELECT course_id FROM prereq)"
+ },
+ {
+  "i": 6302,
+  "db_id": "college_1",
+  "question_en": "Find the first names of professors who are teaching more than one class.",
+  "sql": "SELECT T2.emp_fname FROM CLASS AS T1 JOIN employee AS T2 ON T1.prof_num  =  T2.emp_num GROUP BY T1.prof_num HAVING count(*)  >  1"
+ },
+ {
+  "i": 6330,
+  "db_id": "allergy_1",
+  "question_en": "What are the average ages for male and female students?",
+  "sql": "SELECT avg(age) ,  sex FROM Student GROUP BY sex"
+ },
+ {
+  "i": 6337,
+  "db_id": "hospital_1",
+  "question_en": "Which patients made more than one appointment? Tell me the name and phone number of these patients.",
+  "sql": "SELECT name ,  phone FROM appointment AS T1 JOIN patient AS T2 ON T1.patient  =  T2.ssn GROUP BY T1.patient HAVING count(*)  >  1"
+ },
+ {
+  "i": 6342,
+  "db_id": "products_gen_characteristics",
+  "question_en": "List all characteristics of product named \"sesame\" with type code \"Grade\".",
+  "sql": "SELECT t3.characteristic_name FROM products AS t1 JOIN product_characteristics AS t2 ON t1.product_id  =  t2.product_id JOIN CHARACTERISTICS AS t3 ON t2.characteristic_id  =  t3.characteristic_id WHERE t1.product_name  =  \"sesame\" AND t3.characteristic_type_code  =  \"Grade\""
+ },
+ {
+  "i": 6347,
+  "db_id": "hospital_1",
+  "question_en": "List the names of all distinct medications, ordered in an alphabetical order.",
+  "sql": "SELECT DISTINCT name FROM medication ORDER BY name"
+ },
+ {
+  "i": 6376,
+  "db_id": "store_product",
+  "question_en": "What are the different district names in order of descending city area?",
+  "sql": "SELECT DISTINCT District_name FROM district ORDER BY city_area DESC"
+ },
+ {
+  "i": 6389,
+  "db_id": "college_1",
+  "question_en": "What are the first names of all students who got a grade C in a class?",
+  "sql": "SELECT DISTINCT stu_fname FROM student AS T1 JOIN enroll AS T2 ON T1.stu_num  =  T2.stu_num WHERE enroll_grade  =  'C'"
+ },
+ {
+  "i": 6400,
+  "db_id": "network_2",
+  "question_en": "How many different cities are they from?",
+  "sql": "SELECT count(DISTINCT city) FROM Person"
+ },
+ {
+  "i": 6402,
+  "db_id": "college_2",
+  "question_en": "Find the total budgets of the Marketing or Finance department.",
+  "sql": "SELECT sum(budget) FROM department WHERE dept_name  =  'Marketing' OR dept_name  =  'Finance'"
+ },
+ {
+  "i": 6407,
+  "db_id": "phone_1",
+  "question_en": "Find all phones that have word 'Full' in their accreditation types. List the Hardware Model name and Company name.",
+  "sql": "SELECT Hardware_Model_name ,  Company_name FROM phone WHERE Accreditation_type LIKE 'Full';"
+ },
+ {
+  "i": 6411,
+  "db_id": "store_1",
+  "question_en": "What are the states with the most invoices?",
+  "sql": "SELECT billing_state ,  COUNT(*) FROM invoices WHERE billing_country  =  \"USA\" GROUP BY billing_state ORDER BY COUNT(*) DESC LIMIT 1;"
+ },
+ {
+  "i": 6441,
+  "db_id": "manufactory_1",
+  "question_en": "Find the number of manufactures that are based in Tokyo or Beijing.",
+  "sql": "SELECT count(*) FROM manufacturers WHERE headquarter  =  'Tokyo' OR headquarter  =  'Beijing'"
+ },
+ {
+  "i": 6464,
+  "db_id": "customers_and_addresses",
+  "question_en": "Find the name of the customers who use the most frequently used payment method.",
+  "sql": "SELECT customer_name FROM customers WHERE payment_method  =  (SELECT payment_method FROM customers GROUP BY payment_method ORDER BY count(*) DESC LIMIT 1)"
+ },
+ {
+  "i": 6465,
+  "db_id": "dorm_1",
+  "question_en": "Find the average age of students living in each dorm and the name of dorm.",
+  "sql": "SELECT avg(T1.age) ,  T3.dorm_name FROM student AS T1 JOIN lives_in AS T2 ON T1.stuid  =  T2.stuid JOIN dorm AS T3 ON T3.dormid  =  T2.dormid GROUP BY T3.dorm_name"
+ },
+ {
+  "i": 6492,
+  "db_id": "school_player",
+  "question_en": "List the locations of schools in ascending order of enrollment.",
+  "sql": "SELECT LOCATION FROM school ORDER BY Enrollment ASC"
+ },
+ {
+  "i": 6504,
+  "db_id": "e_learning",
+  "question_en": "Find the student ID and middle name for all the students with at most two enrollments.",
+  "sql": "SELECT T1.student_id ,  T2.middle_name FROM Student_Course_Enrolment AS T1 JOIN Students AS T2 ON T1.student_id  =  T2.student_id GROUP BY T1.student_id HAVING COUNT(*)  <=  2"
+ },
+ {
+  "i": 6539,
+  "db_id": "device",
+  "question_en": "Show the name of the shop that has the most kind of devices in stock.",
+  "sql": "SELECT T2.Shop_Name FROM stock AS T1 JOIN shop AS T2 ON T1.Shop_ID  =  T2.Shop_ID GROUP BY T1.Shop_ID ORDER BY COUNT(*) DESC LIMIT 1"
+ },
+ {
+  "i": 6543,
+  "db_id": "cre_Theme_park",
+  "question_en": "What are the star rating descriptions of the hotels with price above 10000?",
+  "sql": "SELECT T2.star_rating_description FROM HOTELS AS T1 JOIN Ref_Hotel_Star_Ratings AS T2 ON T1.star_rating_code  =  T2.star_rating_code WHERE T1.price_range  >  10000"
+ },
+ {
+  "i": 6556,
+  "db_id": "school_finance",
+  "question_en": "Find the names of schools that have more than one donator with donation amount above 8.5.",
+  "sql": "SELECT T2.School_name FROM endowment AS T1 JOIN school AS T2 ON T1.school_id  =  T2.school_id WHERE T1.amount  >  8.5 GROUP BY T1.school_id HAVING count(*)  >  1"
+ },
+ {
+  "i": 6566,
+  "db_id": "aircraft",
+  "question_en": "List all pilot names in ascending alphabetical order.",
+  "sql": "SELECT Name FROM pilot ORDER BY Name ASC"
+ },
+ {
+  "i": 6577,
+  "db_id": "customers_and_addresses",
+  "question_en": "Find the names of customers who ordered both products Latte and Americano.",
+  "sql": "SELECT t1.customer_name FROM customers AS t1 JOIN customer_orders AS t2 ON t1.customer_id  =  t2.customer_id JOIN order_items AS t3 ON t2.order_id  =  t3.order_id JOIN products AS t4 ON t3.product_id  =  t4.product_id WHERE t4.product_details  =  'Latte' INTERSECT SELECT t1.customer_name FROM customers AS t1 JOIN customer_orders AS t2 ON t1.customer_id  =  t2.customer_id JOIN order_items AS t3 ON t2.order_id  =  t3.order_id JOIN products AS t4 ON t3.product_id  =  t4.product_id WHERE t4.product_details  =  'Americano'"
+ },
+ {
+  "i": 6579,
+  "db_id": "activity_1",
+  "question_en": "How many activities does Mark Giuliano participate in?",
+  "sql": "SELECT count(*) FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID  =  T2.facID WHERE T1.fname  =  \"Mark\" AND T1.lname  =  \"Giuliano\""
+ },
+ {
+  "i": 6588,
+  "db_id": "election",
+  "question_en": "Return all the information for each election record.",
+  "sql": "SELECT * FROM election"
+ },
+ {
+  "i": 6593,
+  "db_id": "election",
+  "question_en": "Which counties have two or more delegates? Give me the county names.",
+  "sql": "SELECT T1.County_name FROM county AS T1 JOIN election AS T2 ON T1.County_id  =  T2.District GROUP BY T1.County_id HAVING COUNT(*)  >=  2"
+ },
+ {
+  "i": 6606,
+  "db_id": "company_office",
+  "question_en": "Sort the company names in descending order of the company's market value.",
+  "sql": "SELECT name FROM Companies ORDER BY Market_Value_billion DESC"
+ },
+ {
+  "i": 6625,
+  "db_id": "dorm_1",
+  "question_en": "What is the last name of every student who is either female or living in a city with the code BAL or male and under 20?",
+  "sql": "SELECT lname FROM student WHERE sex  =  'F' AND city_code  =  'BAL' UNION SELECT lname FROM student WHERE sex  =  'M' AND age  <  20"
+ }
+]

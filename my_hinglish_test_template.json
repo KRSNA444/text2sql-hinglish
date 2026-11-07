@@ -1,0 +1,242 @@
+[
+ {
+  "idx": 4,
+  "db_id": "concert_singer",
+  "question_en": "What are the names, countries, and ages for every singer in descending order of age?",
+  "question": ""
+ },
+ {
+  "idx": 17,
+  "db_id": "concert_singer",
+  "question_en": "What is the maximum capacity and the average of all stadiums ?",
+  "question": ""
+ },
+ {
+  "idx": 38,
+  "db_id": "concert_singer",
+  "question_en": "List all singer names in concerts in year 2014.",
+  "question": ""
+ },
+ {
+  "idx": 49,
+  "db_id": "pets_1",
+  "question_en": "How much does the youngest dog weigh?",
+  "question": ""
+ },
+ {
+  "idx": 91,
+  "db_id": "car_1",
+  "question_en": "For each continent, list its id, name, and how many countries it has?",
+  "question": ""
+ },
+ {
+  "idx": 157,
+  "db_id": "car_1",
+  "question_en": "What is the horsepower of the car with the greatest accelerate?",
+  "question": ""
+ },
+ {
+  "idx": 196,
+  "db_id": "flight_2",
+  "question_en": "How many airlines are from USA?",
+  "question": ""
+ },
+ {
+  "idx": 217,
+  "db_id": "flight_2",
+  "question_en": "Count the number of United Airlines flights arriving in ASY Airport.",
+  "question": ""
+ },
+ {
+  "idx": 242,
+  "db_id": "flight_2",
+  "question_en": "Find all airlines that have at least 10 flights.",
+  "question": ""
+ },
+ {
+  "idx": 282,
+  "db_id": "employee_hire_evaluation",
+  "question_en": "Find the names of employees who never won any award in the evaluation.",
+  "question": ""
+ },
+ {
+  "idx": 304,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "What is the document id, template id and description for document named \"Robbin CV\"?",
+  "question": ""
+ },
+ {
+  "idx": 305,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "Return the document id, template id, and description for the document with the name Robbin CV.",
+  "question": ""
+ },
+ {
+  "idx": 311,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "What are all different template ids used for documents, and how many times were each of them used?",
+  "question": ""
+ },
+ {
+  "idx": 369,
+  "db_id": "cre_Doc_Template_Mgt",
+  "question_en": "Return the different document ids along with the number of paragraphs corresponding to each, ordered by id.",
+  "question": ""
+ },
+ {
+  "idx": 427,
+  "db_id": "museum_visit",
+  "question_en": "What is the name of the visitor who visited both a museum opened before 2009 and a museum opened after 2011?",
+  "question": ""
+ },
+ {
+  "idx": 484,
+  "db_id": "wta_1",
+  "question_en": "Find the name and rank of the 3 youngest winners across all matches.",
+  "question": ""
+ },
+ {
+  "idx": 528,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "List the section_name in reversed lexicographical order.",
+  "question": ""
+ },
+ {
+  "idx": 541,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What is the program id and the summary of the degree that has the most students enrolled?",
+  "question": ""
+ },
+ {
+  "idx": 553,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What is the date and id of the transcript with at least 2 courses listed?",
+  "question": ""
+ },
+ {
+  "idx": 567,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What is the earliest date of a transcript release, and what details can you tell me?",
+  "question": ""
+ },
+ {
+  "idx": 575,
+  "db_id": "student_transcripts_tracking",
+  "question_en": "What is the date and id of the transcript with the least number of results?",
+  "question": ""
+ },
+ {
+  "idx": 622,
+  "db_id": "tvshow",
+  "question_en": "What is Weekly Rank of TV series with Episode \"A Love of a Lifetime\"?",
+  "question": ""
+ },
+ {
+  "idx": 629,
+  "db_id": "tvshow",
+  "question_en": "How many cartoons did each director create?",
+  "question": ""
+ },
+ {
+  "idx": 651,
+  "db_id": "poker_player",
+  "question_en": "What are the earnings of poker players, ordered descending by value?",
+  "question": ""
+ },
+ {
+  "idx": 660,
+  "db_id": "poker_player",
+  "question_en": "What are the names of poker players?",
+  "question": ""
+ },
+ {
+  "idx": 669,
+  "db_id": "poker_player",
+  "question_en": "Return the money rank of the poker player with the greatest height.",
+  "question": ""
+ },
+ {
+  "idx": 688,
+  "db_id": "voter_1",
+  "question_en": "How many states are there?",
+  "question": ""
+ },
+ {
+  "idx": 705,
+  "db_id": "world_1",
+  "question_en": "How many countries have a republic as their form of government?",
+  "question": ""
+ },
+ {
+  "idx": 762,
+  "db_id": "world_1",
+  "question_en": "What is the most populace city that speaks English?",
+  "question": ""
+ },
+ {
+  "idx": 797,
+  "db_id": "world_1",
+  "question_en": "Find the government form name and total population for each government form whose average life expectancy is longer than 72.",
+  "question": ""
+ },
+ {
+  "idx": 821,
+  "db_id": "world_1",
+  "question_en": "What are the codes of countries where Spanish is spoken by the largest percentage of people?",
+  "question": ""
+ },
+ {
+  "idx": 885,
+  "db_id": "network_1",
+  "question_en": "Show the names of high school students and their corresponding number of friends.",
+  "question": ""
+ },
+ {
+  "idx": 889,
+  "db_id": "network_1",
+  "question_en": "Show the names of high schoolers who have at least 3 friends.",
+  "question": ""
+ },
+ {
+  "idx": 938,
+  "db_id": "dog_kennels",
+  "question_en": "Tell me the owner id and last name of the owner who spent the most on treatments of his or her dogs.",
+  "question": ""
+ },
+ {
+  "idx": 955,
+  "db_id": "dog_kennels",
+  "question_en": "List the names of the dogs of the rarest breed and the treatment dates of them.",
+  "question": ""
+ },
+ {
+  "idx": 978,
+  "db_id": "dog_kennels",
+  "question_en": "Show me the cost of the most recently performed treatment.",
+  "question": ""
+ },
+ {
+  "idx": 999,
+  "db_id": "dog_kennels",
+  "question_en": "List the first name of all the professionals along with the description of the treatment they have done.",
+  "question": ""
+ },
+ {
+  "idx": 1005,
+  "db_id": "singer",
+  "question_en": "What are the birth year and citizenship of singers?",
+  "question": ""
+ },
+ {
+  "idx": 1006,
+  "db_id": "singer",
+  "question_en": "What are the birth years and citizenships of the singers?",
+  "question": ""
+ },
+ {
+  "idx": 1025,
+  "db_id": "singer",
+  "question_en": "Show the names of singers and the total sales of their songs.",
+  "question": ""
+ }
+]
