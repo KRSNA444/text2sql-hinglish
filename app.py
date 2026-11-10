@@ -7,10 +7,10 @@ Needs: Ollama running with your model, and `pip install streamlit pandas`.
 import tempfile
 from pathlib import Path
 
-import pandas as pd
 import streamlit as st
 
-from sql_utils import memory_db_from_csvs, open_readonly, schema_from_connection, text_to_sql
+from sql_utils import (display_df, memory_db_from_csvs, open_readonly, prompt_may_be_too_long,
+                       schema_from_connection, text_to_sql)
 
 st.set_page_config(page_title="Text-to-SQL (English + Hinglish)", page_icon="🗄️", layout="wide")
 st.title("Text-to-SQL assistant")
@@ -77,14 +77,21 @@ with st.expander("Database schema (model ko ye dikhaya jata hai)"):
     st.code(schema, language="sql")
 
 # ------------------------------------------------------------------ question
-question = st.text_input("Sawaal", placeholder="Har singer ka naam aur age batao, age ke descending order me")
-if st.button("SQL banao", type="primary") and question.strip():
+with st.form("ask"):  # a form, so pressing Enter in the box also submits
+    question = st.text_input("Sawaal", placeholder="Har singer ka naam aur age batao, age ke descending order me")
+    submitted = st.form_submit_button("SQL banao", type="primary")
+
+if submitted and not question.strip():
+    st.warning("Pehle sawaal likho.")
+elif submitted:
+    if prompt_may_be_too_long(schema, question):
+        st.warning("Is database ka schema bahut bada hai, model ko poora nahi dikh sakta. "
+                   "Jawab galat ho sakta hai; chhota database ya kam tables try karo.")
     try:
         with st.spinner("Model soch raha hai..."):
             attempts = text_to_sql(conn, schema, question.strip(), host, model, retry=retry)
     except Exception as e:
-        st.error(f"Model se baat nahi ho paayi: {e}\n\nCheck karo ki Ollama chal raha hai aur "
-                 f"model '{model}' installed hai.")
+        st.error(f"Model se baat nahi ho paayi: {e}")
         st.stop()
 
     for i, a in enumerate(attempts, 1):
@@ -94,6 +101,9 @@ if st.button("SQL banao", type="primary") and question.strip():
         if a["error"]:
             st.warning(a["error"])
         else:
-            df = pd.DataFrame(a["rows"], columns=a["columns"])
-            st.dataframe(df)
+            df = display_df(a["columns"], a["rows"])
+            if df.empty:
+                st.info("Query chali, par koi row nahi mili.")
+            else:
+                st.dataframe(df)
             st.caption(f"{len(df)} rows" + (" (pehli 200 dikhayi gayi)" if a["truncated"] else ""))
